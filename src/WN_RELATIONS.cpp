@@ -82,7 +82,6 @@ int main()
         if(datos[0] == "33")
         {
             ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
         }
     }
 
