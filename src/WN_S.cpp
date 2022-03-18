@@ -13,18 +13,39 @@ string do_replace( string const & in, string const & from, string const & to )
   return std::regex_replace( in, std::regex(from), to );
 }
 
-int codificacionCategorias(string c)
+int contar_synsets(int *synsets, int s, size_t size)
 {
-    if(c == "n") return 1;
-    else if (c == "v") return 2;
-    else if (c == "a") return 3;
-    else if (c == "r") return 4;
-    else return -1;
+    int count = 1;
+
+    auto itr = find(synsets, synsets + size, s);
+
+    if(itr == synsets + size)
+    {
+        return count;
+    }
+
+    for (size_t i = distance(synsets, itr); i < size; i++)
+    {
+        if(synsets[i] == s) count++;
+    }
+    
+    return count;   
+}
+
+
+string codificacion_categorias(string c)
+{
+    if(c == "n") return "1";
+    else if (c == "v") return "2";
+    else if (c == "a") return "3";
+    else if (c == "r") return "4";
+    else return "-1";
 }
 
 int main()
 {   
     string datos [7];
+    int synsets[150000];
     fstream ficheroLectura;
     fstream ficheroEscritura;
     size_t i = 0;
@@ -56,13 +77,17 @@ int main()
             token = strtok(NULL, "\t");
             i++;
         }
-        ficheroEscritura << "s(" << codificacionCategorias(datos[3]) << datos[2].substr(7, 8) << ",'" << do_replace(datos[0], "'", "''") << "'," << datos[3] << "," << datos[1] << ")." << endl;
+
+        string synsetAux = codificacion_categorias(datos[3]) + datos[2].substr(7, 8);
+        int synset = stoi(synsetAux);
+        ficheroEscritura << "s(" << synset << "," << contar_synsets(synsets, synset, j) << ",'" << do_replace(datos[0], "'", "''") << "'," << datos[3] << "," << datos[1] << ")." << endl;
+        synsets[j] = synset;
+        j++;
     }
 
     cout << "Parseado correctamente.\n";
     ficheroLectura.close();
     ficheroEscritura.close();
     cout << "¡Proceso finalizado!";
-
     return 0;
 }
