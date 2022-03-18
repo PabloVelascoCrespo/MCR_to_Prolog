@@ -56,7 +56,7 @@ int main()
             token = strtok(NULL, "\t");
             i++;
         }
-        ficheroEscritura << "g(" << codificacionCategorias(datos[0].substr(16,1)) << datos[0].substr(7, 8) << ",'" << datos[6] << "')." << endl;
+        ficheroEscritura << "g(" << codificacionCategorias(datos[0].substr(16,1)) << datos[0].substr(7, 8) << ",'" << do_replace(datos[6], "'", "\"") << "')." << endl;
     }
 
     cout << "Parseado correctamente.\n";

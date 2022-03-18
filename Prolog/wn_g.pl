@@ -73990,7 +73990,7 @@ g(107103258,'None').
 g(107103402,'figura retórica en la que el emisor reprocha a la audiencia con_el_fin_de incitarla o convencerla').
 g(107103558,'None').
 g(107103671,'None').
-g(107103802,'inversión del orden normal de las palabras ( como en ' yo el queso amo ' )').
+g(107103802,'inversión del orden normal de las palabras ( como en " yo el queso amo " )').
 g(107103912,'None').
 g(107104020,'None').
 g(107104149,'None').
@@ -109291,7 +109291,7 @@ g(113773906,'None').
 g(113774010,'None').
 g(113774115,'None').
 g(113774311,'None').
-g(113774404,'(A menudo seguido por `de ') un gran número o cantidad o medida').
+g(113774404,'(A menudo seguido por `de ") un gran número o cantidad o medida').
 g(113775093,'Número elevado e indefinido.').
 g(113775319,'None').
 g(113775523,'None').
