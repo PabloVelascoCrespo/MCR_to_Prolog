@@ -10,7 +10,7 @@ using namespace std;
 
 string do_replace( string const & in, string const & from, string const & to )
 {
-  return std::regex_replace( in, std::regex(from), to );
+  return regex_replace( in, regex(from), to );
 }
 
 string codificacion_categorias(string c)
@@ -68,7 +68,7 @@ int main()
         {
             ficheroEscritura_hyp << "hyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
         }
-        
+
         if(datos[0] == "31")
         {
             ficheroEscritura_der << "der(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;

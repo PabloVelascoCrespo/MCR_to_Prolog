@@ -7,10 +7,12 @@
 #include <regex>
 
 using namespace std;
+//TODO implementar para que lo haga con todos los idiomas
+string* idiomas = new string[5] { "cat", "eus", "glg","por","spa"};
 
 string do_replace( string const & in, string const & from, string const & to )
 {
-  return std::regex_replace( in, std::regex(from), to );
+  return regex_replace( in, regex(from), to );
 }
 
 int contar_synsets(int *synsets, int s, size_t size)
@@ -52,9 +54,10 @@ int main()
     size_t j = 0;
 
     cout << "Abriendo ficheros...\n";
-
-    ficheroLectura.open("../spaWN/wei_spa-30_variant.tsv", ios::in);
-    ficheroEscritura.open("../Prolog/wn_s.pl", ios::out);
+    
+    ficheroLectura.open("../mcr/spaWN/wei_spa-30_variant.tsv", ios::in);    
+    ficheroEscritura.open("../spa/Prolog/wn_s.pl", ios::out);
+    
     if(!ficheroLectura.is_open() || !ficheroEscritura.is_open())
     {
         cout << "No se han abierto correctamente\n";

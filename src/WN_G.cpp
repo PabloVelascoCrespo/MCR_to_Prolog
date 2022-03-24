@@ -10,7 +10,7 @@ using namespace std;
 
 string do_replace( string const & in, string const & from, string const & to )
 {
-  return std::regex_replace( in, std::regex(from), to );
+  return regex_replace( in, regex(from), to );
 }
 
 int codificacionCategorias(string c)
