@@ -35,6 +35,12 @@ int main()
         fstream ficheroEscritura_vgp;
         fstream ficheroEscritura_per;
         fstream ficheroEscritura_ant;
+        fstream ficheroEscritura_sim;
+        fstream ficheroEscritura_sub;
+        fstream ficheroEscritura_xphyp;
+        fstream ficheroEscritura_rel;
+        fstream ficheroEscritura_cat;
+
         size_t i;
         string datos[9];
         cout << "Abriendo ficheros...\n";
@@ -45,8 +51,13 @@ int main()
         ficheroEscritura_vgp.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_vgp.pl", ios::out);
         ficheroEscritura_per.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_per.pl", ios::out);
         ficheroEscritura_ant.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_ant.pl", ios::out);
+        ficheroEscritura_sim.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_sim.pl", ios::out);
+        ficheroEscritura_sub.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_sub.pl", ios::out);
+        ficheroEscritura_xphyp.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_xphyp.pl", ios::out);
+        ficheroEscritura_rel.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_rel.pl", ios::out);
+        ficheroEscritura_cat.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_cat.pl", ios::out);
 
-        if(!ficheroLectura.is_open() || !ficheroEscritura_hyp.is_open() || !ficheroEscritura_der.is_open() || !ficheroEscritura_vgp.is_open() || !ficheroEscritura_per.is_open() || !ficheroEscritura_ant.is_open())
+        if(!ficheroLectura.is_open() || !ficheroEscritura_hyp.is_open() || !ficheroEscritura_der.is_open() || !ficheroEscritura_vgp.is_open() || !ficheroEscritura_per.is_open() || !ficheroEscritura_sub.is_open() || !ficheroEscritura_xphyp.is_open() || !ficheroEscritura_ant.is_open() || !ficheroEscritura_sim.is_open() || !ficheroEscritura_rel.is_open() || !ficheroEscritura_cat.is_open())
         {
             cout << "No se han abierto correctamente\n";
             return 0;
@@ -74,6 +85,21 @@ int main()
                 ficheroEscritura_hyp << "hyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
             }
 
+            if(datos[0] == "33")
+            {
+                ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+            }
+
+            if(datos[0] == "47")
+            {
+                ficheroEscritura_per << "per(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+            }
+
+            if(datos[0] == "19")
+            {
+                ficheroEscritura_sub << "sub(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+            }
+
             if(datos[0] == "31")
             {
                 ficheroEscritura_der << "der(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
@@ -84,14 +110,24 @@ int main()
                 ficheroEscritura_vgp << "vgp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
             }
 
-            if(datos[0] == "47")
+            if(datos[0] == "34")
             {
-                ficheroEscritura_per << "per(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+                ficheroEscritura_sim << "sim(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
             }
 
-            if(datos[0] == "33")
+            if(datos[0] == "21")
             {
-                ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+                ficheroEscritura_xphyp << "xphyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+            }
+
+            if(datos[0] == "63")
+            {
+                ficheroEscritura_xphyp << "xphyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+            }
+
+            if(datos[0] == "64")
+            {
+                ficheroEscritura_rel << "rel(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
             }
         }
 
