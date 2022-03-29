@@ -7,6 +7,7 @@
 #include <regex>
 
 using namespace std;
+
 //TODO implementar para que lo haga con todos los idiomas
 string* idiomas = new string[5] { "cat", "eus", "glg","por","spa"};
 
@@ -46,51 +47,54 @@ string codificacion_categorias(string c)
 
 int main()
 {   
-    string datos [7];
-    int synsets[150000];
-    fstream ficheroLectura;
-    fstream ficheroEscritura;
-    size_t i = 0;
-    size_t j = 0;
-
-    cout << "Abriendo ficheros...\n";
-    
-    ficheroLectura.open("../mcr/spaWN/wei_spa-30_variant.tsv", ios::in);    
-    ficheroEscritura.open("../spa/Prolog/wn_s.pl", ios::out);
-    
-    if(!ficheroLectura.is_open() || !ficheroEscritura.is_open())
+    for(int idiomaIndex = 0; idiomaIndex < 5; idiomaIndex++)
     {
-        cout << "No se han abierto correctamente\n";
-        return 0;
-    }
+        string datos [7];
+        int synsets[150000];
+        fstream ficheroLectura;
+        fstream ficheroEscritura;
+        size_t i = 0;
+        size_t j = 0;
 
-    cout << "Se han abierto correctamente.\n" << "Parseando a Prolog...\n";
-
-    string line;
-
-    while(getline(ficheroLectura, line))
-    {
-        i = 0;
-        char *cadena = line.data();
-        char *token =strtok(cadena, "\t");
-
-        while(token != NULL)
+        cout << "Abriendo ficheros...\n";
+        
+        ficheroLectura.open("../mcr/"+idiomas[idiomaIndex]+"WN/wei_"+idiomas[idiomaIndex]+"-30_variant.tsv", ios::in);    
+        ficheroEscritura.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_s.pl", ios::out);
+        
+        if(!ficheroLectura.is_open() || !ficheroEscritura.is_open())
         {
-            datos[i] = token;
-            token = strtok(NULL, "\t");
-            i++;
+            cout << "No se han abierto correctamente\n";
+            return 0;
         }
 
-        string synsetAux = codificacion_categorias(datos[3]) + datos[2].substr(7, 8);
-        int synset = stoi(synsetAux);
-        ficheroEscritura << "s(" << synset << "," << contar_synsets(synsets, synset, j) << ",'" << do_replace(datos[0], "'", "''") << "'," << datos[3] << "," << datos[1] << ")." << endl;
-        synsets[j] = synset;
-        j++;
-    }
+        cout << "Se han abierto correctamente.\n" << "Parseando a Prolog...\n";
 
-    cout << "Parseado correctamente.\n";
-    ficheroLectura.close();
-    ficheroEscritura.close();
+        string line;
+
+        while(getline(ficheroLectura, line))
+        {
+            i = 0;
+            char *cadena = line.data();
+            char *token =strtok(cadena, "\t");
+
+            while(token != NULL)
+            {
+                datos[i] = token;
+                token = strtok(NULL, "\t");
+                i++;
+            }
+
+            string synsetAux = codificacion_categorias(datos[3]) + datos[2].substr(7, 8);
+            int synset = stoi(synsetAux);
+            ficheroEscritura << "s(" << synset << "," << contar_synsets(synsets, synset, j) << ",'" << do_replace(datos[0], "'", "''") << "'," << datos[3] << "," << datos[1] << ")." << endl;
+            synsets[j] = synset;
+            j++;
+        }
+
+        cout << "Idioma "+idiomas[idiomaIndex]+" parseado correctamente.\n";
+        ficheroLectura.close();
+        ficheroEscritura.close();
+    }
     cout << "¡Proceso finalizado!";
     return 0;
 }
