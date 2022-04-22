@@ -8,7 +8,6 @@
 
 using namespace std;
 
-//TODO implementar para que lo haga con todos los idiomas
 string* idiomas = new string[5] { "cat", "eus", "glg","por","spa"};
 
 string do_replace( string const & in, string const & from, string const & to )

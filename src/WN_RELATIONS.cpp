@@ -8,7 +8,6 @@
 
 using namespace std;
 
-//TODO implementar para que lo haga con todos los idiomas
 string* idiomas = new string[5] { "cat", "eus", "glg","por","spa"};
 
 string do_replace( string const & in, string const & from, string const & to )
@@ -40,6 +39,9 @@ int main()
         fstream ficheroEscritura_xphyp;
         fstream ficheroEscritura_rel;
         fstream ficheroEscritura_cat;
+        fstream ficheroEscritura_rgloss;
+        fstream ficheroEscritura_rterm;
+        fstream ficheroEscritura_uterm;
 
         size_t i;
         string datos[9];
@@ -56,8 +58,12 @@ int main()
         ficheroEscritura_xphyp.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_xphyp.pl", ios::out);
         ficheroEscritura_rel.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_rel.pl", ios::out);
         ficheroEscritura_cat.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_cat.pl", ios::out);
+        ficheroEscritura_rgloss.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_rgloss.pl", ios::out);
+        ficheroEscritura_rterm.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_rterm.pl", ios::out);
+        ficheroEscritura_uterm.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_uterm.pl", ios::out);
 
-        if(!ficheroLectura.is_open() || !ficheroEscritura_hyp.is_open() || !ficheroEscritura_der.is_open() || !ficheroEscritura_vgp.is_open() || !ficheroEscritura_per.is_open() || !ficheroEscritura_sub.is_open() || !ficheroEscritura_xphyp.is_open() || !ficheroEscritura_ant.is_open() || !ficheroEscritura_sim.is_open() || !ficheroEscritura_rel.is_open() || !ficheroEscritura_cat.is_open())
+
+        if(!ficheroLectura.is_open() || !ficheroEscritura_hyp.is_open() || !ficheroEscritura_der.is_open() || !ficheroEscritura_vgp.is_open() || !ficheroEscritura_per.is_open() || !ficheroEscritura_sub.is_open() || !ficheroEscritura_xphyp.is_open() || !ficheroEscritura_ant.is_open() || !ficheroEscritura_sim.is_open() || !ficheroEscritura_rel.is_open() || !ficheroEscritura_cat.is_open() || !ficheroEscritura_rgloss.is_open() || !ficheroEscritura_rterm.is_open() || !ficheroEscritura_uterm.is_open())
         {
             cout << "No se han abierto correctamente\n";
             return 0;
@@ -83,51 +89,42 @@ int main()
             if(datos[0] == "12")
             {
                 ficheroEscritura_hyp << "hyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "33")
+            }else if(datos[0] == "33")
             {
-                ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "47")
+                ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",''," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",'')." << endl;
+            }else if(datos[0] == "47")
             {
-                ficheroEscritura_per << "per(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "19")
+                ficheroEscritura_per << "per(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",''," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",'')." << endl;
+            }else if(datos[0] == "19")
             {
                 ficheroEscritura_sub << "sub(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "31")
+            }else if(datos[0] == "31")
             {
                 ficheroEscritura_der << "der(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "52")
+            }else if(datos[0] == "52")
             {
-                ficheroEscritura_vgp << "vgp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "34")
+                ficheroEscritura_vgp << "vgp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",0," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",0)." << endl;
+            }else if(datos[0] == "34")
             {
-                ficheroEscritura_sim << "sim(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "21")
+                ficheroEscritura_sim << "sim(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "21")
             {
                 ficheroEscritura_xphyp << "xphyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "63")
+            }else if(datos[0] == "63")
             {
-                ficheroEscritura_xphyp << "xphyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
-            }
-
-            if(datos[0] == "64")
+                ficheroEscritura_cat << "cat(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "64")
             {
                 ficheroEscritura_rel << "rel(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "61")
+            {
+                ficheroEscritura_rgloss << "rgloss(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "66")
+            {
+                ficheroEscritura_rterm << "rterm(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "68")
+            {
+                ficheroEscritura_uterm << "uterm(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
             }
         }
 

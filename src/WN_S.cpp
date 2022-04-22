@@ -8,7 +8,6 @@
 
 using namespace std;
 
-//TODO implementar para que lo haga con todos los idiomas
 string* idiomas = new string[5] { "cat", "eus", "glg","por","spa"};
 
 string do_replace( string const & in, string const & from, string const & to )
@@ -86,7 +85,7 @@ int main()
 
             string synsetAux = codificacion_categorias(datos[3]) + datos[2].substr(7, 8);
             int synset = stoi(synsetAux);
-            ficheroEscritura << "s(" << synset << "," << contar_synsets(synsets, synset, j) << ",'" << do_replace(datos[0], "'", "''") << "'," << datos[3] << "," << datos[1] << ")." << endl;
+            ficheroEscritura << "s(" << synset << "," << contar_synsets(synsets, synset, j) << ",'" << do_replace(datos[0], "'", "''") << "'," << datos[3] << "," << datos[1] << ",'')." << endl;
             synsets[j] = synset;
             j++;
         }
