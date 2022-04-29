@@ -42,6 +42,9 @@ int main()
         fstream ficheroEscritura_rgloss;
         fstream ficheroEscritura_rterm;
         fstream ficheroEscritura_uterm;
+        fstream ficheroEscritura_mm;
+        fstream ficheroEscritura_mp;
+        fstream ficheroEscritura_sa;
 
         size_t i;
         string datos[9];
@@ -61,9 +64,12 @@ int main()
         ficheroEscritura_rgloss.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_rgloss.pl", ios::out);
         ficheroEscritura_rterm.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_rterm.pl", ios::out);
         ficheroEscritura_uterm.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_uterm.pl", ios::out);
+        ficheroEscritura_mm.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_mm.pl", ios::out);
+        ficheroEscritura_mp.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_mp.pl", ios::out);
+        ficheroEscritura_sa.open("../"+idiomas[idiomaIndex]+"/Prolog/wn_sa.pl", ios::out);
 
 
-        if(!ficheroLectura.is_open() || !ficheroEscritura_hyp.is_open() || !ficheroEscritura_der.is_open() || !ficheroEscritura_vgp.is_open() || !ficheroEscritura_per.is_open() || !ficheroEscritura_sub.is_open() || !ficheroEscritura_xphyp.is_open() || !ficheroEscritura_ant.is_open() || !ficheroEscritura_sim.is_open() || !ficheroEscritura_rel.is_open() || !ficheroEscritura_cat.is_open() || !ficheroEscritura_rgloss.is_open() || !ficheroEscritura_rterm.is_open() || !ficheroEscritura_uterm.is_open())
+        if(!ficheroLectura.is_open() || !ficheroEscritura_hyp.is_open() || !ficheroEscritura_der.is_open() || !ficheroEscritura_vgp.is_open() || !ficheroEscritura_per.is_open() || !ficheroEscritura_sub.is_open() || !ficheroEscritura_xphyp.is_open() || !ficheroEscritura_ant.is_open() || !ficheroEscritura_sim.is_open() || !ficheroEscritura_rel.is_open() || !ficheroEscritura_cat.is_open() || !ficheroEscritura_rgloss.is_open() || !ficheroEscritura_rterm.is_open() || !ficheroEscritura_uterm.is_open() || !ficheroEscritura_mm.is_open() || !ficheroEscritura_mp.is_open() || !ficheroEscritura_sa.is_open())
         {
             cout << "No se han abierto correctamente\n";
             return 0;
@@ -91,10 +97,10 @@ int main()
                 ficheroEscritura_hyp << "hyp(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
             }else if(datos[0] == "33")
             {
-                ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",''," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",'')." << endl;
+                ficheroEscritura_ant << "ant(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",0," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",0)." << endl;
             }else if(datos[0] == "47")
             {
-                ficheroEscritura_per << "per(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",''," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",'')." << endl;
+                ficheroEscritura_per << "per(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",0," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",0)." << endl;
             }else if(datos[0] == "19")
             {
                 ficheroEscritura_sub << "sub(" << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << "," << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ")." << endl;
@@ -125,6 +131,15 @@ int main()
             }else if(datos[0] == "68")
             {
                 ficheroEscritura_uterm << "uterm(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "7")
+            {
+                ficheroEscritura_mm << "mm(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "8")
+            {
+                ficheroEscritura_mp << "mp(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << "," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ")." << endl;
+            }else if(datos[0] == "49")
+            {
+                ficheroEscritura_sa << "sa(" << codificacion_categorias(datos[2]) << datos[1].substr(7,8) << ",0," << codificacion_categorias(datos[4]) << datos[3].substr(7,8) << ",0)." << endl;
             }
         }
 
