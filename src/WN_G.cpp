@@ -1,9 +1,5 @@
 #include <iostream>
-#include <cstring>
 #include <fstream>
-#include <string>
-#include <climits>
-#include <algorithm>
 #include <regex>
 
 using namespace std;
