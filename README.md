@@ -5,7 +5,13 @@
 ### Windows
 
 Para generar todos ficheros y ordenarlos:
-  Windows\exe.bat
+
+    Windows\exe.bat
 
 Si se desea traducir y añadir más glosas a wn_g:
-  Windows\traductor.bat
+
+    Windows\traductor.bat
+    
+### Linux
+
+### Mac OS
