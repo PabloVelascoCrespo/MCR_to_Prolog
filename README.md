@@ -19,4 +19,5 @@ Para generar todos los ficheros y ordenarlos, colóquese dentro del directorio L
     make ejecucion
 
 Si se desea traducir y añadir más glosas a wn_g (No se recomienda debido a que tarda alrededor de 5 horas, dependiendo de la conexión), dentro del directorio mencionado:
+    
     make traductor
