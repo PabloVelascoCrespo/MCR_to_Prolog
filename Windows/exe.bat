@@ -7,7 +7,7 @@ ECHO WN_G ejecutado
 g++ src\WN_RELATIONS.cpp -o src\WN_RELATIONS && src\WN_RELATIONS
 ECHO WN_RELATIONS ejecutado
 
-pip install -r Windows\requirements.txt
+pip install -r requirements.txt
 
 py src\WN_SOrden.py
 ECHO WN_SOrden ejecutado
