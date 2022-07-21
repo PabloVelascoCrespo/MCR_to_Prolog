@@ -50,4 +50,3 @@ for rel in Relations:
         for i in df.index:
             f.write(rel+"("+str(df["Synset Source"][i])+","+str(df["W_Num Source"][i])+","+str(df["Synset Target"][i])+","+str(df["W_Num Target"][i])+").\n")
         f.close();
-
