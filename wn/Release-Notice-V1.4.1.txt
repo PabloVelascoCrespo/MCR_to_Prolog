@@ -1,0 +1,17 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  WN_CONNECT source v1.4.1 %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+WN_CONNECT is a software application prototype that aims to access the lexical database WordNet. One of its main features is that it has been fully implemented using PROLOG or related technologies.
+
+
+%% RELEASE NOTES %%
+%%%%%%%%%%%%%%%%%%%
+
+With respect to former version 1.4, the present version 1.4.1 adds minor enhacements:
+
+Modifictions in the module wn_hypernyms checking for cycles in WordNet HyperTrees (hypernym chains) to avoid non-termination that occurs in several abnormal cases.
+
+
+
+ 

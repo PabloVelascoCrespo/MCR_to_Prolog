@@ -1,0 +1,18 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  WN_CONNECT source v1.4 %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+WN_CONNECT is a software application prototype that aims to access the lexical database WordNet. One of its main features is that it has been fully implemented using PROLOG or related technologies.
+
+
+%% RELEASE NOTES %%
+%%%%%%%%%%%%%%%%%%%
+
+With respect to former version 1.3, the present version 1.4 adds the following:
+
+1) The incorporation of a module (wn_entailments) to deal with entailment relation between verbs. This is a really preliminary attempt.
+
+2) Enhancements in  the module wn_gen_prox_equations in order to allow the generation of proximity equations between "word terms".
+
+Changes:
+Eliminated the verbose behaviour of predicates in module wn_ic_measures, because it produces execution errors in the context of certain Bousi~Prolog programs. 
