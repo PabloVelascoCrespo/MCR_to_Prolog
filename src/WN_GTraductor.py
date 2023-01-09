@@ -9,8 +9,8 @@ pd.options.display.max_colwidth = 50000
 
 translator = Translator()
 
-df = pd.read_csv('src\dfEspa.csv', index_col = [0])
-dfNone = pd.read_csv('src\dfNone.csv', index_col = [0])
+df = pd.read_csv('src\DataFrames\dfEspa.csv', index_col = [0])
+dfNone = pd.read_csv('src\DataFrames\dfNone.csv', index_col = [0])
 
 Por = 10.0
 cont = 0
