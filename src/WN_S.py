@@ -38,7 +38,7 @@ for i in idiomas:
         linea = linea.split('\t')
         synset = codificacionCategoria(linea[3])+linea[2][7:15]
         Synsets.append(int(synset))
-        W_Nums.append(int(contarSynsets(Synsets,synset)))
+        W_Nums.append(int(contarSynsets(Synsets,int(synset))))
         Words.append(linea[0].replace('\'','\'\'').replace('_',' '))
         Types.append(linea[3])
         Senses.append(linea[1])

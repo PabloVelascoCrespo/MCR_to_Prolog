@@ -94,7 +94,6 @@ for Hiponimo in lista_palabras:
 
     Lista_de_Synsets = list(OrderedDict.fromkeys(Lista_de_Synsets))
 
-
     for i in Lista_de_Synsets:
         listaH = lista_hiperonimos(i)
         Lista_de_HiperonimosMCR+= listaH
