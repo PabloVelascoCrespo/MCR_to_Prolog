@@ -1,0 +1,97 @@
+import pandas as pd
+
+idiomas = ['cat', 'eng', 'eus', 'glg', 'por', 'spa']
+
+for i in idiomas:
+    rutaVariant = 'mcr\\'+i+'WN\wei_'+i+'-30_variant.tsv'
+    rutaSynset = 'mcr\\'+i+'WN\wei_'+i+'-30_synset.tsv'
+    rutaRelation = 'mcr\\'+i+'WN\wei_'+i+'-30_relation.tsv'
+
+# FICHERO VARIANT
+    print('Abriendo fichero ' + rutaVariant)
+    ficheroLecturaVariant = open(rutaVariant,'r', encoding='utf-8')
+    lineasVariant = ficheroLecturaVariant.readlines()
+
+    Word = []
+    Senses = []
+    SynsetPoS = []
+    PoS = []
+    Conf = []
+    Exp = []
+    Mark = []
+
+    for linea in lineasVariant:
+        linea = linea.split('\t')
+
+        Word.append(linea[0])
+        Senses.append(linea[1])
+        SynsetPoS.append(linea[2])
+        PoS.append(linea[3])
+        Conf.append(linea[4])
+        Exp.append(linea[5])
+        Mark.append(linea[6][0:-1])
+
+    dfVariant = pd.DataFrame({"Word": Word, "Senses": Senses, "SynsetPoS": SynsetPoS, "PoS": PoS, "Conf": Conf, "Exp": Exp, "Mark": Mark})
+    dfVariant.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_variant.csv')
+
+    ficheroLecturaVariant.close()
+
+#FICHERO SYNSET
+    print('Abriendo fichero ' + rutaSynset)
+
+    ficheroLecturaSynset = open(rutaSynset,'r', encoding='utf-8')
+    lineasSynset = ficheroLecturaSynset.readlines()
+
+    SynsetPoS = []
+    PoS = []
+    Desc = []
+    Glosa = []
+    MaxNiv = []
+    Niv = []
+    Mark = []
+
+    for linea in lineasSynset:
+        linea = linea.split('\t')
+
+        SynsetPoS.append(linea[0])
+        PoS.append(linea[1])
+        Desc.append([linea[2], linea[3], linea[4], linea[5]])
+        Glosa.append(linea[6])
+        MaxNiv.append(linea[7])
+        Niv.append(linea[8])
+        Mark.append(linea[9][0:-1])
+
+    dfSynset = pd.DataFrame({"SynsetPoS": SynsetPoS, "PoS": PoS, "Desc": Desc, "Glosa": Glosa, "MaxNiv": MaxNiv, "Niv": Niv, "Mark": Mark})
+    dfSynset.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_synset.csv')
+
+    ficheroLecturaSynset.close()
+
+#FICHERO RELATION
+    print('Abriendo fichero ' + rutaRelation)
+
+    ficheroLecturaRelation = open(rutaRelation,'r', encoding='utf-8')
+    lineasRelation = ficheroLecturaRelation.readlines()
+
+    Rel_ID = []
+    S_Synset = []
+    S_PoS = []
+    T_Synset = []
+    T_PoS = []
+    Conf = []
+    Info = []
+
+    for linea in lineasRelation:
+        linea = linea.split('\t')
+
+        Rel_ID.append(linea[0])
+        S_Synset.append(linea[1])
+        S_PoS.append(linea[2])
+        T_Synset.append(linea[3])
+        T_PoS.append(linea[4])
+        Conf.append(linea[5])
+        Info.append(linea[6])
+
+    dfRelation = pd.DataFrame({"Rel_ID": Rel_ID, "S_Synset": S_Synset, "S_PoS": S_PoS, "T_Synset": T_Synset, "T_PoS": T_PoS, "Conf": Conf, "Info": Info})
+    dfRelation.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_relation.csv')
+    
+    ficheroLecturaRelation.close()

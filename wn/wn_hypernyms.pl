@@ -175,6 +175,11 @@ hypernym_chain(SS_Hyp, List_SS_Hyper_Acc, List_SS_Hyper) :-
 wn_display_graph_hypernyms(Word) :-
 setof(arc(X,Y),List^H^T^(list_of_representative_hypernyms(Word,List),append(H,[X,Y|T],List)),Graph), wn_display_graph(Graph).
 
+%%% This wn_display_graph is a modificatiton to create different files so they can be analysed
+
+wn_display_graph_hypernyms2(Word, Type) :-
+setof(arc(X,Y),List^H^T^(list_of_representative_hypernyms(Word,List),append(H,[X,Y|T],List)),Graph), wn_utilities:wn_display_graph2(Graph, Type).
+
 %%% list_of_representative_hypernyms(+Word,-List_representative_HyperNyms)
 %%%
 %%%

@@ -159,6 +159,23 @@ display_dot_in_pdf :-
       writeln('ERROR: Cannot generate PDF output file. Check that the dot program is accesible and the output file out.pdf is not open')
   ).
 
+%%% PABLO
+
+wn_display_graph2(Graph, Type) :-
+    open('out.dot', write, Handle),
+    write(Handle, 'digraph G { size="1,1";'),
+    nl(Handle),
+    write_arcs(Handle, Graph),
+    write(Handle,'}'),
+    close(Handle),
+    % shell('dot2tex out.dot > out.tex'),
+    display_dot_in_pdf2(Type).
+
+display_dot_in_pdf2(Type) :-
+  (  write('Displaying graph...'),
+     nl,
+     shell('dot out.dot -Tpdf -o out.pdf')).
+
 write_arcs(_Handle,[]).
 write_arcs(Handle,[arc(A,B)|R]):-
     write(Handle,A),

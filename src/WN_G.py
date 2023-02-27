@@ -12,36 +12,38 @@ def codificacionCategoria(c):
         }
     return categorias[c]
 
+def reemplazarComillas(palabra):
+    if type(palabra) == str:
+        return palabra.replace('\'','\'\'')
+
+def crearSynsetID(synset):
+    synset = codificacionCategoria(synset[-1])+synset[7:15]
+    return int(synset)
+
 for i in idiomas:
     inicio = time.time()
-    ruta = 'mcr\\'+i+'WN\wei_'+i+'-30_synset.tsv'
-    print('Abriendo fichero ' + ruta)
-
-    ficheroLectura = open(ruta,'r', encoding='utf-8')
-    lineas = ficheroLectura.readlines()
-
-    Synsets = []
-    Glosas = []
-
-    for linea in lineas:
-        linea = linea.split('\t')
-        synset = codificacionCategoria(linea[1])+linea[0][7:15]
-        Synsets.append(int(synset))
-        Glosas.append(linea[6].replace('\'','\'\''))
+   
+    ruta = "mcrDF//"+i+"WN\wei_"+i+"-30_synset.csv"
+    print("Leyendo dataframe "+ ruta)
     
-    df = pd.DataFrame({"Synset":Synsets, "Glosa":Glosas})
+    df = pd.read_csv(ruta, index_col=[0])
+    df = df.drop(columns=['PoS', 'Desc', 'MaxNiv', 'Niv', 'Mark'])
+    df.columns = ['Synset','Glosa']
+
+    df['Synset'] = df['Synset'].apply(crearSynsetID)
+    df['Glosa'] = df['Glosa'].apply(reemplazarComillas)
+    
     df = df.sort_values(by=['Synset'])
     df = df.reset_index(drop = True)
-    df.to_csv('src\DataFrames\dfG'+i+'.csv')
+    df.to_csv(i+"\PrologDF\wn_g.csv")
 
     ficheroEscritura = open(i+"\Prolog\wn_g.pl", "w", encoding='utf-8')
 
-    for i in df.index:
-        ficheroEscritura.write("g("+str(df["Synset"][i])+",\'"+str(df["Glosa"][i])+"\').\n")
+    for index in df.index:
+        ficheroEscritura.write("g("+str(df["Synset"][index])+",\'"+str(df["Glosa"][index])+"\').\n")
     
     final = time.time()
 
     ficheroEscritura.close()
-    ficheroLectura.close()
 
     print('Proceso en ruta: ' + ruta + ' finalizado. Ha tardado '+str(final-inicio)+'.\n')

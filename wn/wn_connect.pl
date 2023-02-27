@@ -11,7 +11,6 @@ and distribute WN_CONNECT provided that you make no modifications to any of its
 files and give credit to its original authors.
 *******************************************************************************/
 
-
 :- use_module(wn).
 :- use_module(wn_synsets).
 :- use_module(wn_hypernyms).
@@ -25,4 +24,5 @@ files and give credit to its original authors.
 %:- use_module(wn_fuzzy_predicates).
 
 :- use_module(wn_utilities).
+:- wordnet:load_wordnet.
 

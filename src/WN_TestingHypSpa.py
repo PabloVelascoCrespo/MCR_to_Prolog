@@ -37,7 +37,6 @@ def lista_hiperonimos(synset):
                     if condicion:
                         elem.extend(Lista_de_Hiperonimos)
                 else:
-                    print('a')
                     aux.extend(Lista_de_Hiperonimos)
                     break
         else:
