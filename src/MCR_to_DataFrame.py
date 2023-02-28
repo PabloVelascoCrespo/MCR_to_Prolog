@@ -6,6 +6,7 @@ for i in idiomas:
     rutaVariant = 'mcr\\'+i+'WN\wei_'+i+'-30_variant.tsv'
     rutaSynset = 'mcr\\'+i+'WN\wei_'+i+'-30_synset.tsv'
     rutaRelation = 'mcr\\'+i+'WN\wei_'+i+'-30_relation.tsv'
+    rutaEngKafe = 'engProlog30\wn_g.pl'
 
 # FICHERO VARIANT
     print('Abriendo fichero ' + rutaVariant)
@@ -95,3 +96,27 @@ for i in idiomas:
     dfRelation.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_relation.csv')
     
     ficheroLecturaRelation.close()
+    print()
+
+#TODO: HACERLO CON TODOS LOS FICHEROS
+
+#WN_G ERIC KAFE
+print('Abriendo fichero ' + rutaEngKafe)
+
+ficheroEng = open('engProlog30\wn_g.pl', encoding='utf-8')
+
+lineasEng = ficheroEng.readlines()
+
+SynsetsENG = []
+GlosaENG = []
+
+for linea in lineasEng:
+    linea = linea[2:-3]
+    GlosaENG.append(linea[11:-1])
+    lineaComas = linea.split(',')
+    SynsetsENG.append(int(lineaComas[0]))
+
+dfEng = pd.DataFrame({"Synset":SynsetsENG, "Glosa":GlosaENG})
+dfEng.to_csv('engProlog30DF\wn_g.csv')
+
+ficheroEng.close()
