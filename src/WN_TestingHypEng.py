@@ -14,13 +14,13 @@ pathWNDB_ENG_Kafe = r'C:\Users\Usuario\Desktop\UNI\4º\2C\TFG\TFG_PabloVelascoCr
 
 paths = [pathWNDB_ENG_MCR,pathWNDB_ENG_Kafe]
 
-dfS = pd.read_csv('src\DataFrames\dfSeng.csv', index_col = [0])
+dfS = pd.read_csv('eng\PrologDF\wn_s.csv', index_col = [0])
 dfS = dfS.loc[dfS['Type'].isin(['n','v'])][['Word']]
 
 lista_palabras_index = []
 lista_palabras = []
 
-n = 3000
+n = 10
  
 while len(lista_palabras_index) < n:
     palabra_index = random.randint(0, len(dfS)-1)
@@ -46,7 +46,6 @@ Lista_de_Hiponimos_Kafe=[]
 for Hiponimo in lista_palabras:
     aux = []
     os.environ['WNDB'] = pathWNDB_ENG_Kafe
-    bool(list(prolog.query('wordnet:load_wordnet')))
 
     for hiperonimosK in prolog.query("wn_hypernyms(\'"+ Hiponimo +"\', no, H)"):
         aux.append(hiperonimosK["H"])

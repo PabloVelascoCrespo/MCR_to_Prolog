@@ -1,47 +1,46 @@
-from operator import le
 import time
 import pandas as pd
 from googletrans import Translator
-
-start_time = time.time()
 
 pd.options.display.max_colwidth = 50000
 
 translator = Translator()
 
-df = pd.read_csv('src\DataFrames\dfEspa.csv', index_col = [0])
-dfNone = pd.read_csv('src\DataFrames\dfNone.csv', index_col = [0])
+#TODO: Así vale controlar el error? B)
+def traductor(synset):
+    print(synset)
+    cadena = ""
+    try:
+        cadena = translator.translate(dfEng.loc[dfEng['Synset'] == synset].Glosa.item(), dest="es").text
+        cadena = cadena.replace('\'','\'\'')
+        cadena = cadena.replace('"', '""')
+    except:
+        cadena = 'None (error al traducir)'
+    return cadena
 
-Por = 10.0
-cont = 0
+inicio = time.time()
 
-for i in dfNone.index:
-    df['Glosa'][i] = translator.translate(df["Glosa"][i], dest = "es").text
-    cont+=1
-    print(cont)
-    if (cont/len(dfNone.index)*100 > Por - 1)&(cont/len(dfNone.index)*100 < Por + 1):
-        print(Por, "%")
-        Por+= 10
-        df.to_csv("src/dfEspa.csv")
+dfSpa = pd.read_csv('spa\PrologDF\wn_g.csv', index_col=0)
+dfEng = pd.read_csv('engProlog30DF\wn_g.csv', index_col=0)
 
-df.to_csv("src/dfEspa.csv")
+filtro = dfSpa['Glosa'] == "None (error al traducir)"
+dfNoneSpa = dfSpa[filtro]
 
-end_time = time.time()
+filtro = dfEng['Glosa'] != "None"
+dfEng = dfEng[filtro]
 
-print(end_time - start_time)
+dfNoneSpa['Glosa'] = dfNoneSpa['Synset'].apply(traductor)
 
-f = open("spa\Prolog\wn_g.pl", "w", encoding='utf-8')
+dfSpa.loc[dfNoneSpa.index, 'Glosa'] = dfNoneSpa['Glosa']
 
-for i in df.index:
-    if df["Glosa"][i][0] == "'":
-        if df["Glosa"][i][-1] == "'":
-            f.write("g("+str(df["Synset"][i])+","+str(df["Glosa"][i])+").\n")
-        else:
-            f.write("g("+str(df["Synset"][i])+","+str(df["Glosa"][i])+"').\n")
-    else:
-        if df["Glosa"][i][-1] == "'":
-            f.write("g("+str(df["Synset"][i])+",'"+str(df["Glosa"][i])+").\n")
-        else:
-            f.write("g("+str(df["Synset"][i])+",'"+str(df["Glosa"][i])+"').\n")
+dfSpa.to_csv("spa\PrologDF\wn_g.csv")
 
-f.close()
+ficheroEscritura = open("spa\Prolog\wn_g.pl", "w", encoding='utf-8')
+
+for index in dfSpa.index:
+    ficheroEscritura.write("g("+str(dfSpa["Synset"][index])+",\'"+str(dfSpa["Glosa"][index])+"\').\n")
+
+print(dfSpa.head(15))
+
+final = time.time()
+print('Ha tardado '+str(final-inicio)+'.\n')
