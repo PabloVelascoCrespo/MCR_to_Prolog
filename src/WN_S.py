@@ -25,7 +25,7 @@ def contarSynsets(lista, e):
 
 def ponerEspacios(palabra):
     if type(palabra) == str:
-        return palabra.replace('\'','\'\'').replace('_',' ')
+        return "\'"+palabra[1:-1].replace('\'','\'\'').replace('_',' ')+"\'"
 
 for i in idiomas:
     inicio = time.time()   
@@ -69,7 +69,7 @@ for i in idiomas:
     ficheroEscritura = open(i+"\Prolog\wn_s.pl", "w", encoding='utf-8')
 
     for i in df.index:
-        ficheroEscritura.write("s("+str(df["Synset"][i])+","+str(df["W Num"][i])+",\'"+str(df["Word"][i])+"\',"+df["Type"][i]+","+str(df["Sense"][i])+","+str(df["Tag Count"][i])+").\n")
+        ficheroEscritura.write("s("+str(df["Synset"][i])+","+str(df["W Num"][i])+","+str(df["Word"][i])+","+df["Type"][i]+","+str(df["Sense"][i])+","+str(df["Tag Count"][i])+").\n")
 
     ficheroEscritura.close()
 

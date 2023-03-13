@@ -36,7 +36,7 @@ for i in idiomas:
     for linea in lineasVariant:
         linea = linea.split('\t')
 
-        Word.append(linea[0])
+        Word.append("\'"+linea[0]+"\'")
         Senses.append(linea[1])
         SynsetPoS.append(linea[2])
         PoS.append(linea[3])
