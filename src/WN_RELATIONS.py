@@ -35,7 +35,7 @@ def crearDF(key, df):
             dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
-            dfAux.to_csv(i+"\PrologDF\wn_"+relaciones[key][0]+".csv")
+            dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
 
             ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
             for index in dfAux.index:
@@ -55,7 +55,7 @@ def crearDF(key, df):
             dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
-            dfAux.to_csv(i+"\PrologDF\wn_"+relaciones[key][0]+".csv")
+            dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
 
             ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
             for index in dfAux.index:
@@ -69,7 +69,7 @@ def crearDF(key, df):
             dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
-            dfAux.to_csv(i+"\PrologDF\wn_"+relaciones[key][0]+".csv")
+            dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
             
             ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
             for index in dfAux.index:
@@ -89,7 +89,7 @@ def crearDF(key, df):
             dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
-            dfAux.to_csv(i+"\PrologDF\wn_"+relaciones[key][0]+".csv")
+            dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
 
             ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
             for index in dfAux.index:
@@ -107,7 +107,7 @@ def crearDF(key, df):
 for i in idiomas:
     inicio = time.time()
    
-    ruta = "mcrDF//"+i+"WN\wei_"+i+"-30_relation.csv"
+    ruta = "mcrCSV//"+i+"WN\wei_"+i+"-30_relation.csv"
     print("Leyendo dataframe "+ ruta)
     
     df = pd.read_csv(ruta, index_col=[0])

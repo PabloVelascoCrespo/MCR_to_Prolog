@@ -62,7 +62,7 @@ def lista_hiperonimos(synset):
 prolog = Prolog()
 prolog.consult('wn/wn_connect.pl')
 
-dfS = pd.read_csv('src\DataFrames\dfSspa.csv', index_col = [0])
+dfS = pd.read_csv('spa\PrologCSV\wn_s.csv', index_col = [0])
 dfS = dfS.loc[dfS['Type'].isin(['n','v'])][['Word','Type']]
 
 lista_palabras_index = []
@@ -94,7 +94,7 @@ for Hiponimo in lista_palabras:
     for hiperonimos in prolog.query("wn_hypernyms(\'"+ Hiponimo +"\', no, Hiperonimos)"):
         Lista_de_HiperonimosProlog.append(hiperonimos["Hiperonimos"])
 
-    dfHyp = pd.read_csv('src\DataFrames\dfRelations_spa_hyp.csv', index_col = [0])
+    dfHyp = pd.read_csv('spa\PrologCSV\wn_hyp.csv', index_col = [0])
     Lista_de_Synsets = []
 
     for i in range(0,len(Lista_de_HiperonimosProlog)):

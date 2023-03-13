@@ -23,7 +23,7 @@ def crearSynsetID(synset):
 for i in idiomas:
     inicio = time.time()
    
-    ruta = "mcrDF//"+i+"WN\wei_"+i+"-30_synset.csv"
+    ruta = "mcrCSV//"+i+"WN\wei_"+i+"-30_synset.csv"
     print("Leyendo dataframe "+ ruta)
     
     df = pd.read_csv(ruta, index_col=[0])
@@ -35,7 +35,7 @@ for i in idiomas:
     
     df = df.sort_values(by=['Synset'])
     df = df.reset_index(drop = True)
-    df.to_csv(i+"\PrologDF\wn_g.csv")
+    df.to_csv(i+"\PrologCSV\wn_g.csv")
 
     ficheroEscritura = open(i+"\Prolog\wn_g.pl", "w", encoding='utf-8')
 

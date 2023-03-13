@@ -30,7 +30,7 @@ def ponerEspacios(palabra):
 for i in idiomas:
     inicio = time.time()   
    
-    ruta = "mcrDF//"+i+"WN\wei_"+i+"-30_variant.csv"
+    ruta = "mcrCSV//"+i+"WN\wei_"+i+"-30_variant.csv"
     print("Leyendo dataframe "+ ruta)
     
     df = pd.read_csv(ruta, index_col=[0])
@@ -64,7 +64,7 @@ for i in idiomas:
 
     df = df.sort_values(by=['Synset','W Num'])
     df = df.reset_index(drop = True)
-    df.to_csv(i+"\PrologDF\wn_s.csv")
+    df.to_csv(i+"\PrologCSV\wn_s.csv")
 
     ficheroEscritura = open(i+"\Prolog\wn_s.pl", "w", encoding='utf-8')
 

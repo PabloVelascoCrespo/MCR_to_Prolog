@@ -14,7 +14,7 @@ pathWNDB_ENG_Kafe = r'C:\Users\Usuario\Desktop\UNI\4º\2C\TFG\TFG_PabloVelascoCr
 
 paths = [pathWNDB_ENG_MCR,pathWNDB_ENG_Kafe]
 
-dfS = pd.read_csv('eng\PrologDF\wn_s.csv', index_col = [0])
+dfS = pd.read_csv('eng\PrologCSV\wn_s.csv', index_col = [0])
 dfS = dfS.loc[dfS['Type'].isin(['n','v'])][['Word']]
 
 lista_palabras_index = []

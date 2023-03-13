@@ -20,8 +20,8 @@ def traductor(synset):
 
 inicio = time.time()
 
-dfSpa = pd.read_csv('spa\PrologDF\wn_g.csv', index_col=0)
-dfEng = pd.read_csv('engProlog30DF\wn_g.csv', index_col=0)
+dfSpa = pd.read_csv('spa\PrologCSV\wn_g.csv', index_col=0)
+dfEng = pd.read_csv('engProlog30CSV\wn_g.csv', index_col=0)
 
 filtro = dfSpa['Glosa'] == "None (error al traducir)"
 dfNoneSpa = dfSpa[filtro]
@@ -33,7 +33,7 @@ dfNoneSpa['Glosa'] = dfNoneSpa['Synset'].apply(traductor)
 
 dfSpa.loc[dfNoneSpa.index, 'Glosa'] = dfNoneSpa['Glosa']
 
-dfSpa.to_csv("spa\PrologDF\wn_g.csv")
+dfSpa.to_csv("spa\PrologCSV\wn_g.csv")
 
 ficheroEscritura = open("spa\Prolog\wn_g.pl", "w", encoding='utf-8')
 

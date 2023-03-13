@@ -44,8 +44,8 @@ for i in idiomas:
         Exp.append(linea[5])
         Mark.append(linea[6][0:-1])
 
-    dfVariant = pd.DataFrame({"Word": Word, "Senses": Senses, "SynsetPoS": SynsetPoS, "PoS": PoS, "Conf": Conf, "Exp": Exp, "Mark": Mark})
-    dfVariant.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_variant.csv')
+    csvVariant = pd.DataFrame({"Word": Word, "Senses": Senses, "SynsetPoS": SynsetPoS, "PoS": PoS, "Conf": Conf, "Exp": Exp, "Mark": Mark})
+    csvVariant.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_variant.csv')
 
     ficheroLecturaVariant.close()
 
@@ -74,8 +74,8 @@ for i in idiomas:
         Niv.append(linea[8])
         Mark.append(linea[9][0:-1])
 
-    dfSynset = pd.DataFrame({"SynsetPoS": SynsetPoS, "PoS": PoS, "Desc": Desc, "Glosa": Glosa, "MaxNiv": MaxNiv, "Niv": Niv, "Mark": Mark})
-    dfSynset.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_synset.csv')
+    csvSynset = pd.DataFrame({"SynsetPoS": SynsetPoS, "PoS": PoS, "Desc": Desc, "Glosa": Glosa, "MaxNiv": MaxNiv, "Niv": Niv, "Mark": Mark})
+    csvSynset.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_synset.csv')
 
     ficheroLecturaSynset.close()
 
@@ -104,8 +104,8 @@ for i in idiomas:
         Conf.append(linea[5])
         Info.append(linea[6])
 
-    dfRelation = pd.DataFrame({"Rel_ID": Rel_ID, "S_Synset": S_Synset, "S_PoS": S_PoS, "T_Synset": T_Synset, "T_PoS": T_PoS, "Conf": Conf, "Info": Info})
-    dfRelation.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_relation.csv')
+    csvRelation = pd.DataFrame({"Rel_ID": Rel_ID, "S_Synset": S_Synset, "S_PoS": S_PoS, "T_Synset": T_Synset, "T_PoS": T_PoS, "Conf": Conf, "Info": Info})
+    csvRelation.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_relation.csv')
     
     ficheroLecturaRelation.close()
 
@@ -129,8 +129,8 @@ for i in idiomas:
         PoS.append(linea[3])
         SynsetPoS.append(linea[4][:-1])
 
-    dfExamples = pd.DataFrame({"Word": Word, "Senses": Senses, "Glosa": Glosa, "PoS": PoS, "SynsetPoS": SynsetPoS})
-    dfExamples.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_examples.csv')
+    csvExamples = pd.DataFrame({"Word": Word, "Senses": Senses, "Glosa": Glosa, "PoS": PoS, "SynsetPoS": SynsetPoS})
+    csvExamples.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_examples.csv')
 
     ficheroLecturaExamples.close()
 
@@ -155,8 +155,8 @@ for i in idiomas:
         wn.append(linea[3])
         version.append(linea[4][:-1])
 
-    dfToIli = pd.DataFrame({"ILI Synset": ili, "PoS": PoS, "TO Synset": to, "WordNet": wn, "Version": version})
-    dfToIli.to_csv('mcrDF/'+i+'WN/wei_'+i+'-30_to_ili.csv')
+    csvToIli = pd.DataFrame({"ILI Synset": ili, "PoS": PoS, "TO Synset": to, "WordNet": wn, "Version": version})
+    csvToIli.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_to_ili.csv')
 
     ficheroLecturaToIli.close()
 
@@ -187,8 +187,8 @@ for linea in ficheroAdimenSUMO_1:
     Class.append(linea[3])
     Symbol.append(linea[4][:-1])
 
-dfAdimenSUMO_1 = pd.DataFrame({"SynsetPoS": Synset, "PoS": PoS, "WordNet": wn, "Class": Class, "Symbol": Symbol})
-dfAdimenSUMO_1.to_csv("mcrDF\\AdimenSUMO\\" + file_list[0][:-3] + "csv")
+csvAdimenSUMO_1 = pd.DataFrame({"SynsetPoS": Synset, "PoS": PoS, "WordNet": wn, "Class": Class, "Symbol": Symbol})
+csvAdimenSUMO_1.to_csv("mcrCSV\\AdimenSUMO\\" + file_list[0][:-3] + "csv")
 
 ficheroAdimenSUMO_1.close()
 
@@ -207,8 +207,8 @@ for linea in ficheroAdimenSUMO_2:
     Hierarchy_1.append(linea[1])
     Hierarchy_2.append(linea[2][:-1])
 
-dfAdimenSUMO_2 = pd.DataFrame({"Subclass": Subclass, "Hierarchy_1": Hierarchy_1, "Hierarchy_2": Hierarchy_2})
-dfAdimenSUMO_2.to_csv("mcrDF\\AdimenSUMO\\" + file_list[1][:-3] + "csv")
+csvAdimenSUMO_2 = pd.DataFrame({"Subclass": Subclass, "Hierarchy_1": Hierarchy_1, "Hierarchy_2": Hierarchy_2})
+csvAdimenSUMO_2.to_csv("mcrCSV\\AdimenSUMO\\" + file_list[1][:-3] + "csv")
 ficheroAdimenSUMO_2.close()
 print()
 
@@ -236,8 +236,8 @@ for linea in lineasEng:
     Sense.append(linea[4])
     Tag_Count.append(linea[5])
 
-dfEng = pd.DataFrame({"Synset":Synset, "W Num":W_Num, "Word":Word, "Type":Type, "Sense":Sense, "Tag Count":Tag_Count})
-dfEng.to_csv('engProlog30DF\wn_s.csv')
+csvEng = pd.DataFrame({"Synset":Synset, "W Num":W_Num, "Word":Word, "Type":Type, "Sense":Sense, "Tag Count":Tag_Count})
+csvEng.to_csv('engProlog30CSV\wn_s.csv')
 
 ficheroEng.close()
 
@@ -257,7 +257,7 @@ for linea in lineasEng:
     lineaComas = linea.split(',')
     SynsetsENG.append(int(lineaComas[0]))
 
-dfEng = pd.DataFrame({"Synset":SynsetsENG, "Glosa":GlosaENG})
-dfEng.to_csv('engProlog30DF\wn_g.csv')
+csvEng = pd.DataFrame({"Synset":SynsetsENG, "Glosa":GlosaENG})
+csvEng.to_csv('engProlog30CSV\wn_g.csv')
 
 ficheroEng.close()
