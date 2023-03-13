@@ -1,5 +1,7 @@
 import pandas as pd
 
+# TODO: hay que poner esto en el WN_RELATIONS.py, que además tardará menos porque lo irá haciendo a medida que lo haga, solo con un 'if' :D
+
 idiomas = ['cat', 'eng', 'eus', 'glg', 'por', 'spa']
 relacionesLexicas = ['ant', 'der', 'vgp', 'per', 'sa']
 
