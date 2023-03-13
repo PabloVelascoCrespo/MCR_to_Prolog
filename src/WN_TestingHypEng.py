@@ -84,3 +84,4 @@ print('Lista de palabras que son diferentes:')
 for palabra_incorrecta in lista_incorrectas:
     if not palabra_tiene_mayus(palabra_incorrecta):
         print(palabra_incorrecta)
+        

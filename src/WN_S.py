@@ -75,3 +75,4 @@ for i in idiomas:
 
     final = time.time()
     print('Proceso en ruta: ' + ruta + ' finalizado. Ha tardado '+str(final-inicio)+'.\n')
+    

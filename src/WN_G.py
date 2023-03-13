@@ -47,3 +47,4 @@ for i in idiomas:
     ficheroEscritura.close()
 
     print('Proceso en ruta: ' + ruta + ' finalizado. Ha tardado '+str(final-inicio)+'.\n')
+    
