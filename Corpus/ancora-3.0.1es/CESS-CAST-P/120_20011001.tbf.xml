@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><article lng="es">
+  <sentence>
+    <sn arg="arg0" complex="yes" entity="entity1" entityref="ne" func="suj" ne="person" tem="agt">
+      <spec gen="m" num="s">
+        <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="El"/>
+      </spec>
+      <grup.nom coord="yes">
+        <grup.nom coord="yes">
+          <grup.nom gen="m" num="s">
+            <n gen="m" lem="alcalde" num="s" pos="ncms000" postype="common" sense="16:07401898" wd="alcalde"/>
+            <sp>
+              <prep>
+                <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+              </prep>
+              <sn entityref="ne" ne="location">
+                <grup.nom>
+                  <n lem="La_Seu" ne="location" pos="np00000" postype="proper" wd="La_Seu"/>
+                </grup.nom>
+              </sn>
+            </sp>
+          </grup.nom>
+          <conj conjunctiontype="coordinating">
+            <c lem="y" pos="cc" postype="coordinating" wd="y"/>
+          </conj>
+          <grup.nom gen="m" num="s">
+            <n gen="m" lem="senador" num="s" pos="ncms000" postype="common" sense="16:07563953" wd="senador"/>
+          </grup.nom>
+        </grup.nom>
+        <sn adjunct="yes" entityref="ne" ne="person">
+          <f lem="," pos="fc" punct="comma" wd=","/>
+          <sn corefsubtype="definit" coreftype="pred" entity="entity1" entityref="ne" ne="person">
+            <grup.nom gen="m" num="s">
+              <n lem="Joan_Ganyet" ne="person" pos="np00000" postype="proper" wd="Joan_Ganyet"/>
+            </grup.nom>
+          </sn>
+          <sn adjunct="yes" entityref="ne" ne="organization">
+            <grup.nom gen="m" num="s">
+              <f lem="(" pos="fpa" punct="bracket" punctenclose="open" wd="("/>
+              <n lem="PSC" ne="organization" pos="np00000" postype="proper" wd="PSC"/>
+              <f lem=")" pos="fpt" punct="bracket" punctenclose="close" wd=")"/>
+            </grup.nom>
+          </sn>
+        </sn>
+      </grup.nom>
+      <f lem="," pos="fc" punct="comma" wd=","/>
+    </sn>
+    <grup.verb>
+      <v alt_lexicalid="verb.considerar.1.default=suj/arg0/agt + cd/arg1/pat + cpred/arg2/atr + argM(cau/tmp/loc/adv/fin),verb.considerar.2.default=suj/arg0/agt + cd/arg1/pat + argM(tmp/adv)" lem="considerar" lexicalid="verb.considerar.1.default" lss="A21.transitive-agentive-patient" mood="indicative" num="s" person="3" pos="vmip3s0" postype="main" tense="present" toreview="yes" toreviewcomment="Must disambiguate" toreviewtype="lexicalid" wd="considera"/>
+    </grup.verb>
+    <S arg="arg1" clausetype="completive" func="cd" tem="pat">
+      <conj conjunctiontype="subordinating">
+        <c lem="que" pos="cs" postype="subordinating" wd="que"/>
+      </conj>
+      <sn arg="arg0" entity="singleton1" entityref="ne" func="suj" ne="organization" tem="agt">
+        <spec gen="m" num="s">
+          <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+        </spec>
+        <grup.nom gen="m" num="s">
+          <n lem="Gobierno" ne="organization" pos="np00000" postype="proper" wd="Gobierno"/>
+          <sp>
+            <prep>
+              <s contracted="yes" gen="m" lem="del" num="s" pos="spcms" postype="preposition" wd="del"/>
+            </prep>
+            <sn entityref="ne" ne="organization">
+              <grup.nom gen="m" num="s">
+                <n lem="PP" ne="organization" pos="np00000" postype="proper" wd="PP"/>
+              </grup.nom>
+            </sn>
+          </sp>
+        </grup.nom>
+      </sn>
+      <grup.verb>
+        <f lem="&quot;" pos="fe" punct="quotation" wd="&quot;"/>
+        <v lem="volver" mood="indicative" num="s" person="3" pos="vmip3s0" postype="main" tense="present" toreview="yes" toreviewcomment="No options found" toreviewtype="lexicalid" wd="vuelve"/>
+        <s lem="a" pos="sps00" postype="preposition" wd="a"/>
+        <infinitiu>
+          <v lem="marginar" lexicalid="verb.marginar.1.default" lss="A21.transitive-agentive-patient" mood="infinitive" pos="vmn0000" postype="main" wd="marginar"/>
+        </infinitiu>
+        <f lem="&quot;" pos="fe" punct="quotation" wd="&quot;"/>
+      </grup.verb>
+      <sp arg="arg1" func="cd" tem="pat">
+        <prep>
+          <s contracted="yes" gen="m" lem="al" num="s" pos="spcms" postype="preposition" wd="al"/>
+        </prep>
+        <sn entity="singleton2" entityref="ne" ne="organization">
+          <grup.nom gen="m" num="s">
+            <n lem="Eix_Pirinenc" ne="organization" pos="np00000" postype="proper" wd="Eix_Pirinenc"/>
+          </grup.nom>
+        </sn>
+      </sp>
+      <sp arg="argM" func="cc" tem="loc">
+        <prep>
+          <s lem="en" pos="sps00" postype="preposition" wd="en"/>
+        </prep>
+        <sn entityref="nne" homophoricDD="yes">
+          <spec gen="f" num="p">
+            <d gen="f" lem="el" num="p" pos="da0fp0" postype="article" wd="las"/>
+          </spec>
+          <grup.nom gen="f" num="p">
+            <n gen="f" iarg0="agt:singleton1" iarg1="pat:singleton3" iarg2="loc:singleton2" lem="inversión" lexicalid="noun.inversión.2.default" num="p" origin="deverbal" pos="ncfp000" postype="common" sense="16:09599330" wd="inversiones"/>
+            <S clausetype="participle" func="cn" impersonal="yes">
+              <participi>
+                <a gen="f" lem="previsto" lss="B22.unaccusative-passive-transitive" num="p" pos="aq0fpp" posfunction="participle" postype="qualificative" wd="previstas"/>
+              </participi>
+              <sp arg="argM" func="cc" tem="tmp">
+                <prep>
+                  <s lem="para" pos="sps00" postype="preposition" wd="para"/>
+                </prep>
+                <sn entityref="ne" ne="date">
+                  <spec gen="m" num="s">
+                    <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+                  </spec>
+                  <grup.nom gen="m" num="s">
+                    <w lem="[??:??/??/2002:??.??]" ne="date" wd="2002"/>
+                  </grup.nom>
+                </sn>
+              </sp>
+            </S>
+          </grup.nom>
+        </sn>
+      </sp>
+      <sp arg="argM" func="cc" tem="cau">
+        <f lem="," pos="fc" punct="comma" wd=","/>
+        <prep>
+          <s contracted="yes" gen="m" lem="al" num="s" pos="spcms" postype="preposition" wd="al"/>
+        </prep>
+        <S clausetype="completive" impersonal="yes">
+          <infinitiu>
+            <v lem="destinar" lexicalid="verb.destinar.1.default" lss="A34.ditransitive-patient-theme" mood="infinitive" pos="vmn0000" postype="main" wd="destinar"/>
+          </infinitiu>
+          <sn arg="arg1" entity="singleton3" entityref="nne" func="cd" homophoricDD="yes" tem="pat">
+            <f lem="&quot;" pos="fe" punct="quotation" wd="&quot;"/>
+            <spec gen="f" num="s">
+              <d gen="f" lem="el" num="s" pos="da0fs0" postype="article" wd="la"/>
+            </spec>
+            <grup.nom gen="f" num="s">
+              <s.a gen="f" num="s">
+                <grup.a gen="f" num="s">
+                  <a gen="f" lem="ridículo" num="s" pos="aq0fs0" postype="qualificative" wd="ridícula"/>
+                </grup.a>
+              </s.a>
+              <n gen="f" lem="cantidad" num="s" pos="ncfs000" postype="common" sense="16:09597673" wd="cantidad"/>
+              <sp>
+                <prep>
+                  <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+                </prep>
+                <sn>
+                  <spec gen="m" num="p">
+                    <z lem="8.3" ne="number" wd="8,3"/>
+                  </spec>
+                  <grup.nom gen="m" num="p">
+                    <n gen="m" lem="millón" num="p" pos="ncmp000" postype="common" sense="16:09902865" wd="millones"/>
+                  </grup.nom>
+                </sn>
+              </sp>
+            </grup.nom>
+            <f lem="&quot;" pos="fe" punct="quotation" wd="&quot;"/>
+          </sn>
+        </S>
+      </sp>
+    </S>
+    <f lem="." pos="fp" punct="period" wd="."/>
+  </sentence>
+</article>

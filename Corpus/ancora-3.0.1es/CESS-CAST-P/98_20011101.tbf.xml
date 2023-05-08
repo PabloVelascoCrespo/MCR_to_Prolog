@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><article lng="es">
+  <sentence>
+    <sn arg="arg2" entity="singleton2" entityref="ne" func="suj" ne="location" tem="loc">
+      <spec gen="m" num="s">
+        <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="El"/>
+      </spec>
+      <grup.nom gen="m" num="s">
+        <n gen="m" lem="recinto" num="s" pos="ncms000" postype="common" sense="16:02638575" wd="recinto"/>
+        <sp>
+          <prep>
+            <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+          </prep>
+          <sn entityref="ne" ne="person">
+            <grup.nom>
+              <n lem="Sant_Gervasi" ne="person" pos="np00000" postype="proper" wd="Sant_Gervasi"/>
+            </grup.nom>
+          </sn>
+        </sp>
+      </grup.nom>
+    </sn>
+    <grup.verb>
+      <v alt_lexicalid="verb.acoger.3.default=suj/arg0/agt + cd/arg1/pat + cc/arg2/loc,verb.acoger.3.oblique_subject=suj/arg2/loc + cd/arg1/pat" lem="acoger" lexicalid="verb.acoger.3.default" lss="A31.ditransitive-patient-locative" mood="indicative" num="s" person="3" pos="vmis3s0" postype="main" tense="past" toreview="yes" toreviewcomment="Must disambiguate" toreviewtype="lexicalid" wd="acogió"/>
+    </grup.verb>
+    <sn arg="arg1" entity="entity1" entityref="nne" func="cd" tem="pat">
+      <spec gen="m" num="s">
+        <d gen="m" lem="uno" num="s" pos="di0ms0" postype="indefinite" wd="un"/>
+      </spec>
+      <grup.nom gen="m" num="s">
+        <n gen="m" lem="recital" num="s" pos="ncms000" postype="common" sense="16:05157886" wd="recital"/>
+        <sp>
+          <prep>
+            <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+          </prep>
+          <sn entity="singleton1" entityref="ne" ne="person">
+            <spec gen="f" num="s">
+              <d gen="f" lem="el" num="s" pos="da0fs0" postype="article" wd="la"/>
+            </spec>
+            <grup.nom gen="f" num="s">
+              <n gen="c" lem="soprano" num="s" pos="nccs000" postype="common" sense="16:05143606" wd="soprano"/>
+              <sn entityref="ne" ne="person">
+                <grup.nom gen="f" num="s">
+                  <n lem="Lorena_García" ne="person" pos="np00000" postype="proper" wd="Lorena_García"/>
+                </grup.nom>
+              </sn>
+            </grup.nom>
+          </sn>
+        </sp>
+        <sp>
+          <f lem="," pos="fc" punct="comma" wd=","/>
+          <prep>
+            <s lem="junto_con" pos="sps00" postype="preposition" wd="junto_con"/>
+          </prep>
+          <sn entityref="ne" ne="organization">
+            <spec gen="m" num="s">
+              <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+            </spec>
+            <grup.nom gen="m" num="s">
+              <n gen="m" lem="cuarteto" num="s" pos="ncms000" postype="common" sense="16:06122126" wd="cuarteto"/>
+              <sp>
+                <prep>
+                  <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+                </prep>
+                <sn>
+                  <grup.nom gen="f" num="s">
+                    <n gen="f" lem="cuerda" num="s" pos="ncfs000" postype="common" sense="16:cs1" wd="cuerda"/>
+                  </grup.nom>
+                </sn>
+              </sp>
+              <sp>
+                <prep>
+                  <s contracted="yes" gen="m" lem="del" num="s" pos="spcms" postype="preposition" wd="del"/>
+                </prep>
+                <sn entityref="ne" ne="organization">
+                  <grup.nom gen="m" num="s">
+                    <n lem="Conservatori_Superior_de_Música_del_Liceu" ne="organization" pos="np00000" postype="proper" wd="Conservatori_Superior_de_Música_del_Liceu"/>
+                  </grup.nom>
+                </sn>
+              </sp>
+            </grup.nom>
+          </sn>
+        </sp>
+      </grup.nom>
+    </sn>
+    <f lem="." pos="fp" punct="period" wd="."/>
+  </sentence>
+  <sentence>
+    <sn arg="arg1" coreftype="ident" entity="entity1" entityref="nne" func="suj" tem="tem">
+      <spec gen="f" num="s">
+        <d gen="f" lem="el" num="s" pos="da0fs0" postype="article" wd="La"/>
+      </spec>
+      <grup.nom gen="f" num="s">
+        <n gen="f" iarg0="agt:singleton1" iargM="loc:singleton2" lem="actuación" lexicalid="noun.actuación.1.default" num="s" origin="deverbal" pos="ncfs000" postype="common" sense="16:00359430" wd="actuación"/>
+      </grup.nom>
+    </sn>
+    <grup.verb>
+      <v lem="formar_parte" lexicalid="verb.formar_parte.1.default" lss="C21.state-attributive" mood="indicative" num="s" person="3" pos="vmii3s0" postype="main" tense="imperfect" wd="formaba_parte"/>
+    </grup.verb>
+    <sp arg="arg2" func="creg" tem="atr">
+      <prep>
+        <s contracted="yes" gen="m" lem="del" num="s" pos="spcms" postype="preposition" wd="del"/>
+      </prep>
+      <sn entityref="ne" ne="other">
+        <grup.nom gen="m" num="s">
+          <n gen="m" lem="ciclo" num="s" pos="ncms000" postype="common" sense="16:cs1" wd="ciclo"/>
+          <sn entityref="ne" ne="other">
+            <grup.nom>
+              <n lem="La_capsa_de_música" ne="other" pos="np00000" postype="proper" wd="La_capsa_de_música"/>
+            </grup.nom>
+          </sn>
+        </grup.nom>
+      </sn>
+    </sp>
+    <f lem="." pos="fp" punct="period" wd="."/>
+  </sentence>
+</article>

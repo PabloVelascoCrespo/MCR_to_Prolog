@@ -32,4 +32,3 @@ for i in idiomas:
 
         print("Se ha terminado de ejecutar el fichero: wn_"+rel+" del idioma "+i)
     print("Se ha terminado de ejecutar el idioma: "+i+"\n")
-    
