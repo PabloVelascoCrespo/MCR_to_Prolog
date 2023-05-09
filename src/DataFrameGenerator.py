@@ -52,7 +52,7 @@ for i in idiomas:
 #FICHERO SYNSET
     print('Abriendo fichero ' + rutaSynset)
 
-    ficheroLecturaSynset = open(rutaSynset,'r', encoding='utf-8')
+    ficheroLecturaSynset = open(rutaSynset,'r', encoding = 'utf-8')
     lineasSynset = ficheroLecturaSynset.readlines()
 
     SynsetPoS = []
@@ -82,7 +82,7 @@ for i in idiomas:
 #FICHERO RELATION
     print('Abriendo fichero ' + rutaRelation)
 
-    ficheroLecturaRelation = open(rutaRelation,'r', encoding='utf-8')
+    ficheroLecturaRelation = open(rutaRelation,'r', encoding = 'utf-8')
     lineasRelation = ficheroLecturaRelation.readlines()
 
     Rel_ID = []
@@ -111,7 +111,7 @@ for i in idiomas:
 
 # FICHERO EXAMPLES
     print('Abriendo fichero ' + rutaExamples)
-    ficheroLecturaExamples = open(rutaExamples,'r', encoding='utf-8')
+    ficheroLecturaExamples = open(rutaExamples,'r', encoding = 'utf-8')
     lineasExamples = ficheroLecturaExamples.readlines()
 
     Word = []
@@ -137,7 +137,7 @@ for i in idiomas:
 
 # FICHERO TO ILI
     print('Abriendo fichero ' + rutaToIli)
-    ficheroLecturaToIli = open(rutaToIli,'r', encoding='utf-8')
+    ficheroLecturaToIli = open(rutaToIli,'r', encoding = 'utf-8')
     lineasToIli = ficheroLecturaToIli.readlines()
 
     ili = []
@@ -170,7 +170,7 @@ file_list = os.listdir(rutaAdimenSUMO)
 
 print('Abriendo fichero ' + rutaAdimenSUMO + file_list[0])
 
-ficheroAdimenSUMO_1 = open(rutaAdimenSUMO + file_list[0], encoding='utf-8')
+ficheroAdimenSUMO_1 = open(rutaAdimenSUMO + file_list[0], encoding = 'utf-8')
 
 Synset = []
 PoS = []
@@ -194,7 +194,7 @@ ficheroAdimenSUMO_1.close()
 
 print('Abriendo fichero ' + rutaAdimenSUMO + file_list[1])
 
-ficheroAdimenSUMO_2 = open(rutaAdimenSUMO + file_list[1], encoding='utf-8')
+ficheroAdimenSUMO_2 = open(rutaAdimenSUMO + file_list[1], encoding = 'utf-8')
 
 Subclass = []
 Hierarchy_1 = []
@@ -215,7 +215,7 @@ print()
 #WN_S ERIC KAFE
 print('Abriendo fichero ' + rutaEngKafeS)
 
-ficheroEng = open('engProlog30\wn_s.pl', encoding='utf-8')
+ficheroEng = open('engProlog30\wn_s.pl', encoding = 'utf-8')
 
 lineasEng = ficheroEng.readlines()
 
@@ -244,7 +244,7 @@ ficheroEng.close()
 #WN_G ERIC KAFE
 print('Abriendo fichero ' + rutaEngKafeG)
 
-ficheroEng = open('engProlog30\wn_g.pl', encoding='utf-8')
+ficheroEng = open('engProlog30\wn_g.pl', encoding = 'utf-8')
 
 lineasEng = ficheroEng.readlines()
 
@@ -257,7 +257,7 @@ for linea in lineasEng:
     lineaComas = linea.split(',')
     SynsetsENG.append(int(lineaComas[0]))
 
-csvEng = pd.DataFrame({"Synset":SynsetsENG, "Glosa":GlosaENG})
+csvEng = pd.DataFrame({"Synset": SynsetsENG, "Glosa": GlosaENG})
 csvEng.to_csv('engProlog30CSV\wn_g.csv')
 
 ficheroEng.close()

@@ -13,28 +13,28 @@ def codificacionCategoria(c):
     return categorias[c]
 
 def crearSynsetID(synset):
-    synset = codificacionCategoria(synset[-1])+synset[7:15]
+    synset = codificacionCategoria(synset[-1]) + synset[7:15]
     return int(synset)
 
 def contarSynsets(lista, e):
-   contador=0
+   contador = 0
    for i in lista:
       if i == e:
-         contador+=1
+         contador += 1
    return str(contador)
 
 def ponerEspacios(palabra):
     if type(palabra) == str:
-        return "\'"+palabra[1:-1].replace('\'','\'\'').replace('_',' ')+"\'"
+        return "\'" + palabra[1:-1].replace('\'','\'\'').replace('_',' ') + "\'"
 
 for i in idiomas:
-    inicio = time.time()   
-   
-    ruta = "mcrCSV//"+i+"WN\wei_"+i+"-30_variant.csv"
-    print("Leyendo dataframe "+ ruta)
+    inicio = time.time()
+
+    ruta = "mcrCSV//" + i + "WN\wei_" + i + "-30_variant.csv"
+    print("Leyendo dataframe " + ruta)
     
-    df = pd.read_csv(ruta, index_col=[0])
-    df = df.drop(columns=['Conf', 'Exp', 'Mark'])
+    df = pd.read_csv(ruta, index_col = [0])
+    df = df.drop(columns = ['Conf', 'Exp', 'Mark'])
     df.columns = ['Word', 'Sense', 'Synset', 'Type']
 
     df['Synset'] = df['Synset'].apply(crearSynsetID)
@@ -62,17 +62,16 @@ for i in idiomas:
 
     df = df[['Synset', 'W Num', 'Word', 'Type', 'Sense', 'Tag Count']]
 
-    df = df.sort_values(by=['Synset','W Num'])
+    df = df.sort_values(by = ['Synset','W Num'])
     df = df.reset_index(drop = True)
-    df.to_csv(i+"\PrologCSV\wn_s.csv")
+    df.to_csv(i + "\PrologCSV\wn_s.csv")
 
-    ficheroEscritura = open(i+"\Prolog\wn_s.pl", "w", encoding='utf-8')
+    ficheroEscritura = open(i + "\Prolog\wn_s.pl", "w", encoding = 'utf-8')
 
     for i in df.index:
-        ficheroEscritura.write("s("+str(df["Synset"][i])+","+str(df["W Num"][i])+","+str(df["Word"][i])+","+df["Type"][i]+","+str(df["Sense"][i])+","+str(df["Tag Count"][i])+").\n")
+        ficheroEscritura.write("s(" + str(df["Synset"][i]) + "," + str(df["W Num"][i]) + "," + str(df["Word"][i]) + "," + df["Type"][i] + "," + str(df["Sense"][i]) + "," + str(df["Tag Count"][i]) + ").\n")
 
     ficheroEscritura.close()
 
     final = time.time()
-    print('Proceso en ruta: ' + ruta + ' finalizado. Ha tardado '+str(final-inicio)+'.\n')
-    
+    print('Proceso en ruta: ' + ruta + ' finalizado. Ha tardado ' + str(final-inicio) + '.\n')

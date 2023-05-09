@@ -51,7 +51,7 @@ def codificacionNumero(c):
 for file in lista_ficheros:
     print('Abriendo fichero ' + file + '.')
 
-    xml = open(file,'r', encoding = 'utf-8')
+    xml = open(file, 'r', encoding = 'utf-8')
     xml_lineas = xml.readlines()
 
     lineas = []
@@ -63,7 +63,7 @@ for file in lista_ficheros:
             lineas.append(linea[index:])
 
     for linea in lineas:
-        if linea.find('lem') != -1 & linea.find('sense')!=-1 & linea.find('cs1') == -1:
+        if linea.find('lem') != -1 & linea.find('sense') != -1 & linea.find('cs1') == -1:
 
             tokens = linea.split(' ')
 
@@ -110,7 +110,7 @@ def obtenerWN30(palabra, pos, synset16, tagcount):
             except:
                 palabras = codificacionNumero(tokens[3])
 
-            lista = tokens[4:4+(palabras*2)]
+            lista = tokens[4:4 + (palabras * 2)]
             cadena = ""
 
             for j in lista:
@@ -139,9 +139,9 @@ def obtenerWN30_2(palabra, pos, tagcount, lista, glosa):
         synset30 = ""
         linea_dividida = i.split(' | ')
 
-        for j in range(0, int(len(lista)/2)):
-            if lista[j*2] in linea_dividida[0]:
-                porcentajeLista = porcentajeLista+1
+        for j in range(0, int(len(lista) / 2)):
+            if lista[j * 2] in linea_dividida[0]:
+                porcentajeLista = porcentajeLista + 1
 
         if porcentajeLista > 2:
             for elem in glosa:
@@ -159,11 +159,11 @@ def obtenerWN30_2(palabra, pos, tagcount, lista, glosa):
         df.loc[(df['Word'].str.contains(palabra)) & (df['Synset'] == int(synset30)), "Tag Count"] = tagcount
 
 for i in dfSynsets16.index:
-    print(str(i+1) + "/" + str(len(dfSynsets16)) + " = " + str(((i+1)/len(dfSynsets16)*100)) + "%")
+    print(str(i + 1) + "/" + str(len(dfSynsets16)) + " = " + str(((i + 1) / len(dfSynsets16) * 100)) + "%")
     obtenerWN30(dfSynsets16['Palabra'][i], dfSynsets16['PoS'][i], dfSynsets16['Synset16'][i], dfSynsets16['TagCount'][i])
 
 for i in df_no_encontrados.index:
-    print(str(i+1) + "/" + str(len(df_no_encontrados)) + " = " + str(((i+1)/len(df_no_encontrados)*100)) + "%")
+    print(str(i + 1) + "/" + str(len(df_no_encontrados)) + " = " + str(((i + 1) / len(df_no_encontrados) * 100)) + "%")
     obtenerWN30_2(df_no_encontrados['Palabra'][i], df_no_encontrados['PoS'][i], df_no_encontrados['TagCount'][i], df_no_encontrados['Lista'][i], df_no_encontrados['Glosa'][i])
 
 df.to_csv("spa\PrologCSV\wn_s.csv")
