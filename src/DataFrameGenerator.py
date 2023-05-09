@@ -14,11 +14,11 @@ rutaMarks = 'mcr\\Marks'
 rutaTopOntology = 'mcr\\TopOntology'
 
 for i in idiomas:
-    rutaVariant = 'mcr\\'+i+'WN\wei_'+i+'-30_variant.tsv'
-    rutaSynset = 'mcr\\'+i+'WN\wei_'+i+'-30_synset.tsv'
-    rutaRelation = 'mcr\\'+i+'WN\wei_'+i+'-30_relation.tsv'
-    rutaExamples = 'mcr\\'+i+'WN\wei_'+i+'-30_examples.tsv'
-    rutaToIli = 'mcr\\'+i+'WN\wei_'+i+'-30_to_ili.tsv'
+    rutaVariant = 'mcr\\' + i + 'WN\wei_' + i + '-30_variant.tsv'
+    rutaSynset = 'mcr\\' + i + 'WN\wei_' + i + '-30_synset.tsv'
+    rutaRelation = 'mcr\\' + i + 'WN\wei_' + i + '-30_relation.tsv'
+    rutaExamples = 'mcr\\' + i + 'WN\wei_' + i + '-30_examples.tsv'
+    rutaToIli = 'mcr\\' + i + 'WN\wei_' + i + '-30_to_ili.tsv'
 
 # FICHERO VARIANT
     print('Abriendo fichero ' + rutaVariant)
@@ -36,7 +36,7 @@ for i in idiomas:
     for linea in lineasVariant:
         linea = linea.split('\t')
 
-        Word.append("\'"+linea[0]+"\'")
+        Word.append("\'" + linea[0] + "\'")
         Senses.append(linea[1])
         SynsetPoS.append(linea[2])
         PoS.append(linea[3])
@@ -45,7 +45,7 @@ for i in idiomas:
         Mark.append(linea[6][0:-1])
 
     csvVariant = pd.DataFrame({"Word": Word, "Senses": Senses, "SynsetPoS": SynsetPoS, "PoS": PoS, "Conf": Conf, "Exp": Exp, "Mark": Mark})
-    csvVariant.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_variant.csv')
+    csvVariant.to_csv('mcrCSV/' + i + 'WN/wei_' + i + '-30_variant.csv')
 
     ficheroLecturaVariant.close()
 
@@ -75,7 +75,7 @@ for i in idiomas:
         Mark.append(linea[9][0:-1])
 
     csvSynset = pd.DataFrame({"SynsetPoS": SynsetPoS, "PoS": PoS, "Desc": Desc, "Glosa": Glosa, "MaxNiv": MaxNiv, "Niv": Niv, "Mark": Mark})
-    csvSynset.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_synset.csv')
+    csvSynset.to_csv('mcrCSV/' + i + 'WN/wei_' + i + '-30_synset.csv')
 
     ficheroLecturaSynset.close()
 
@@ -105,7 +105,7 @@ for i in idiomas:
         Info.append(linea[6])
 
     csvRelation = pd.DataFrame({"Rel_ID": Rel_ID, "S_Synset": S_Synset, "S_PoS": S_PoS, "T_Synset": T_Synset, "T_PoS": T_PoS, "Conf": Conf, "Info": Info})
-    csvRelation.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_relation.csv')
+    csvRelation.to_csv('mcrCSV/' + i + 'WN/wei_' + i + '-30_relation.csv')
     
     ficheroLecturaRelation.close()
 
@@ -130,14 +130,14 @@ for i in idiomas:
         SynsetPoS.append(linea[4][:-1])
 
     csvExamples = pd.DataFrame({"Word": Word, "Senses": Senses, "Glosa": Glosa, "PoS": PoS, "SynsetPoS": SynsetPoS})
-    csvExamples.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_examples.csv')
+    csvExamples.to_csv('mcrCSV/' + i + 'WN/wei_' + i + '-30_examples.csv')
 
     ficheroLecturaExamples.close()
 
 
 # FICHERO TO ILI
     print('Abriendo fichero ' + rutaToIli)
-    ficheroLecturaToIli = open(rutaToIli,'r', encoding = 'utf-8')
+    ficheroLecturaToIli = open(rutaToIli, 'r', encoding = 'utf-8')
     lineasToIli = ficheroLecturaToIli.readlines()
 
     ili = []
@@ -156,7 +156,7 @@ for i in idiomas:
         version.append(linea[4][:-1])
 
     csvToIli = pd.DataFrame({"ILI Synset": ili, "PoS": PoS, "TO Synset": to, "WordNet": wn, "Version": version})
-    csvToIli.to_csv('mcrCSV/'+i+'WN/wei_'+i+'-30_to_ili.csv')
+    csvToIli.to_csv('mcrCSV/' + i + 'WN/wei_' + i + '-30_to_ili.csv')
 
     ficheroLecturaToIli.close()
 
