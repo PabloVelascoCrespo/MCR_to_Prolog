@@ -6,12 +6,12 @@ import glob
 
 lista_ficheros = []
 
-for archivo in glob.glob("Corpus/ancora-3.0.1es/**", recursive=True):
+for archivo in glob.glob("Corpus/ancora-3.0.1es/**", recursive = True):
     if 'xml' in archivo:
         lista_ficheros.append(archivo)
 
-dfSynsets16 = pd.DataFrame(columns=['Synset16', 'PoS', 'Palabra', 'TagCount'])
-df_no_encontrados = pd.DataFrame(columns=['PoS', 'Palabra', 'TagCount', 'Lista', 'Glosa'])
+dfSynsets16 = pd.DataFrame(columns = ['Synset16', 'PoS', 'Palabra', 'TagCount'])
+df_no_encontrados = pd.DataFrame(columns = ['PoS', 'Palabra', 'TagCount', 'Lista', 'Glosa'])
 
 def codificacionCategoria(c):
     categorias = {
@@ -49,9 +49,9 @@ def codificacionNumero(c):
     return numeros[c]
 
 for file in lista_ficheros:
-    print('Abriendo fichero '+file+'.')
+    print('Abriendo fichero ' + file + '.')
 
-    xml = open(file,'r', encoding='utf-8')
+    xml = open(file,'r', encoding = 'utf-8')
     xml_lineas = xml.readlines()
 
     lineas = []
@@ -87,13 +87,13 @@ dfSynsets16.to_csv('spa/PrologCSV/Tag_Count.csv')
 
 #dfSynsets16 = pd.read_csv('spa/PrologCSV/Tag_Count.csv', encoding = 'utf-8', index_col=[0])
 
-wn_16 = open('WN16/data.noun','r', encoding='utf-8')
-wn_30 = open('WN30/data.noun','r', encoding='utf-8')
+wn_16 = open('WN16/data.noun', 'r', encoding = 'utf-8')
+wn_30 = open('WN30/data.noun', 'r', encoding = 'utf-8')
 
 wn_16 = wn_16.readlines()
 wn_30 = wn_30.readlines()
 
-df = pd.read_csv('spa/PrologCSV/wn_s.csv', encoding = 'utf-8', index_col=[0])
+df = pd.read_csv('spa/PrologCSV/wn_s.csv', encoding = 'utf-8', index_col = [0])
 
 def obtenerWN30(palabra, pos, synset16, tagcount):
 

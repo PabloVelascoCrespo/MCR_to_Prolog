@@ -11,6 +11,12 @@ relaciones = {
     '46':['xpsim',3],'60':['near',3]
     }
 
+def metodo(synset):
+    if synset in List:
+        return 1
+    else:
+        return 0
+
 def codificacionCategoria(c):
     categorias = {
         'n':'1',
@@ -25,21 +31,25 @@ def crearSynsetID(synset):
     return int(synset)
 
 def crearDF(key, df):
+
     dfAux = df[df['Rel_ID'] == int(key)]
+
     if not(dfAux.empty):
         if relaciones[key][1] == 1:
             dfAux = dfAux.drop(columns = ['Rel_ID'])
             dfAux = dfAux[['Synset_Target', 'Synset_Source']]
             dfAux.rename(columns = { 'Synset_Target': 'Synset Source', 'Synset_Source': 'Synset Target'}, inplace = True)
 
-            dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
+            dfAux = dfAux.sort_values(by = ['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
             dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
 
-            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
+            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding = 'utf-8')
+
             for index in dfAux.index:
                 ficheroEscritura.write(relaciones[key][0]+"("+str(dfAux["Synset Source"][index])+","+str(dfAux["Synset Target"][index])+").\n")
+
             ficheroEscritura.close()
 
         if relaciones[key][1] == 2:
@@ -52,26 +62,37 @@ def crearDF(key, df):
             dfAux.rename(columns = { 'Synset_Target': 'Synset Source', 'Synset_Source': 'Synset Target'}, inplace = True)
             dfAux = dfAux[['Synset Source', 'W_Num Source', 'Synset Target', 'W_Num Target']]
 
-            dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
+            dfAux = dfAux.sort_values(by = ['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
             dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
 
-            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
+            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding = 'utf-8')
+
             for index in dfAux.index:
-                ficheroEscritura.write(relaciones[key][0]+"("+str(dfAux["Synset Source"][index])+",0,"+str(dfAux["Synset Target"][index])+",0).\n")
+                source_w_num = '0'
+                target_w_num = '0'
+
+                if dfAux["Synset Source"][index] in List:
+                    source_w_num = '1'
+
+                if dfAux["Synset Source"][index] in List:
+                    target_w_num = '1'
+
+                ficheroEscritura.write(relaciones[key][0]+"("+str(dfAux["Synset Source"][index])+","+source_w_num+","+str(dfAux["Synset Target"][index])+","+target_w_num+").\n")
+
             ficheroEscritura.close()
-            
+
         if relaciones[key][1] == 3:
             dfAux = dfAux.drop(columns = ['Rel_ID'])
             dfAux.rename(columns = { 'Synset_Source': 'Synset Source', 'Synset_Target': 'Synset Target'}, inplace = True)
 
-            dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
+            dfAux = dfAux.sort_values(by = ['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
             dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
-            
-            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
+
+            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding = 'utf-8')
             for index in dfAux.index:
                 ficheroEscritura.write(relaciones[key][0]+"("+str(dfAux["Synset Source"][index])+","+str(dfAux["Synset Target"][index])+").\n")
             ficheroEscritura.close()
@@ -86,14 +107,24 @@ def crearDF(key, df):
             dfAux.rename(columns = { 'Synset_Source': 'Synset Source', 'Synset_Target': 'Synset Target'}, inplace = True)
             dfAux = dfAux[['Synset Source', 'W_Num Source', 'Synset Target', 'W_Num Target']]
 
-            dfAux = dfAux.sort_values(by=['Synset Source', 'Synset Target'])
+            dfAux = dfAux.sort_values(by = ['Synset Source', 'Synset Target'])
             dfAux = dfAux.reset_index(drop = True)
 
             dfAux.to_csv(i+"\PrologCSV\wn_"+relaciones[key][0]+".csv")
 
-            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding='utf-8')
+            ficheroEscritura = open(i+"\Prolog\wn_"+relaciones[key][0]+".pl", "w", encoding = 'utf-8')
+
             for index in dfAux.index:
-                ficheroEscritura.write(relaciones[key][0]+"("+str(dfAux["Synset Source"][index])+",0,"+str(dfAux["Synset Target"][index])+",0).\n")
+                source_w_num = '0'
+                target_w_num = '0'
+
+                if dfAux["Synset Source"][index] in List:
+                    source_w_num = '1'
+
+                if dfAux["Synset Source"][index] in List:
+                    target_w_num = '1'
+
+                ficheroEscritura.write(relaciones[key][0]+"("+str(dfAux["Synset Source"][index])+","+source_w_num+","+str(dfAux["Synset Target"][index])+","+target_w_num+").\n")
             ficheroEscritura.close()
 
 # 1: 2 datos del revés
@@ -106,12 +137,18 @@ def crearDF(key, df):
 
 for i in idiomas:
     inicio = time.time()
-   
+
+    dfS = pd.read_csv(i+'//PrologCSV//wn_s.csv', index_col = [0])
+
+    Synsets_count = dfS.Synset.value_counts()
+    Synsets_count_1 = Synsets_count[(Synsets_count == 1)]
+    List = list(Synsets_count_1.index)
+
     ruta = "mcrCSV//"+i+"WN\wei_"+i+"-30_relation.csv"
     print("Leyendo dataframe "+ ruta)
-    
-    df = pd.read_csv(ruta, index_col=[0])
-    df = df.drop(columns=['S_PoS', 'T_PoS', 'Conf', 'Info'])
+
+    df = pd.read_csv(ruta, index_col = [0])
+    df = df.drop(columns = ['S_PoS', 'T_PoS', 'Conf', 'Info'])
 
     df.columns = ['Rel_ID', 'Synset_Source', 'Synset_Target']
 
@@ -126,4 +163,3 @@ for i in idiomas:
 
     final = time.time()
     print('Proceso en ruta: ' + ruta + ' finalizado. Ha tardado '+str(final-inicio)+'.\n')
-    
