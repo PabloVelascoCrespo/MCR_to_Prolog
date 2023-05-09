@@ -43,4 +43,5 @@ for index in dfSpa.index:
 print(dfSpa.head(15))
 
 final = time.time()
+
 print('Ha tardado ' + str(final-inicio) + '.\n')
