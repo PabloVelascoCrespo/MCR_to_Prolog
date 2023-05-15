@@ -14,7 +14,7 @@ def codificacionCategoria(c):
 
 def reemplazarComillas(palabra):
     if type(palabra) == str:
-        return palabra.replace('\'','\'\'')
+        return palabra.replace('\'', '\'\'')
 
 def crearSynsetID(synset):
     synset = codificacionCategoria(synset[-1]) + synset[7:15]
@@ -23,12 +23,12 @@ def crearSynsetID(synset):
 for i in idiomas:
     inicio = time.time()
    
-    ruta = "mcrCSV//"+i+"WN\wei_" + i + "-30_synset.csv"
-    print("Leyendo dataframe "+ ruta)
+    ruta = "mcrCSV//" + i + "WN\wei_" + i + "-30_synset.csv"
+    print("Leyendo dataframe " + ruta)
     
     df = pd.read_csv(ruta, index_col=[0])
     df = df.drop(columns=['PoS', 'Desc', 'MaxNiv', 'Niv', 'Mark'])
-    df.columns = ['Synset','Glosa']
+    df.columns = ['Synset', 'Glosa']
 
     df['Synset'] = df['Synset'].apply(crearSynsetID)
     df['Glosa'] = df['Glosa'].apply(reemplazarComillas)

@@ -79,7 +79,7 @@ def crearDF(key, df):
                 if dfAux["Synset Source"][index] in List:
                     target_w_num = '1'
 
-                ficheroEscritura.write(relaciones[key][0] + "(" + str(dfAux["Synset Source"][index]) + "," + source_w_num+"," + str(dfAux["Synset Target"][index]) + "," + target_w_num + ").\n")
+                ficheroEscritura.write(relaciones[key][0] + "(" + str(dfAux["Synset Source"][index]) + "," + source_w_num + "," + str(dfAux["Synset Target"][index]) + "," + target_w_num + ").\n")
 
             ficheroEscritura.close()
 
@@ -93,6 +93,7 @@ def crearDF(key, df):
             dfAux.to_csv(i + "\PrologCSV\wn_" + relaciones[key][0] + ".csv")
 
             ficheroEscritura = open(i + "\Prolog\wn_"+relaciones[key][0] + ".pl", "w", encoding = 'utf-8')
+
             for index in dfAux.index:
                 ficheroEscritura.write(relaciones[key][0] + "(" + str(dfAux["Synset Source"][index]) + "," + str(dfAux["Synset Target"][index]) + ").\n")
             ficheroEscritura.close()
@@ -101,6 +102,7 @@ def crearDF(key, df):
             dfAux = dfAux.drop(columns = ['Rel_ID'])
 
             W_Num = [0] * len(dfAux['Synset_Target'])
+
             dfAux['W_Num Source'] = W_Num
             dfAux['W_Num Target'] = W_Num
 
