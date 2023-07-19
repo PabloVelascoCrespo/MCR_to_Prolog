@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article lng="es">
+  <sentence verbless="yes">
+    <sp>
+      <prep>
+        <s lem="por" pos="sps00" postype="preposition" wd="Por"/>
+      </prep>
+      <sn>
+        <spec gen="f" num="s">
+          <d gen="f" lem="el" num="s" pos="da0fs0" postype="article" wd="la"/>
+        </spec>
+        <grup.nom gen="f" num="s">
+          <s.a gen="f" num="s">
+            <grup.a gen="f" num="s">
+              <a gen="f" lem="sencillo" num="s" pos="aq0fs0" postype="qualificative" wd="sencilla"/>
+            </grup.a>
+          </s.a>
+          <n gen="f" lem="razón" num="s" pos="ncfs000" postype="common" sense="16:04482668" wd="razón"/>
+          <sp>
+            <prep>
+              <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+            </prep>
+            <S clausetype="completive">
+              <conj conjunctiontype="subordinating">
+                <c lem="que" pos="cs" postype="subordinating" wd="que"/>
+              </conj>
+              <grup.verb>
+                <v lem="ser" lss="C21.state-attributive" mood="indicative" num="s" person="3" pos="vsip3s0" postype="semiauxiliary" tense="present" wd="es"/>
+              </grup.verb>
+              <sa arg="arg2" func="atr" tem="atr">
+                <spec>
+                  <r lem="casi" pos="rg" wd="casi"/>
+                </spec>
+                <grup.a>
+                  <a gen="m" lem="seguro" num="s" pos="aq0ms0" postype="qualificative" wd="seguro"/>
+                </grup.a>
+              </sa>
+              <S arg="arg1" clausetype="completive" func="suj" tem="tem">
+                <conj conjunctiontype="subordinating">
+                  <c lem="que" pos="cs" postype="subordinating" wd="que"/>
+                </conj>
+                <neg func="mod">
+                  <r lem="no" pos="rn" postype="negative" wd="no"/>
+                </neg>
+                <grup.verb>
+                  <v lem="bastar" lexicalid="verb.bastar.2.default" lss="C11.state-existential" mood="indicative" num="s" person="3" pos="vmif3s0" postype="main" tense="future" wd="bastará"/>
+                </grup.verb>
+                <sn arg="arg1" func="suj" tem="tem">
+                  <spec arg="arg0" gen="f" num="s" tem="agt">
+                    <d gen="c" lem="su" num="s" person="3" pos="dp3cs0" postype="possessive" wd="su"/>
+                  </spec>
+                  <grup.nom gen="f" num="s">
+                    <s.a func="cn" gen="f" num="s">
+                      <grup.a gen="f" num="s">
+                        <a gen="c" lem="noble" num="s" pos="aq0cs0" postype="qualificative" wd="noble"/>
+                      </grup.a>
+                    </s.a>
+                    <n gen="f" lem="intención" lexicalid="noun.intención.1.default" num="s" origin="deverbal" pos="ncfs000" postype="common" sense="16:04588594" wd="intención"/>
+                  </grup.nom>
+                </sn>
+                <S arg="argM" clausetype="adverbial" func="cc" tem="fin">
+                  <conj conjunctiontype="subordinating">
+                    <c lem="para_que" pos="cs" postype="subordinating" wd="para_que"/>
+                  </conj>
+                  <sn arg="arg0" elliptic="yes" func="suj" tem="agt"/>
+                  <sn arg="arg2" func="ci" tem="ben">
+                    <grup.nom num="s">
+                      <p case="dative" gen="c" lem="él" num="s" person="3" pos="pp3csd00" postype="personal" wd="le"/>
+                    </grup.nom>
+                  </sn>
+                  <grup.verb>
+                    <v lem="permitir" lexicalid="verb.permitir.2.default" lss="A32.ditransitive-patient-benefactive" mood="subjunctive" num="p" person="3" pos="vmsp3p0" postype="main" tense="present" wd="permitan"/>
+                  </grup.verb>
+                  <S arg="arg1" clausetype="completive" func="cd" impersonal="yes" tem="pat">
+                    <infinitiu>
+                      <v lem="cumplir" lexicalid="verb.cumplir.1.default" lss="A21.transitive-agentive-patient" mood="infinitive" pos="vmn0000" postype="main" wd="cumplir"/>
+                    </infinitiu>
+                    <sn arg="arg1" func="cd" tem="pat">
+                      <spec gen="m" num="s">
+                        <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+                      </spec>
+                      <grup.nom gen="m" num="s">
+                        <n gen="m" lem="precepto" num="s" pos="ncms000" postype="common" sense="16:04991006" wd="precepto"/>
+                        <s.a gen="m" num="s">
+                          <grup.a gen="m" num="s">
+                            <a gen="m" lem="cristiano" num="s" pos="aq0ms0" postype="qualificative" wd="cristiano"/>
+                          </grup.a>
+                        </s.a>
+                        <sp>
+                          <prep>
+                            <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+                          </prep>
+                          <S clausetype="completive" impersonal="yes">
+                            <infinitiu>
+                              <v lem="ayudar" lexicalid="verb.ayudar.1.default" lss="A34.ditransitive-patient-theme" mood="infinitive" pos="vmn0000" postype="main" wd="ayudar"/>
+                            </infinitiu>
+                            <sp arg="arg1" func="cd" tem="pat">
+                              <prep>
+                                <s contracted="yes" gen="m" lem="al" num="s" pos="spcms" postype="preposition" wd="al"/>
+                              </prep>
+                              <sn>
+                                <grup.nom gen="m" num="s">
+                                  <n gen="m" lem="prójimo" num="s" pos="ncms000" postype="common" sense="16:cs1" wd="prójimo"/>
+                                </grup.nom>
+                              </sn>
+                            </sp>
+                          </S>
+                        </sp>
+                      </grup.nom>
+                    </sn>
+                  </S>
+                </S>
+              </S>
+            </S>
+          </sp>
+        </grup.nom>
+      </sn>
+    </sp>
+    <f lem="." pos="fp" punct="period" wd="."/>
+  </sentence>
+</article>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article lng="es">
+  <sentence>
+    <S clausesubtype="concessive" clausetype="adverbial" func="ao">
+      <conj conjunctiontype="subordinating">
+        <c lem="aunque" pos="cs" postype="subordinating" wd="Aunque"/>
+      </conj>
+      <sn arg="arg1" entityref="nne" func="suj" tem="pat">
+        <spec arg="arg1" gen="f" num="s" tem="tem">
+          <d entity="entity2" entityref="spec" gen="c" lem="su" num="s" person="3" pos="dp3cs0" postype="possessive" wd="su"/>
+        </spec>
+        <grup.nom gen="f" num="s">
+          <n gen="f" lem="reaparición" lexicalid="noun.reaparición.2.default" num="s" origin="deverbal" pos="ncfs000" postype="common" sense="16:05457728" wd="reaparición"/>
+          <sp arg="arg2" func="cn" tem="loc">
+            <prep>
+              <s lem="en" pos="sps00" postype="preposition" wd="en"/>
+            </prep>
+            <sn entityref="ne" ne="other">
+              <spec gen="m" num="s">
+                <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+              </spec>
+              <grup.nom gen="m" num="s">
+                <n lem="Rock_in_Rio" ne="other" pos="np00000" postype="proper" wd="Rock_in_Rio"/>
+              </grup.nom>
+            </sn>
+          </sp>
+        </grup.nom>
+      </sn>
+      <grup.verb>
+        <v lem="ser" mood="indicative" num="s" person="3" pos="vsis3s0" postype="semiauxiliary" tense="past" wd="fue"/>
+        <v gen="f" lem="criticar" lexicalid="verb.criticar.1.passive" lss="B22.unaccusative-passive-transitive" mood="participle" num="s" pos="vmp00sf" postype="main" wd="criticada"/>
+      </grup.verb>
+      <sp arg="arg0" func="cag" tem="agt">
+        <sadv adjunct="yes">
+          <grup.adv>
+            <r lem="hasta" pos="rg" wd="hasta"/>
+          </grup.adv>
+        </sadv>
+        <sp>
+          <prep>
+            <s lem="por" pos="sps00" postype="preposition" wd="por"/>
+          </prep>
+          <sn entityref="ne" ne="person">
+            <grup.nom gen="m" num="s">
+              <n lem="Dave_Mustaine" ne="person" pos="np00000" postype="proper" wd="Dave_Mustaine"/>
+              <sp>
+                <f lem="(" pos="fpa" punct="bracket" punctenclose="open" wd="("/>
+                <prep>
+                  <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+                </prep>
+                <sn entityref="ne" ne="organization">
+                  <grup.nom>
+                    <n lem="Megadeth" ne="organization" pos="np00000" postype="proper" wd="Megadeth"/>
+                  </grup.nom>
+                </sn>
+                <f lem=")" pos="fpt" punct="bracket" punctenclose="close" wd=")"/>
+              </sp>
+            </grup.nom>
+          </sn>
+        </sp>
+      </sp>
+      <f lem="," pos="fc" punct="comma" wd=","/>
+    </S>
+    <sn arg="arg1" entity="entity1" entityref="nne" func="suj" homophoricDD="yes" tem="tem">
+      <spec gen="m" num="s">
+        <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+      </spec>
+      <grup.nom gen="m" num="s">
+        <n gen="m" lem="regreso" lexicalid="noun.regreso.2.default" num="s" origin="deverbal" pos="ncms000" postype="common" sense="16:00211639" wd="regreso"/>
+        <sp arg="arg0" func="cn" tem="agt">
+          <prep>
+            <s lem="de" pos="sps00" postype="preposition" wd="de"/>
+          </prep>
+          <sn coreftype="ident" entity="entity2" entityref="ne" ne="person">
+            <grup.nom gen="m" num="s">
+              <n lem="Axl_Rose" ne="person" pos="np00000" postype="proper" wd="Axl_Rose"/>
+            </grup.nom>
+          </sn>
+        </sp>
+      </grup.nom>
+    </sn>
+    <grup.verb>
+      <v lem="ser" lss="C21.state-attributive" mood="indicative" num="s" person="3" pos="vsip3s0" postype="semiauxiliary" tense="present" wd="es"/>
+    </grup.verb>
+    <sn arg="arg2" corefsubtype="indefinit" coreftype="pred" entity="entity1" func="atr" tem="atr">
+      <spec gen="m" num="s">
+        <d gen="m" lem="uno" num="s" pos="di0ms0" postype="indefinite" wd="un"/>
+      </spec>
+      <grup.nom gen="m" num="s">
+        <n gen="m" iarg1="tem:entity1" lem="acontecimiento" lexicalid="noun.acontecimiento.1.default" num="s" origin="deverbal" pos="ncms000" postype="common" sense="16:05538537" wd="acontecimiento"/>
+      </grup.nom>
+    </sn>
+    <f lem="." pos="fp" punct="period" wd="."/>
+  </sentence>
+  <sentence>
+    <sn arg="arg1" coreftype="ident" elliptic="yes" entity="entity2" entityref="spec" func="suj" tem="tem"/>
+    <grup.verb>
+      <v alt_lexicalid="verb.llegar.1.default=suj/arg1/tem + ci/arg2/ben + cc/arg3/ori + cc/arg4/des + argM(atr/tmp/cau/adv/fin/mnr),verb.llegar.1.impersonal=cc/arg4/des + argM(tmp/mnr)" lem="llegar" lexicalid="verb.llegar.1.default" lss="B11.unaccusative-motion" mood="indicative" num="s" person="3" pos="vmif3s0" postype="main" tense="future" toreview="yes" toreviewcomment="Must disambiguate" toreviewtype="lexicalid" wd="Llegará"/>
+    </grup.verb>
+    <sp arg="argM" func="cc" tem="adv">
+      <prep>
+        <s lem="con" pos="sps00" postype="preposition" wd="con"/>
+      </prep>
+      <sn entityref="ne" ne="organization">
+        <grup.nom>
+          <n lem="Guns_n'Roses" ne="organization" pos="np00000" postype="proper" wd="Guns_n'Roses"/>
+        </grup.nom>
+      </sn>
+    </sp>
+    <sp arg="arg4" func="cc" tem="des">
+      <prep>
+        <s contracted="yes" gen="m" lem="al" num="s" pos="spcms" postype="preposition" wd="al"/>
+      </prep>
+      <sn entityref="ne" ne="location">
+        <grup.nom gen="m" num="s">
+          <n lem="Sant_Jordi" ne="location" pos="np00000" postype="proper" wd="Sant_Jordi"/>
+        </grup.nom>
+      </sn>
+    </sp>
+    <sn arg="argM" entityref="ne" func="cc" ne="date" tem="tmp">
+      <spec gen="m" num="s">
+        <d gen="m" lem="el" num="s" pos="da0ms0" postype="article" wd="el"/>
+      </spec>
+      <grup.nom gen="m" num="s">
+        <w lem="[??:20/06/??:??.??]" ne="date" wd="20_de_junio"/>
+      </grup.nom>
+    </sn>
+    <f lem="." pos="fp" punct="period" wd="."/>
+  </sentence>
+</article>

@@ -22,17 +22,17 @@ def crearSynsetID(synset):
 
 for i in idiomas:
     inicio = time.time()
-   
+
     ruta = "mcrCSV//" + i + "WN\wei_" + i + "-30_synset.csv"
     print("Leyendo dataframe " + ruta)
-    
+
     df = pd.read_csv(ruta, index_col=[0])
     df = df.drop(columns=['PoS', 'Desc', 'MaxNiv', 'Niv', 'Mark'])
     df.columns = ['Synset', 'Glosa']
 
     df['Synset'] = df['Synset'].apply(crearSynsetID)
     df['Glosa'] = df['Glosa'].apply(reemplazarComillas)
-    
+
     df = df.sort_values(by = ['Synset'])
     df = df.reset_index(drop = True)
     df.to_csv(i + "\PrologCSV\wn_g.csv")
@@ -41,7 +41,7 @@ for i in idiomas:
 
     for index in df.index:
         ficheroEscritura.write("g(" + str(df["Synset"][index]) + ",\'" + str(df["Glosa"][index]) + "\').\n")
-    
+
     final = time.time()
 
     ficheroEscritura.close()
