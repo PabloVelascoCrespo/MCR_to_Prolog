@@ -42,7 +42,7 @@ def codificacionCategoria(c):
 def ponerEspacios(palabra):
     if type(palabra) == str:
         return "\'" + palabra[1:-1].replace('\'','\'\'').replace('_',' ') + "\'"
-
+#TODO: tengo que añadir a la ecuación el tag count de SenSem :p
 def media_geometrica(na,nw,Na,Nw,N):
     return round((na*Na/N) + (nw*Nw/N))
 

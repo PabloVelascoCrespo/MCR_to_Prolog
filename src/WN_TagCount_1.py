@@ -7,6 +7,15 @@ def is_synset(synset):
     else:
         return False
 
+def codificacionCategoria(c):
+    categorias = {
+        'n':'1',
+        'v':'2',
+        'a':'3',
+        'r':'4'
+        }
+    return categorias[c]
+
 # Parte 1 TODO, dudas: debería hacer un programa por cada corpus, porque cada uno tiene su estructura y almacenar
 # los conjuntos de datos en algún formato y así ya solo leerlos desde aquí y hacer todo ese proceso
 
@@ -103,3 +112,31 @@ for fichero_ruta in lista_ficheros:
         i = i + 1
 
 dfSynsets16.to_csv('spa/PrologCSV/Tag_Count_WikiCorpus.csv')
+
+# SENSEM ##############################################################################################################
+dfSynsetsSenSem = pd.DataFrame(columns=['Synset', 'PoS', 'Palabra','TagCount'])
+
+rutaSenSem = "Corpus/SenSem/spsemcor.utf8.xml"
+
+archivoSenSem = open(rutaSenSem, 'r', encoding='utf-8')
+
+for linea in archivoSenSem:
+    if 'WN30_S=' in linea:
+        synset30SenSem = codificacionCategoria(linea[linea.find('WN30_S')+16]) +  linea[linea.find('WN30_S')+8:linea.find('WN30_S')+16]
+        PoS = linea[linea.find('WN30_S')+16]
+        palabra = ""
+        if 'lema=' in linea:
+            palabra = linea[linea.find('lema=')+6:linea.find('lema=')+6+linea[linea.find('lema=')+6:].find('"')]
+        elif 'lema_verbo=' in linea:
+            palabra = linea[linea.find('lema_verbo=')+12:linea.find('lema_verbo=')+12+linea[linea.find('lema_verbo=')+12:].find('"')]
+        if palabra == "":
+            print("No se ha encontrado la palabra con SYNSET: " + synset30SenSem)
+        else:
+            if (synset30SenSem in dfSynsetsSenSem.values) & (palabra in dfSynsetsSenSem.values):
+                dfSynsetsSenSem.loc[(dfSynsetsSenSem['Palabra'].str.contains(palabra)) & (dfSynsetsSenSem['Synset'].str.contains(synset30SenSem)), "TagCount"] += 1
+            else:
+                dfSynsetsSenSem.loc[len(dfSynsetsSenSem)] = [synset30SenSem, PoS, palabra, 1]
+
+dfSynsetsSenSem = dfSynsetsSenSem.sort_values(['Synset', 'TagCount', 'Palabra'])    
+dfSynsetsSenSem = dfSynsetsSenSem.reset_index(drop=True)       
+dfSynsetsSenSem.to_csv('spa/PrologCSV/Tag_Count_SenSem.csv')
