@@ -1,0 +1,61 @@
+[33mc6819ea[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: reset: moving to HEAD~3
+[33m0b08ba8[m HEAD@{1}: commit: Version 1.0
+[33m988b906[m HEAD@{2}: commit: Version 1.0
+[33mc666260[m HEAD@{3}: commit: Version 1.0
+[33mc6819ea[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{4}: commit: Version 1.0
+[33mee7cdcb[m HEAD@{5}: commit: Version 1.0
+[33mee1227e[m HEAD@{6}: commit: Version 1.0
+[33m66572cf[m HEAD@{7}: commit: Version 1.0
+[33mcdfb487[m HEAD@{8}: commit: Version 1.0
+[33mfa5c76f[m HEAD@{9}: commit: Version 1.0
+[33ma6868d4[m HEAD@{10}: commit: Version 1.0
+[33m7ba32a5[m HEAD@{11}: commit: Version 1.0
+[33mf92fbd3[m HEAD@{12}: commit: Version 1.0
+[33m2103cf4[m HEAD@{13}: commit: Version 1.0
+[33mfef1936[m HEAD@{14}: commit: Version 1.0
+[33mbb7bef6[m HEAD@{15}: commit: Version 1.0
+[33m5fc8a85[m HEAD@{16}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33m4eefcff[m HEAD@{17}: commit: Version 1.0
+[33mb088200[m HEAD@{18}: commit: Version 1.0
+[33m18a42df[m HEAD@{19}: reset: moving to HEAD~
+[33m934f4e3[m HEAD@{20}: commit: Version 1.0
+[33m18a42df[m HEAD@{21}: commit: Update README.md
+[33mec774a9[m HEAD@{22}: commit: Update README.md
+[33m0b28f4d[m HEAD@{23}: commit: Version 1.0
+[33ma84176d[m HEAD@{24}: commit: Version 1.0
+[33me72acb4[m HEAD@{25}: commit: Version 1.0
+[33mc159b09[m HEAD@{26}: commit: Version 1.0
+[33m390828f[m HEAD@{27}: commit: Version 1.0
+[33m30b6b21[m HEAD@{28}: commit: Version 1.0
+[33m9c8bdfc[m HEAD@{29}: commit: Version 1.0
+[33m95593b6[m HEAD@{30}: commit: Version 1.0
+[33md2922d6[m HEAD@{31}: commit: Version 1.0
+[33m66dbe8c[m HEAD@{32}: commit: Añdir WN-CONNECT
+[33m78303d4[m HEAD@{33}: commit: Version 1.0
+[33md2e36d9[m HEAD@{34}: commit: Version 1.0
+[33me0d923b[m HEAD@{35}: commit: Version 1.0
+[33m5ea3e68[m HEAD@{36}: commit: Version 1.
+[33m9db0134[m HEAD@{37}: commit: Añadir requisitos
+[33m53e5e8b[m HEAD@{38}: commit: Version 1.0
+[33maf103d7[m HEAD@{39}: commit: Update README.md
+[33m893a185[m HEAD@{40}: commit: Update README.md
+[33m2a501d4[m HEAD@{41}: commit: Version 0.
+[33m4097893[m HEAD@{42}: pull origin master: Merge made by the 'ort' strategy.
+[33ma2700ae[m HEAD@{43}: commit: Version 0.9
+[33m9cf9cbf[m HEAD@{44}: commit: Create README.md
+[33m972628c[m HEAD@{45}: commit: Create README.md
+[33m34a501b[m HEAD@{46}: commit: Version 0.8
+[33md40e960[m HEAD@{47}: commit: Version 0.7
+[33m3b0f2ad[m HEAD@{48}: commit: Version 0.6
+[33m37a22f1[m HEAD@{49}: commit: Version 0.6
+[33m4253a6b[m HEAD@{50}: commit: Version 0.5
+[33mf855c23[m HEAD@{51}: commit: Version 0.4
+[33m7b2dae5[m HEAD@{52}: commit: Version 0.3
+[33mfbe2f52[m HEAD@{53}: commit: Version 0.2
+[33me213d3f[m HEAD@{54}: commit: Version 0.2
+[33md0d1de8[m HEAD@{55}: commit: Version 0.2
+[33ma97622b[m HEAD@{56}: pull --tags origin master: Merge made by the 'ort' strategy.
+[33mc425ae4[m HEAD@{57}: commit: Version 0.1
+[33m50e0ebb[m HEAD@{58}: commit: Eliminar
+[33m215463b[m HEAD@{59}: commit: Commit inicial
+[33m4ad0ba7[m HEAD@{60}: commit (initial): Commit inicial

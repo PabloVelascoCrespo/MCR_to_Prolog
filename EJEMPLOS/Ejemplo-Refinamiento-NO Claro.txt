@@ -1,0 +1,36 @@
+('00009457', [('00002684', 1.0), ('05810948', 0.67), ('06132724', 0.67), ('06310237', 0.67)])
+
+3.0
+00009457 03 n 02 object 0 physical_object 0 029 @ 00001740 n 0000 ~ 00010123 n 0000 ~ 00010572 n 0000 ~ 00011937 n 0000 ~ 00014887 n 0000 ~ 02476046 n 0000 ~ 02597572 n 0000 ~ 02679093 n 0000 ~ 03090721 n 0000 ~ 05881698 n 0000 ~ 06666185 n 0000 ~ 06666813 n 0000 ~ 06666964 n 0000 ~ 06667120 n 0000 ~ 06667277 n 0000 ~ 06667491 n 0000 ~ 06667690 n 0000 ~ 06667786 n 0000 ~ 06667942 n 0000 ~ 06668569 n 0000 ~ 06668927 n 0000 ~ 06669110 n 0000 ~ 06670415 n 0000 ~ 06670589 n 0000 ~ 06746514 n 0000 ~ 06796531 n 0000 ~ 06796605 n 0000 ~ 06796761 n 0000 ~ 06848060 n 0000 | 
+a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"  
+
+1.6
+00002684 03 n 02 object 0 physical_object 0 039 @ 00001930 n 0000 + 00532607 v 0105 ~ 00003553 n 0000 ~ 00027167 n 0000 ~ 03009633 n 0000 ~ 03149951 n 0000 ~ 03233423 n 0000 ~ 03338648 n 0000 ~ 03532080 n 0000 ~ 03595179 n 0000 ~ 03610270 n 0000 ~ 03714721 n 0000 ~ 03892891 n 0000 ~ 04012260 n 0000 ~ 04248010 n 0000 ~ 04345288 n 0000 ~ 04486445 n 0000 ~ 07851054 n 0000 ~ 09238143 n 0000 ~ 09251689 n 0000 ~ 09267490 n 0000 ~ 09279458 n 0000 ~ 09281777 n 0000 ~ 09283193 n 0000 ~ 09287968 n 0000 ~ 09295338 n 0000 ~ 09300905 n 0000 ~ 09302031 n 0000 ~ 09308398 n 0000 ~ 09334396 n 0000 ~ 09335240 n 0000 ~ 09358550 n 0000 ~ 09368224 n 0000 ~ 09407346 n 0000 ~ 09409203 n 0000 ~ 09432990 n 0000 ~ 09468237 n 0000 ~ 09474162 n 0000 ~ 09477037 n 0000 |
+a tangible and visible entity; an entity that can cast a shadow; "it was full of rackets, balls and other objects"  
+
+05810948 09 n 01 object 1 008 @ 05809192 n 0000 ~ 05811466 n 0000 ~ 05811662 n 0000 ~ 05811884 n 0000 ~ 05812038 n 0000 ~ 05812921 n 0000 ~ 05813109 n 0000 ~ 05813229 n 0000 | 
+the focus of cognitions or feelings; "objects of thought"; "the object of my affection"  
+
+06132724 09 n 01 object 2 001 @ 06128570 n 0000 | 
+(computing) a discrete item that provides a description of virtually anything known to a computer; "in object-oriented programming, objects include data and define its status, its methods of operation and how it interacts with other objects"  
+
+06310237 10 n 01 object 0 006 @ 06312966 n 0000 ;c 06174404 n 0000 ~ 06310449 n 0000 ~ 06310578 n 0000 ~ 06310713 n 0000 ~ 06310848 n 0000 |
+(grammar) a constituent that is acted upon; "the object of the verb"  
+
+--------------------------------------------------------------------------------------------------------------------
+
+('00014887', [('00027167', 1.0), ('03682189', 1.0)])
+
+3.0
+00014887 03 n 01 location 0 013 @ 00009457 n 0000 #p 00015975 n 0000 ~ 06262545 n 0000 ~ 06262675 n 0000 ~ 06262813 n 0000 ~ 06263016 n 0000 ~ 06310843 n 0000 ~ 06337463 n 0000 ~ 06351684 n 0000 ~ 06358701 n 0000 ~ 06359477 n 0000 ~ 06391607 n 0000 ~ 06708950 n 0000 | 
+a point or extent in space  
+
+1.6
+00027167 03 n 01 location 0 032 @ 00002684 n 0000 #p 00028651 n 0000 + 02694933 v 0102 + 02333689 v 0101 + 02286204 v 0101 + 00413876 v 0102 ~ 08489497 n 0000 ~ 08489627 n 0000 ~ 08489765 n 0000 ~ 08489890 n 0000 ~ 08490039 n 0000 ~ 08490199 n 0000 ~ 08490402 n 0000 ~ 08500433 n 0000 ~ 08509111 n 0000 ~ 08561081 n 0000 ~ 08561230 n 0000 ~ 08561351 n 0000 ~ 08561462 n 0000 ~ 08561583 n 0000 ~ 08561714 n 0000 ~ 08561835 n 0000 ~ 08561946 n 0000 ~ 08562067 n 0000 ~ 08593262 n 0000 ~ 08620061 n 0000 ~ 08630039 n 0000 ~ 08630985 n 0000 ~ 08683383 n 0000 ~ 08795880 n 0000 ~ 09386842 n 0000 ~ 13910384 n 0000 | 
+a point or extent in space  
+
+03682189 06 n 01 location 0 002 @ 04602044 n 0000 ! 04344544 n 0101 | 
+a workplace away from a studio at which some or all of a movie may be made; "they shot the film on location in Nevada"  
+
+
+Estos son ejemplos de REFINAMIENTO, pero no son tan claros en estos casos, ya que, como se puede ver, no hay un valor que destaque mucho entre el resto por mucho y solo podemos dedudcir que es un REFINAMIENTO tras comparar las glosas

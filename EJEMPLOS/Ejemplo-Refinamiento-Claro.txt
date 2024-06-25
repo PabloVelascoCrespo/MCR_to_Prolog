@@ -1,0 +1,36 @@
+En la fila 00003731 hay los siguientes valores distintos de 0: 1.0,0.22,0.25,0.33,0.5
+Al hacer la fórmula de eliminar los valores que sean inferiores al 60% de la media se eliminan tanto el 0.22 como el 0.25 (la media es 0.46, que al calcular el 60% nos da como resultado 0.276)
+
+Y se queda lo siguiente:
+('00003731', [('00007347', 1.0), ('06740402', 0.33), ('07326557', 0.5)])
+
+3.0
+00003731 03 n 03 causal_agent 0 cause 0 causal_agency 0 016 @ 00001740 n 0000 ~ 00004123 n 0000 ~ 06665737 n 0000 ~ 06860237 n 0000 ~ 06860410 n 0000 ~ 06860613 n 0000 ~ 06860910 n 0000 ~ 06861200 n 0000 ~ 07143593 n 0000 ~ 07214409 n 0000 ~ 07444457 n 0000 ~ 07491804 n 0000 ~ 07600530 n 0000 ~ 07769591 n 0000 ~ 10427605 n 0000 ~ 10597048 n 0000 | 
+any entity that causes events to happen  
+
+1.6
+00007347 03 n 03 causal_agent 0 cause 0 causal_agency 0 020 @ 00001930 n 0000 + 00323199 a 0201 + 01645601 v 0201 + 00770437 v 0203 ~ 00007846 n 0000 ~ 09190918 n 0000 ~ 09503682 n 0000 ~ 09503877 n 0000 ~ 09504464 n 0000 ~ 09504603 n 0000 ~ 09504915 n 0000 ~ 09900711 n 0000 ~ 10009926 n 0000 ~ 10378412 n 0000 ~ 10461424 n 0000 ~ 10757918 n 0000 ~ 11417561 n 0000 ~ 14540564 n 0000 ~ 14541044 n 0000 ~ 14778436 n 0000 | 
+any entity that produces an effect or is responsible for events or results  
+
+06740402 10 n 03 cause 0 reason 0 grounds 0 004 @ 06740183 n 0000 + 00323199 a 0101 + 01645601 v 0101 + 00770437 v 0103 | 
+a justification for something existing or happening; "he had no cause to complain"; "they had good reason to rejoice"  
+
+07326557 11 n 01 cause 0 009 @ 07323922 n 0000 + 00323199 a 0101 + 01645601 v 0101 + 00770437 v 0103 ~ 07326880 n 0000 ~ 07327608 n 0000 ~ 07327805 n 0000 ~ 07328756 n 0000 ~ 07426108 n 0000 | 
+events that provide the generative force that is the origin of something; "they are trying to determine the cause of the crash"  
+
+--------------------------------------------------------------------------
+
+('00018604', [('00024264', 1.0), ('05849040', 0.5)])
+
+3.0
+00018604 03 n 01 attribute 0 012 @ 00013018 n 0000 ~ 00015185 n 0000 ~ 03642179 n 0000 ~ 03643183 n 0000 ~ 03643335 n 0000 ~ 03643456 n 0000 ~ 03652654 n 0000 ~ 03653078 n 0000 ~ 03714179 n 0000 ~ 03714294 n 0000 ~ 03848700 n 0000 ~ 03851000 n 0000 | 
+an abstraction belonging to or characteristic of an entity  
+
+1.6
+00024264 03 n 01 attribute 0 020 @ 00002137 n 0000 ~ 00024720 n 0000 ~ 00027807 n 0000 ~ 00028270 n 0000 ~ 00028651 n 0000 ~ 04615866 n 0000 ~ 04616059 n 0000 ~ 04616916 n 0000 ~ 04617289 n 0000 ~ 04617441 n 0000 ~ 04617562 n 0000 ~ 04630689 n 0000 ~ 04631298 n 0000 ~ 04691992 n 0000 ~ 04723286 n 0000 ~ 04723436 n 0000 ~ 04723816 n 0000 ~ 04916342 n 0000 ~ 04921011 n 0000 ~ 05134353 n 0000 | 
+an abstraction belonging to or characteristic of an entity  
+
+05849040 09 n 03 property 0 attribute 0 dimension 0 004 @ 05835747 n 0000 ~ 05849284 n 0000 ~ 05849789 n 0000 ~ 05850212 n 0000 | 
+a construct whereby objects or individuals can be distinguished; "self-confidence is not an endearing property"  
+
+Como se puede ver, en estos ejemplos, son un caso de REFINAMIENTO muy claro, se puede observar porque, en primer lugar, excepto uno de los valores, el resto son MUY bajos y en segundo lugar porque las glosas comparten muchas palabras.

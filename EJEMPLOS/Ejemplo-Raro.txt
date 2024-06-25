@@ -1,0 +1,15 @@
+('00013018', [('00002137', 0.67), ('00392848', 1.0), ('02669001', 1.0), ('05700625', 0.67), ('05780104', 0.5), ('05854150', 0.67)])
+
+3.0
+00013018 03 n 01 abstraction 0 006 ~ 00015594 n 0000 ~ 00015975 n 0000 ~ 00018604 n 0000 ~ 00018916 n 0000 ~ 00020056 n 0000 ~ 05992373 n 0000 | 
+a general concept formed by extracting common features from specific examples  
+
+1.6
+00002137 03 n 02 abstraction 0 abstract_entity 0 010 @ 00001740 n 0000 + 00692329 v 0101 ~ 00023100 n 0000 ~ 00024264 n 0000 ~ 00031264 n 0000 ~ 00031921 n 0000 ~ 00033020 n 0000 ~ 00033615 n 0000 ~ 05810143 n 0000 ~ 07999699 n 0000 | 
+a general concept formed by extracting common features from specific examples  
+
+00392848 04 n 01 abstraction 0 001 @ 00391599 n 0000 | 
+the act of withdrawing or removing something  
+
+02669001 06 n 01 abstraction 0 001 @ 03876519 n 0000 | 
+an abstract painting  

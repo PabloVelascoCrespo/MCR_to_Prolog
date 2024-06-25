@@ -72,7 +72,7 @@ for file in lista_ficheros:
 
 dfSynsets16.to_csv('spa/PrologCSV/Tag_Count_AnCora.csv')
 
-# WIKICORPUS ##############################################################################################################
+# WIKICORPUS ##########################################################################################################
 
 dfSynsets16 = pd.read_csv('spa/PrologCSV/Tag_Count_WikiCorpus.csv',index_col=[0], dtype={"Synset16":"string"})
 
@@ -114,6 +114,7 @@ for fichero_ruta in lista_ficheros:
 dfSynsets16.to_csv('spa/PrologCSV/Tag_Count_WikiCorpus.csv')
 
 # SENSEM ##############################################################################################################
+
 dfSynsetsSenSem = pd.DataFrame(columns=['Synset', 'PoS', 'Palabra','TagCount'])
 
 rutaSenSem = "Corpus/SenSem/spsemcor.utf8.xml"

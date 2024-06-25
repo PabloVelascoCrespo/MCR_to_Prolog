@@ -1,0 +1,31 @@
+('00038052', ['00037200', '00065855', '05803747', '06346681', '06688274', '06763681', '13374281', '13378518', '13405646'])
+1.6:
+00038052 04 n 02 credit 0 course_credit 0 002 @ 00036271 n 0000 ~ 00038219 n 0000 | educational recognition that a course of studies has been successfully completed  
+
+3.0
+00037200 04 n 01 credit 1 001 @ 00035189 n 0000 | 
+used in the phrase `to your credit' in order to indicate an achievement deserving praise; "she already had several performances to her credit";  
+
+00065855 04 n 02 credit 0 course_credit 0 002 @ 00062806 n 0000 ~ 00066075 n 0000 | 
+recognition by a college or university that a course of studies has been successfully completed; typically measured in semester hours  
+
+*05803747 09 n 02 credit_rating 0 credit 0 001 @ 05803379 n 0000 | 
+an estimate, based on previous dealings, of a person's or an organization's ability to fulfill their financial commitments  
+
+06346681 10 n 01 credit 1 003 @ 06346461 n 0000 #p 06613686 n 0000 + 00727791 v 0102 | 
+an entry on a list of persons who contributed to a film or written work; "the credits were given at the end of the film"  
+
+*06688274 10 n 02 recognition 0 credit 0 005 @ 06686736 n 0000 + 00727143 v 0201 ~ 06688522 n 0000 ~ 06688751 n 0000 ~ 06688913 n 0000 | 
+approval; "give her recognition for trying"; "he was given credit for his work"; "give her credit for trying"  
+
+*06763681 10 n 07 citation 1 cite 0 acknowledgment 1 credit 2 reference 3 mention 2 quotation 1 011 @ 06763273 n 0000 + 01024190 v 0601 + 01705257 v 0501 + 00727791 v 0402 + 01059123 v 0302 + 01705257 v 0102 + 01015866 v 0103 + 01023259 v 0102 + 01024190 v 0104 ~ 06764751 n 0000 ~ 06764867 n 0000 | 
+a short note recognizing a source of information or of a quoted passage; "the student's essay failed to list several important citations"; "the acknowledgments are usually printed at the front of a book"; "the article includes mention of similar clinical cases"  
+
+*13374281 21 n 02 credit 0 deferred_payment 0 002 @ 13278375 n 0000 ! 13386465 n 0101 | 
+arrangement for deferred payment for goods and services  
+
+13378518 21 n 01 credit 2 007 @ 13329641 n 0000 ~ 13378717 n 0000 ~ 13379106 n 0000 ~ 13379264 n 0000 ~ 13379413 n 0000 ~ 13379619 n 0000 ~ 13379753 n 0000 | 
+money available for a client to borrow  
+
+*13405646 21 n 02 credit 1 credit_entry 0 003 @ 13405296 n 0000 + 02264752 v 0101 ! 13405807 n 0101 | 
+n accounting entry acknowledging income or capital items  

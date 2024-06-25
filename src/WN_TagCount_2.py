@@ -1,5 +1,4 @@
 import pandas as pd
-import glob
 
 # Parte 2 falta que tenga en cuenta el PoS y que se almacene y no sé si tendré que hacer que sea más robusto en 
 # cuanto a fallos, en principio no, porque todas las palabras de la 1.6 estarán en la 3.0
@@ -42,42 +41,70 @@ def codificacionCategoria(c):
 def ponerEspacios(palabra):
     if type(palabra) == str:
         return "\'" + palabra[1:-1].replace('\'','\'\'').replace('_',' ') + "\'"
-#TODO: tengo que añadir a la ecuación el tag count de SenSem :p
-def media_geometrica(na,nw,Na,Nw,N):
-    return round((na*Na/N) + (nw*Nw/N))
 
-# Quizás si hago el bucle con AnCora en lugar de WikiCorpus es más rápido? Porque el bucle es más pequeño.
-# TODO: ordenar por synset el TagCount de AnCora (a lo mejor mejora el rendimiento?) ;D
-def fusionarDF(dfAnCora, dfWikiCorpus):
-    df = dfAnCora.copy()
+def media_geometrica(na,nw,ns,Na,Nw,Ns,N):
+    return round((na*Na/N) + (nw*Nw/N) + (ns*Ns/N))
+
+def comparacionGlosas(glosa1, glosa2):
+    if glosa1 == []:
+        return True
+    elif glosa1[0] in glosa2:
+        return comparacionGlosas(glosa1[1:], glosa2[glosa2.find(glosa1[0]) + len(glosa1[0]):])
+    else:
+        return False
+
+def comparacionGlosas_2(glosa1, glosa2):
+    count = 0
+    for palabra in glosa1:
+        if " " + palabra + " " in " " + glosa2 + " ":
+            count += 1
+    return count / len(glosa1) * 100
+
+# TODO: qué hacemos con los verbos?
+
+def fusionarDF(dfAnCora, dfWikiCorpus, dfSenSem, dfWN30):
     Na = len(dfAnCora)
     Nw = len(dfWikiCorpus)
-    N = Na + Nw
-    for i in dfWikiCorpus.index:
-        if (dfWikiCorpus['Synset16'][i] in df.values) & (dfWikiCorpus['Palabra'][i] in df.values):
-            na = dfAnCora.loc[(df['Synset16'].str.contains(dfWikiCorpus['Synset16'][i])) & (df['Palabra'].str.contains(dfWikiCorpus['Palabra'][i])), "TagCount"].values[0]
-            nw = dfWikiCorpus['TagCount'][i]
-            df.loc[(df['Synset16'].str.contains(dfWikiCorpus['Synset16'][i])) & (df['Palabra'].str.contains(dfWikiCorpus['Palabra'][i])), "TagCount"] = media_geometrica(na,nw,Na,Nw,N)
-        else:
-            df.loc[len(df)] = media_geometrica(0,dfWikiCorpus['TagCount'][i], Na, Nw, N)
-    return df
+    Ns = len(dfSenSem)
+    N = Na + Nw + Ns
 
-dfSynsets16AnCora = pd.read_csv('spa/PrologCSV/Tag_Count_AnCora.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
-dfSynsets16WikiCorpus = pd.read_csv('spa/PrologCSV/Tag_Count_WikiCorpus.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
+    por = 5
 
-dfSynsets16 = fusionarDF(dfSynsets16AnCora,dfSynsets16WikiCorpus)
+    for i in dfWN30.index:
 
-wn_16 = open('WN16/data.noun', 'r', encoding = 'utf-8')
-wn_30 = open('WN30/data.noun', 'r', encoding = 'utf-8')
+        if i/len(dfWN30)*100 > por:
+            por += 5
+            print(str(i) + " / " + str(len(dfWN30)) + " = " + str(i/len(dfWN30)*100))
+            print(dfWN30)
+            dfWN30.to_csv("spa\PrologCSV\AAAAAAAAAAAAAAAAAAAA_WN_S.CSV")
 
-wn_16 = wn_16.readlines()
-wn_30 = wn_30.readlines()
+        na = 0
+        nw = 0
+        ns = 0
 
-df = pd.read_csv('spa/PrologCSV/wn_s.csv', encoding = 'utf-8', index_col = [0])
+        if (dfWN30['Word'][i][1:-1] in dfSynsets30AnCora.values) & (str(dfWN30['Synset'][i]) in dfSynsets30AnCora.values):
+            try:
+                na = dfSynsets30AnCora.loc[(dfSynsets30AnCora['Synset16'].str.contains(str(dfWN30['Synset'][i]))) & (dfSynsets30AnCora['Palabra'].str.contains(dfWN30['Word'][i][1:-1])), "TagCount"].values[0]
+            except:
+                pass
 
-df_no_encontrados = pd.DataFrame(columns = ['PoS', 'Palabra', 'TagCount', 'Lista', 'Glosa'])
+        if (dfWN30['Word'][i][1:-1] in dfWikiCorpus.values) & (str(dfWN30['Synset'][i]) in dfWikiCorpus.values):
+            try:
+                nw = dfWikiCorpus.loc[(dfWikiCorpus['Synset16'].str.contains(str(dfWN30['Synset'][i]))) & (dfWikiCorpus['Palabra'].str.contains(dfWN30['Word'][i][1:-1])), "TagCount"].values[0]
+            except:
+                pass
 
-def obtenerWN30(palabra, pos, synset16, tagcount):
+        if (dfWN30['Word'][i][1:-1] in dfSenSem.values) & (str(dfWN30['Synset'][i]) in dfSenSem.values):
+            try:
+                ns = dfSenSem.loc[(dfSenSem['Synset16'].str.contains(str(dfWN30['Synset'][i]))) & (dfSenSem['Palabra'].str.contains(dfWN30['Word'][i][1:-1])), "TagCount"].values[0]
+            except:
+                pass
+
+        dfWN30['Tag Count'][i] = media_geometrica(na, nw, ns, Na, Nw, Ns, N)
+
+    return dfWN30
+
+def obtenerWN30(synset16):
 
     cadena = ""
 
@@ -89,6 +116,7 @@ def obtenerWN30(palabra, pos, synset16, tagcount):
 
             try:
                 palabras = int(tokens[3])
+
             except:
                 palabras = codificacionNumero(tokens[3])
 
@@ -104,48 +132,79 @@ def obtenerWN30(palabra, pos, synset16, tagcount):
         if i.find(cadena) != -1:
             tokens = i.split(' ')
             synset30 = tokens[0]
-
     if synset30 != "":
-        synset30 = codificacionCategoria(pos) + synset30
-        df.loc[(df['Word'].str.contains(ponerEspacios(palabra))) & (df['Synset'] == int(synset30)), "Tag Count"] = tagcount
-
+        return synset30
     else:
-        df_no_encontrados.loc[len(df_no_encontrados)] = [pos, palabra, tagcount, lista, glosa]
+        lista = cadena.split(' ')
+        synset30=obtenerWN30_2(lista, glosa)
+        print(synset30)
+        return synset30
 
-def obtenerWN30_2(palabra, pos, tagcount, lista, glosa):
+#TODO mejorarlo para que haga lo de comparar que estén en el mismo orden las palabras o buscar otro menos, aquí hay que decidir qué se prefiere, 
+# la precisión (requisitos más difíciles pero que nos aseguren que pertenecen al mismo synset) o la cantidad (reducir los requisitos para que 
+# haya más palabras que se traduzcan aunque ello conlleve a que algunas no sean las mejores palabras elegidas)
+
+def obtenerWN30_2(lista, glosa):
     synset30 = ""
-    porcentajeLista = 0
-    porcentajeGlosa = 0
-
+    glosa = glosa.split(";")[0]
+    glosa = glosa.replace(",","")
+    glosa = glosa.replace(";","")
+    glosa = glosa.replace(".","")
+    glosa = glosa.split(" ")
     for i in wn_30[29:]:
         synset30 = ""
-        linea_dividida = i.split(' | ')
-
+        linea_dividida = i.split(' | ')        
+        porcentajeLista = 0
         for j in range(0, int(len(lista) / 2)):
-            if lista[j * 2] in linea_dividida[0]:
+            if (" " + lista[j * 2] + " ") in (" " + linea_dividida[0] + " "):
                 porcentajeLista = porcentajeLista + 1
 
-        if porcentajeLista > 2:
-            for elem in glosa:
-                if elem in linea_dividida[1]:
-                    porcentajeGlosa = porcentajeGlosa + 1
+        if porcentajeLista > 0:
+            if comparacionGlosas(glosa, linea_dividida[1]) == True:
+                synset30 = i.split(' ')[0]
+                return synset30
+            elif comparacionGlosas_2(glosa, linea_dividida[1]) > 50:
+                    synset30 = i.split(' ')[0]
+                    return synset30
+            else:
+                return "Synset Not Found"
 
-        porcentajeGlosa = porcentajeGlosa / len(linea_dividida[1]) * 100
+def traductor16a30(dfSynsets16):
+    x = 1
+    for i in dfSynsets16.index:
+        if ((i + 1) / len(dfSynsets16) * 100) >= 20 * x:
+            print(str(i + 1) + "/" + str(len(dfSynsets16)) + " = " + str(((i + 1) / len(dfSynsets16) * 100)) + "%")
+            x = x + 1
+        dfSynsets16['Synset16'][i] = "1" + str(obtenerWN30(dfSynsets16['Synset16'][i]))
+    return dfSynsets16
 
-        if porcentajeGlosa > 75:
-            synset30 = i.split(' ')[0]
-            break
+dfSynsets16AnCora = pd.read_csv('spa/PrologCSV/Tag_Count_AnCora.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
+#dfSynsets30AnCora = pd.read_csv('spa/PrologCSV/Tag_Count_AnCora30.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
 
-    if synset30 != "":
-        synset30 = codificacionCategoria(pos) + synset30
-        df.loc[(df['Word'].str.contains(ponerEspacios(palabra))) & (df['Synset'] == int(synset30)), "Tag Count"] = tagcount
+dfSynsets16WikiCorpus = pd.read_csv('spa/PrologCSV/Tag_Count_WikiCorpus.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
+#dfSynsets30WikiCorpus = pd.read_csv('spa/PrologCSV/Tag_Count_WikiCorpus30.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
 
-for i in dfSynsets16.index:
-    print(str(i + 1) + "/" + str(len(dfSynsets16)) + " = " + str(((i + 1) / len(dfSynsets16) * 100)) + "%")
-    obtenerWN30(dfSynsets16['Palabra'][i], dfSynsets16['PoS'][i], dfSynsets16['Synset16'][i], dfSynsets16['TagCount'][i])
+dfSynsets30SenSem = pd.read_csv('spa/PrologCSV/Tag_Count_SenSem.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
 
-for i in df_no_encontrados.index:
-    print(str(i + 1) + "/" + str(len(df_no_encontrados)) + " = " + str(((i + 1) / len(df_no_encontrados) * 100)) + "%")
-    obtenerWN30_2(df_no_encontrados['Palabra'][i], df_no_encontrados['PoS'][i], df_no_encontrados['TagCount'][i], df_no_encontrados['Lista'][i], df_no_encontrados['Glosa'][i])
+dfWN30 = pd.read_csv('spa/PrologCSV/wn_s.csv', encoding='utf-8', index_col=[0])
 
-df.to_csv("spa\PrologCSV\wn_s.csv")
+wn_16 = open('WN16/data.noun', 'r', encoding = 'utf-8')
+wn_30 = open('WN30/data.noun', 'r', encoding = 'utf-8')
+
+wn_16 = wn_16.readlines()
+wn_30 = wn_30.readlines()
+
+print("Traduciendo AnCora de WordNet 1.6 a 3.0")
+dfSynsets30AnCora = traductor16a30(dfSynsets16AnCora)
+print(dfSynsets30AnCora)
+dfSynsets30AnCora.to_csv("spa\PrologCSV\Tag_Count_AnCora30.csv")
+
+print("Traduciendo WikiCorpus de WordNet 1.6 a 3.0")
+dfSynsets30WikiCorpus = traductor16a30(dfSynsets16WikiCorpus)
+print(dfSynsets30WikiCorpus)
+dfSynsets30WikiCorpus.to_csv("spa\PrologCSV\Tag_Count_WikiCorpus30.csv")
+
+dfWN30 = fusionarDF(dfSynsets30AnCora, dfSynsets30WikiCorpus, dfSynsets30SenSem, dfWN30)
+
+print(dfWN30)
+dfWN30.to_csv("spa\PrologCSV\AAAAAAAAAAAAAAAAAAAA_WN_S.CSV")
