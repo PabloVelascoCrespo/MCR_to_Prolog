@@ -1,31 +1,46 @@
 import pandas as pd
+import os
+import re
 
 print("Opening WN files...")
 wn_16 = open('WN16/data.noun', 'r', encoding = 'utf-8').readlines()[29:]
 wn_30 = open('WN30/data.noun', 'r', encoding = 'utf-8').readlines()[29:]
+folder = "sim_matrix"
+files = os.listdir(folder)
+pattern = re.compile(r'sim_matrix\[(\d+)-(\d+)\].csv')
+end_indices = []
+last_index = ""
+for file in files:
+    match = pattern.match(file)
+    if match:
+        end_index = match.group(2)
+        end_indices.append(end_index)
+
+if end_indices:
+    last_index = max(end_indices)
+    print(f"El último índice procesado es: {last_index}")
+else:
+    print("No se encontraron ficheros con el formato esperado.")
+
 print("WN files opened.")
+
 print("Opening DataFrames...")
 dfSynsets16AnCora = pd.read_csv('spa/PrologCSV/Tag_Count_AnCora.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
 dfSynsets16WikiCorpus = pd.read_csv('spa/PrologCSV/Tag_Count_WikiCorpus.csv', encoding = 'utf-8', index_col=[0], dtype={'Synset16':'string'})
 wn_16_DF = pd.read_csv("Words&Gloss16.csv", dtype={'Synset': str, 'Gloss': str}, index_col=[0])
-wn_30_DF = pd.read_csv("Words&Gloss30.csv", dtype={'Synset': str, 'Gloss': str}, index_col=[0])
-
-print("Startig with chunks")
-chunksize = 500
-chunks = []
-for chunk in pd.read_csv('similarities_matrix.csv', dtype={'Synset16': str}, index_col='Synset16', chunksize=chunksize):
-    print("A")
-    chunks.append(chunk)
-
-df = pd.concat(chunks, axis=0)
-print("Chunks done.")
-
+wn_30_DF = pd.read_csv("Words&Gloss30.csv", dtype={'Synset': str, 'Gloss': str}, index_col=[0]) 
+df = pd.read_csv('Collab Files/DataFrame.csv', dtype={'Synset16': str}, index_col='Synset16')
+df.drop(df.index[0], inplace=True)
 print("DataFrames opened.")
+
+def split_dataframe(df, chunk_size):
+    for start in range(0, len(df), chunk_size):
+        yield df[start:start + chunk_size]
 
 def codificacionNumero(c):
     numeros = {
         '0a':10,
-        '0b':11,
+        '0b':11,    
         '0c':12,
         '0d':13,
         '0e':14,
@@ -97,10 +112,18 @@ print("dataframe creado")
 print(df)
 '''
 
-print(df)
+print("Starting from " + str(wn_16_synsets.index(last_index))+ " position.")
 
-df = get_sim_matrix(df,wn_16_synsets[7000:])
+df = get_sim_matrix(df,wn_16_synsets[wn_16_synsets.index(last_index):])
 print("matrix done")
 
-df.to_csv("similarities_matrix.csv")
+chunk_size = 150
+
+for chunk in split_dataframe(df, chunk_size):
+    start_idx = chunk.index[0]
+    end_idx = chunk.index[-1]
+    filename = f'sim_matrix/sim_matrix[{start_idx}-{end_idx}].csv'
+    print("Saving " + filename)
+    chunk.to_csv(filename, index=True)
+
 print("csv done")
