@@ -44,16 +44,80 @@ def get_words(wn_line):
 def get_gloss(wn_line):
     return wn_line.split(" | ")[1][:-1]
 
+def get_antonyms(wn_line):
+    return wn_line.count(" ! ")
+
+def get_hypernyms(wn_line):
+    return wn_line.count(" @ ")
+
+def get_i_hypernyms(wn_line):
+    return wn_line.count(" @i ")
+    
+def get_hyponym(wn_line):
+    return wn_line.count(" ~ ")
+    
+def get_i_hyponym(wn_line):
+    return wn_line.count(" ~i ")
+
+def get_m_holonym(wn_line):
+    return wn_line.count(" #m ")
+
+def get_s_holonym(wn_line):
+    return wn_line.count(" #s ")
+
+def get_p_holonym(wn_line):
+    return wn_line.count(" #p ")
+
+def get_m_meronym(wn_line):
+    return wn_line.count(" %m ")
+
+def get_s_meronym(wn_line):
+    return wn_line.count(" %s ")
+
+def get_p_meronym(wn_line):
+    return wn_line.count(" %p ")
+
+def get_attribute(wn_line):
+    return wn_line.count(" = ")
+
+def get_d_r_t(wn_line):
+    return wn_line.count(" + ")
+
 def getDF(wn):
     wn_synsets = list(map(get_synset, wn))
     wn_words =  list(map(get_words, wn))
     wn_gloss = list(map(get_gloss, wn))
+    wn_antonyms = list(map(get_antonyms, wn))
+    wn_hypernyms = list(map(get_hypernyms, wn))
+    wn_i_hypernyms = list(map(get_i_hypernyms, wn))
+    wn_hyponym = list(map(get_hyponym, wn))
+    wn_i_hyponym = list(map(get_i_hyponym, wn))
+    wn_m_holonym = list(map(get_m_holonym, wn))
+    wn_s_holonym = list(map(get_s_holonym, wn))
+    wn_p_holonym = list(map(get_p_holonym, wn))
+    wn_m_meronym = list(map(get_m_meronym, wn))
+    wn_s_meronym = list(map(get_s_meronym, wn))
+    wn_p_meronym = list(map(get_p_meronym, wn))
+    wn_attribute = list(map(get_attribute, wn))
+    wn_d_r_t = list(map(get_d_r_t, wn))
 
     df = pd.DataFrame(columns=["Synset","Words","Gloss"])
     df["Synset"] = wn_synsets
     df["Words"] = wn_words
     df["Gloss"] = wn_gloss
-
+    df["antonyms"] = wn_antonyms
+    df["hypernyms"] = wn_hypernyms
+    df["i_hypernyms"] = wn_i_hypernyms
+    df["hyponym"] = wn_hyponym
+    df["i_hyponym"] = wn_i_hyponym
+    df["m_holonym"] = wn_m_holonym
+    df["s_holonym"] = wn_s_holonym
+    df["p_holonym"] = wn_p_holonym
+    df["m_meronym"] = wn_m_meronym
+    df["s_meronym"] = wn_s_meronym
+    df["p_meronym"] = wn_p_meronym
+    df["attribute"] = wn_attribute
+    df["d_r_t"] = wn_d_r_t
     return df
 
 wn_16 = open('WN16/data.noun', 'r', encoding = 'utf-8').readlines()[29:]

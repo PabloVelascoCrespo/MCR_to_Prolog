@@ -19,7 +19,7 @@ df = pd.concat(chunks, axis=0)
 print("Chunks done.")
 
 # Definir el tamaño de cada parte
-chunk_size = 150  # Cambia este valor según el tamaño deseado de cada parte
+chunk_size = 150
 
 # Generar los dataframes pequeños y guardarlos en nuevos ficheros CSV
 for chunk in split_dataframe(df, chunk_size):

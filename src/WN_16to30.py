@@ -73,13 +73,13 @@ def get_sim_matrix(df, wn_16_synsets):
                 words_16 = get_words(row_label,wn_16_DF)
                 for col_label in df.columns:
                     words_30 = get_words(col_label,wn_30_DF)
-                    df.at[row_label, col_label] = words_similarities(words_16, words_30)
+                    df.at[row_label, col_label] = calcular_jaccard(words_16, words_30)
                 print("Synset " + row_label + " done.")
     except KeyboardInterrupt:
         print("Exiting...")
     return df
 
-def words_similarities(words_16, words_30):
+def calcular_jaccard(words_16, words_30):
     return round(2*common_words(words_16,words_30) / (len(words_16) + len(words_30)), 2)
 
 def common_words(list1,list2):
