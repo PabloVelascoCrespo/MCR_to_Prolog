@@ -83,10 +83,34 @@ def get_attribute(wn_line):
 def get_d_r_t(wn_line):
     return wn_line.count(" + ")
 
+def get_list_hypenyms(cadena):
+    resultados = []
+    indice = 0
+    
+    while indice < len(cadena):
+        # Buscar el siguiente "@"
+        indice = cadena.find("@", indice)
+        
+        # Si no se encuentra "@" se rompe el bucle
+        if indice == -1:
+            break
+        
+        # Obtener los siguientes 9 caracteres después del "@"
+        segmento = cadena[indice+2:indice+10]
+        
+        # Agregar el segmento a la lista de resultados
+        resultados.append(segmento)
+        
+        # Mover el índice más allá del "@" encontrado para continuar la búsqueda
+        indice += 1
+    
+    return resultados
+
 def getDF(wn):
     wn_synsets = list(map(get_synset, wn))
     wn_words =  list(map(get_words, wn))
     wn_gloss = list(map(get_gloss, wn))
+    wn_list_hypernyms = list(map(get_list_hypenyms, wn))
     wn_antonyms = list(map(get_antonyms, wn))
     wn_hypernyms = list(map(get_hypernyms, wn))
     wn_i_hypernyms = list(map(get_i_hypernyms, wn))
@@ -105,6 +129,7 @@ def getDF(wn):
     df["Synset"] = wn_synsets
     df["Words"] = wn_words
     df["Gloss"] = wn_gloss
+    df["Hypernyms"] = wn_list_hypernyms
     df["antonyms"] = wn_antonyms
     df["hypernyms"] = wn_hypernyms
     df["i_hypernyms"] = wn_i_hypernyms

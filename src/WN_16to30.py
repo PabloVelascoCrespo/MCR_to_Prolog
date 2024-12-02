@@ -114,7 +114,7 @@ print(df)
 
 print("Starting from " + str(wn_16_synsets.index(last_index))+ " position.")
 
-df = get_sim_matrix(df,wn_16_synsets[wn_16_synsets.index(last_index):])
+df = get_sim_matrix(df,wn_16_synsets[wn_16_synsets.index(last_index):23591])
 print("matrix done")
 
 chunk_size = 150
