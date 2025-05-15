@@ -1,4 +1,3 @@
-=============================
 #Conversion of the Spanish WordNet databases into a Prolog-readable format (with Tag-count information)
 
 The Spanish WordNet, like others, does not provide a version compatible with Prolog. This work aims to fill this gap by translating the Multilingual Central Repository (MCR) version of the Spanish WordNet (based on the English WordNet 3.0) into anProlog-compatible format. This goal is motivated by the variety of linguistic applications that can be addressed using WordNet in combination with the declarative features of Prolog (for example, cataloging of texts, analysis of causal relationships,. . ., and generally more intuitive access to information contained in WordNet).
@@ -11,7 +10,6 @@ https://doi.org/10.1007/s10579-024-09752-w
 https://link.springer.com/article/10.1007/s10579-024-09752-w
 
 Finally, it is important to highlight that in this new version we are publishing, the s.pl file of the Spanish version of WordNet has been supplemented with data on word usage stored in its Tag-count field. This important information was missing from the MCR files, and a complex process was required to acquire it (using the limited Spanish corpora available, which also had to be aligned with WordNet version 3.0).
-=============================
 
 # Conversion of the Spanish WordNet databases into a Prolog-readable format
 
