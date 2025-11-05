@@ -1,4 +1,4 @@
-,Synset16,PoS,Palabra,TagCount
+,Synset,PoS,Word,Tag Count
 0,100001740,n,entidad,2767
 1,100004258,n,organismo,2674
 2,100004258,n,ser,2510
@@ -18,8 +18,8 @@
 16,100017222,n,planta,18344
 17,100002684,n,cosa,5361
 18,100002684,n,objeto,3210
-19,1Synset Not Found,n,sustancia,1394
-20,1Synset Not Found,n,materia,2394
+19,100020827,n,sustancia,1394
+20,100020827,n,materia,2394
 21,100021265,n,nutriente,316
 22,100021265,n,sustento,176
 23,100021265,n,comida,1625
@@ -55,9 +55,9 @@
 53,100035189,n,consecución,211
 54,100035189,n,realización,1502
 55,100035189,n,logro,1161
-56,1Synset Not Found,n,gesta,138
-57,1Synset Not Found,n,hazaña,318
-58,1Synset Not Found,n,proeza,81
+56,100036762,n,gesta,138
+57,100036762,n,hazaña,318
+58,100036762,n,proeza,81
 59,100037090,n,golpe_maestro,1
 60,114577331,n,acto,10
 61,111517210,n,interactuación,2
@@ -212,8 +212,8 @@
 210,100100543,n,versión,859
 211,105928733,n,reinterpretación,47
 212,100102374,n,jam_session,8
-213,1Synset Not Found,n,automatización,108
-214,1Synset Not Found,n,mecanización,45
+213,100102457,n,automatización,108
+214,100102457,n,mecanización,45
 215,100102927,n,motorización,102
 216,100045250,n,propulsión,32
 217,100103140,n,lanzamiento,28
@@ -239,7 +239,7 @@
 237,100116687,n,proyección,825
 238,100116687,n,expulsión,565
 239,100117578,n,eructo,15
-240,1Synset Not Found,n,regurgitación,20
+240,100118733,n,regurgitación,20
 241,100119568,n,salto,1554
 242,112398526,n,brinco,10
 243,100120202,n,salto,41
@@ -485,17 +485,17 @@
 483,100233614,n,desactivación,29
 484,100234423,n,neutralización,35
 485,100235435,n,apertura,2206
-486,1Synset Not Found,n,fundación,645
-487,1Synset Not Found,n,instauración,137
+486,100240184,n,fundación,645
+487,100240184,n,instauración,137
 488,100240938,n,instalación,104
 489,100241699,n,inicio,12
 490,100237078,n,constitución,2407
 491,100237078,n,fundación,3048
 492,100242583,n,sindicalización,6
-493,1Synset Not Found,n,primicia,35
-494,1Synset Not Found,n,introducción,1784
-495,1Synset Not Found,n,lanzamiento,2121
-496,1Synset Not Found,n,debut,3211
+493,100238022,n,primicia,35
+494,100238022,n,introducción,1784
+495,100238022,n,lanzamiento,2121
+496,100238022,n,debut,3211
 497,100243373,n,inauguración,902
 498,100239230,n,iniciativa,1740
 499,100236581,n,ascenso,31
@@ -534,8 +534,8 @@
 532,100396642,n,aclarado,23
 533,115164750,n,baño,1
 534,100258695,n,friega,1
-535,1Synset Not Found,n,rectificación,35
-536,1Synset Not Found,n,corrección,34
+535,100258854,n,rectificación,35
+536,100258854,n,corrección,34
 537,113300828,n,retribución,1
 538,100259643,n,compensación,14
 539,114462666,n,perfeccionamiento,166
@@ -548,13 +548,13 @@
 546,100265119,n,renovación,739
 547,100265992,n,realce,3
 548,100266645,n,ventilación,296
-549,1Synset Not Found,n,arreglo,1141
-550,1Synset Not Found,n,compostura,14
-551,1Synset Not Found,n,remiendo,2
-552,1Synset Not Found,n,reparación,717
+549,100266806,n,arreglo,1141
+550,100266806,n,compostura,14
+551,100266806,n,remiendo,2
+552,100266806,n,reparación,717
 553,100267522,n,mantenimiento,1530
-554,1Synset Not Found,n,reglaje,9
-555,1Synset Not Found,n,revisión,660
+554,100268112,n,reglaje,9
+555,100268112,n,revisión,660
 556,114424517,n,renovación,4
 557,107174138,n,reconstrucción,1128
 558,100270186,n,reedificación,47
@@ -881,10 +881,10 @@
 879,101262713,n,reintegro,14
 880,113524399,n,supresión,10
 881,100397347,n,censura,2
-882,1Synset Not Found,n,fragmentación,166
-883,1Synset Not Found,n,partija,5
-884,1Synset Not Found,n,división,86
-885,1Synset Not Found,n,segmentación,70
+882,100397953,n,fragmentación,166
+883,100397953,n,partija,5
+884,100397953,n,división,86
+885,100397953,n,segmentación,70
 886,100398585,n,septación,1
 887,100398704,n,transformación,241
 888,100399393,n,modificación,3
@@ -1097,12 +1097,12 @@
 1095,100510050,n,jarana,25
 1096,100510189,n,alborozo,5
 1097,100510189,n,algazara,2
-1098,1Synset Not Found,n,francachela,3
-1099,1Synset Not Found,n,borrachera,34
-1100,1Synset Not Found,n,parranda,30
-1101,1Synset Not Found,n,melopea,7
-1102,1Synset Not Found,n,castaña,3
-1103,1Synset Not Found,n,turca,5
+1098,100510723,n,francachela,3
+1099,100510723,n,borrachera,34
+1100,100510723,n,parranda,30
+1101,100510723,n,melopea,7
+1102,100510723,n,castaña,3
+1103,100510723,n,turca,5
 1104,100511041,n,farra,8
 1105,100511212,n,orgía,57
 1106,100511212,n,bacanal,17
@@ -1117,8 +1117,8 @@
 1115,100512522,n,coqueteo,22
 1116,100512522,n,escarceo,18
 1117,100512522,n,remoquete,2
-1118,1Synset Not Found,n,arlequinada,2
-1119,1Synset Not Found,n,bufonada,4
+1118,100513401,n,arlequinada,2
+1119,100513401,n,bufonada,4
 1120,100513761,n,payasadas,3
 1121,100427580,n,broma,14
 1122,100514128,n,jugarreta,8
@@ -1191,10 +1191,10 @@
 1189,107063101,n,bebop,80
 1190,107063249,n,bugui,2
 1191,107063921,n,jazz_moderno,2
-1192,1Synset Not Found,n,rock,6340
-1193,1Synset Not Found,n,rock_&_roll,6229
-1194,1Synset Not Found,n,rock'n'roll,5363
-1195,1Synset Not Found,n,rock_and_roll,5913
+1192,107064715,n,rock,6340
+1193,107064715,n,rock_&_roll,6229
+1194,107064715,n,rock'n'roll,5363
+1195,107064715,n,rock_and_roll,5913
 1196,107066042,n,swing,71
 1197,107282006,n,música_vocal,2
 1198,100545501,n,canto,1067
@@ -1265,8 +1265,8 @@
 1263,100574925,n,tijereta,3
 1264,100574925,n,chilena,18
 1265,112748248,n,trabajo,16380
-1266,1Synset Not Found,n,funcionalidad,472
-1267,1Synset Not Found,n,operatividad,30
+1266,113525549,n,funcionalidad,472
+1267,113525549,n,operatividad,30
 1268,100577068,n,operación,56
 1269,100577525,n,prestación,697
 1270,100577525,n,servicio,15232
@@ -1281,8 +1281,8 @@
 1279,100584769,n,cargo,239
 1280,113451804,n,servicios,1
 1281,100585660,n,servicio_público,2
-1282,1Synset Not Found,n,puesto,7041
-1283,1Synset Not Found,n,cargo,7850
+1282,100586262,n,puesto,7041
+1283,100586262,n,cargo,7850
 1284,108349548,n,almirantazgo,78
 1285,100588780,n,embajada,548
 1286,100588881,n,apostolado,127
@@ -1425,8 +1425,8 @@
 1423,100664577,n,terapia_ocupacional,6
 1424,100394242,n,autotomía,3
 1425,100669481,n,raspado,12
-1426,1Synset Not Found,n,intervención,2065
-1427,1Synset Not Found,n,operación,3919
+1426,100671351,n,intervención,2065
+1427,100671351,n,operación,3919
 1428,100678010,n,incisión,112
 1429,100682856,n,laparotomía,4
 1430,100683012,n,laparoscopia,2
@@ -1535,8 +1535,8 @@
 1533,100743500,n,devaneo,4
 1534,100743822,n,dispendio,7
 1535,100744443,n,agravio,11
-1536,1Synset Not Found,n,transgresión,27
-1537,1Synset Not Found,n,trasgresión,2
+1536,100745005,n,transgresión,27
+1537,100745005,n,trasgresión,2
 1538,100745637,n,inmoralidad,29
 1539,100745637,n,iniquidad,15
 1540,100746587,n,profanación,38
@@ -1555,7 +1555,7 @@
 1553,100749105,n,chateo,1
 1554,100749767,n,traición,513
 1555,100749767,n,perfidia,21
-1556,1Synset Not Found,n,subversión,47
+1556,100215838,n,subversión,47
 1557,107277158,n,plagio,85
 1558,100155298,n,falsificación,142
 1559,100751398,n,montaje,7
@@ -1564,14 +1564,14 @@
 1562,100751779,n,tergiversación,1
 1563,100752431,n,disimulación,2
 1564,100752431,n,engaño,245
-1565,1Synset Not Found,n,fullería,1
-1566,1Synset Not Found,n,sofisma,4
-1567,1Synset Not Found,n,argucia,9
-1568,1Synset Not Found,n,farfolla,3
-1569,1Synset Not Found,n,picaresca,17
+1565,100752954,n,fullería,1
+1566,100752954,n,sofisma,4
+1567,100752954,n,argucia,9
+1568,100752954,n,farfolla,3
+1569,100752954,n,picaresca,17
 1570,100753240,n,doble_juego,3
-1571,1Synset Not Found,n,pastrana,49
-1572,1Synset Not Found,n,camelo,3
+1571,100753685,n,pastrana,49
+1572,100753685,n,camelo,3
 1573,100754424,n,fraude,3
 1574,100754593,n,fraude_electoral,1
 1575,100754593,n,pucherazo,1
@@ -1596,8 +1596,8 @@
 1594,1Synset Not Found,n,asalto,11
 1595,100768701,n,crimen,2
 1596,110201535,n,fraude,28
-1597,1Synset Not Found,n,contravención,7
-1598,1Synset Not Found,n,infracción,120
+1597,100770270,n,contravención,7
+1598,100770270,n,infracción,120
 1599,100772253,n,exhibicionismo,1
 1600,100772381,n,perjurio,9
 1601,100772813,n,sedición,31
@@ -1644,8 +1644,8 @@
 1642,100786195,n,intento,3538
 1643,100786195,n,tentativa,290
 1644,100787465,n,contribución,18
-1645,1Synset Not Found,n,careo,6
-1646,1Synset Not Found,n,confrontación,5
+1645,100622266,n,careo,6
+1646,100622266,n,confrontación,5
 1647,100787307,n,razzia,24
 1648,100788766,n,esfuerzo,12
 1649,100788973,n,puja,33
@@ -1790,8 +1790,8 @@
 1788,100855055,n,cunnilingus,6
 1789,100855169,n,felación,30
 1790,100855527,n,autoerotismo,6
-1791,1Synset Not Found,n,onanismo,1
-1792,1Synset Not Found,n,masturbación,46
+1791,100855674,n,onanismo,1
+1792,100855674,n,masturbación,46
 1793,100856193,n,manola,7
 1794,100856342,n,promiscuidad,22
 1795,100856847,n,homosexualidad,950
@@ -1979,8 +1979,8 @@
 1977,100942234,n,labra,25
 1978,109389867,n,perforación,10
 1979,100945205,n,montaje,149
-1980,1Synset Not Found,n,busca,231
-1981,1Synset Not Found,n,búsqueda,2500
+1980,100945401,n,busca,231
+1981,100945401,n,búsqueda,2500
 1982,100946060,n,cacheo,8
 1983,100947128,n,uso,10657
 1984,100947128,n,utilización,1364
@@ -2249,8 +2249,8 @@
 2247,101063350,n,dilación,21
 2248,115271008,n,intermisión,1
 2249,101063697,n,alto,1
-2250,1Synset Not Found,n,relax,59
-2251,1Synset Not Found,n,relajamiento,7
+2250,101064148,n,relax,59
+2251,101064148,n,relajamiento,7
 2252,101064863,n,quietud,1
 2253,113573057,n,vegetación,3
 2254,101065441,n,ociosidad,6
@@ -2275,8 +2275,8 @@
 2273,1Synset Not Found,n,mimo,74
 2274,101073655,n,abuso,628
 2275,101073824,n,orgía,1
-2276,1Synset Not Found,n,obstaculización,4
-2277,1Synset Not Found,n,interferencia,341
+2276,101073995,n,obstaculización,4
+2277,101073995,n,interferencia,341
 2278,101074694,n,oclusión,20
 2279,101075117,n,asedio,996
 2280,101075117,n,cerco,371
@@ -2355,7 +2355,7 @@
 2353,101105259,n,transporte,29
 2354,101105737,n,navegación,28
 2355,103002341,n,transporte_aéreo,1
-2356,1Synset Not Found,n,mudanza,1
+2356,100168658,n,mudanza,1
 2357,101106587,n,transbordador,303
 2358,101106808,n,negociación,583
 2359,101106808,n,transacción,335
@@ -2363,10 +2363,10 @@
 2361,101108402,n,traspaso,11
 2362,101109311,n,secularización,56
 2363,101109467,n,intercambio,4
-2364,1Synset Not Found,n,retorno,950
-2365,1Synset Not Found,n,trueque,57
-2366,1Synset Not Found,n,canje,36
-2367,1Synset Not Found,n,cambalache,18
+2364,101109687,n,retorno,950
+2365,101109687,n,trueque,57
+2366,101109687,n,canje,36
+2367,101109687,n,cambalache,18
 2368,101110063,n,amiguismo,3
 2369,101110274,n,negocio,173
 2370,101111236,n,empeño,209
@@ -2715,8 +2715,8 @@
 2713,101245318,n,holocausto,210
 2714,101246541,n,rebato,9
 2715,101246926,n,emboscada,276
-2716,1Synset Not Found,n,emancipación,177
-2717,1Synset Not Found,n,desvinculación,23
+2716,101247413,n,emancipación,177
+2717,101247413,n,desvinculación,23
 2718,108541288,n,lavado,1
 2719,101247807,n,manumisión,8
 2720,105176188,n,ingreso,115
@@ -2739,7 +2739,7 @@
 2737,101250826,n,transubstanciación,5
 2738,101250826,n,transustanciación,1
 2739,101252280,n,colonización,737
-2740,1Synset Not Found,n,reasentamiento,18
+2740,101252566,n,reasentamiento,18
 2741,113457665,n,decocción,19
 2742,101253060,n,emisión,142
 2743,107385803,n,tarareo,3
@@ -4884,7 +4884,7 @@
 4882,102708711,n,analizador,94
 4883,113431221,n,anamorfosis,2
 4884,102709367,n,ancla,280
-4885,1Synset Not Found,n,morillo,51
+4885,102710044,n,morillo,51
 4886,102710201,n,androide,116
 4887,102710201,n,humanoide,132
 4888,102710429,n,anemómetro,9
@@ -4916,8 +4916,8 @@
 4914,102727825,n,dispositivo,22
 4915,105559908,n,apéndice,7
 4916,103620052,n,aparato,18
-4917,1Synset Not Found,n,adminículo,3
-4918,1Synset Not Found,n,armatoste,2
+4917,102729965,n,adminículo,3
+4918,102729965,n,armatoste,2
 4919,102730265,n,aplicador,10
 4920,108496334,n,delantal,27
 4921,102731398,n,ábside,1230
@@ -5110,7 +5110,7 @@
 5108,103096439,n,piporro,2
 5109,103096439,n,fagot,113
 5110,103096439,n,bajón,18
-5111,1Synset Not Found,n,hilván,1
+5111,102805111,n,hilván,1
 5112,108064372,n,bastión,18
 5113,102806088,n,bastión,155
 5114,102806088,n,alcazaba,57
@@ -5120,8 +5120,8 @@
 5118,102807731,n,cuarto_de_baño,26
 5119,102807731,n,lavabo,43
 5120,102807731,n,baño,391
-5121,1Synset Not Found,n,baño,542
-5122,1Synset Not Found,n,bañera,62
+5121,102808440,n,baño,542
+5122,102808440,n,bañera,62
 5123,102808829,n,batiscafo,10
 5124,102809105,n,batik,2
 5125,102809241,n,batista,171
@@ -5242,9 +5242,9 @@
 5240,102857644,n,sala_de_juntas,6
 5241,102857907,n,tablado,22
 5242,104574348,n,embarcación,39
-5243,1Synset Not Found,n,sombrero_de_paja,39
-5244,1Synset Not Found,n,jipijapa,3
-5245,1Synset Not Found,n,panamá,1173
+5243,102859184,n,sombrero_de_paja,39
+5244,102859184,n,jipijapa,3
+5245,102859184,n,panamá,1173
 5246,102859343,n,bichero,3
 5247,102860415,n,canilla,23
 5248,102860415,n,bobina,102
@@ -5421,8 +5421,8 @@
 5419,112705458,n,botón,391
 5420,102928930,n,ojal,29
 5421,102929289,n,contrafuerte,370
-5422,1Synset Not Found,n,disyuntor,7
-5423,1Synset Not Found,n,ronda,35
+5422,102828648,n,disyuntor,7
+5423,102828648,n,ronda,35
 5424,102930492,n,subproducto,70
 5425,102930766,n,taxi,307
 5426,102931013,n,cabriolé,11
@@ -5469,12 +5469,12 @@
 5467,102948557,n,bujía,35
 5468,102948719,n,pabilo,3
 5469,102948719,n,torcida,1
-5470,1Synset Not Found,n,marijuana,5
-5471,1Synset Not Found,n,cáñamo,51
-5472,1Synset Not Found,n,marihuana,140
-5473,1Synset Not Found,n,maría,1251
-5474,1Synset Not Found,n,cannabis,130
-5475,1Synset Not Found,n,yerba,57
+5470,102949691,n,marijuana,5
+5471,102949691,n,cáñamo,51
+5472,102949691,n,marihuana,140
+5473,102949691,n,maría,1251
+5474,102949691,n,cannabis,130
+5475,102949691,n,yerba,57
 5476,110271525,n,cañón,391
 5477,102950943,n,bala_de_cañón,2
 5478,102951170,n,cánula,12
@@ -5714,11 +5714,11 @@
 5712,103050655,n,secadora,11
 5713,103051152,n,tendedero,10
 5714,103051249,n,pinza,2
-5715,1Synset Not Found,n,ropa,1591
-5716,1Synset Not Found,n,vestimenta,396
-5717,1Synset Not Found,n,vestuario,608
-5718,1Synset Not Found,n,atavío,16
-5719,1Synset Not Found,n,indumentaria,185
+5715,103051540,n,ropa,1591
+5716,103051540,n,vestimenta,396
+5717,103051540,n,vestuario,608
+5718,103051540,n,atavío,16
+5719,103051540,n,indumentaria,185
 5720,103053163,n,nudo,9
 5721,113024653,n,porra,65
 5722,113024653,n,tranca,8
@@ -5937,9 +5937,9 @@
 5935,103140431,n,aceitera,1
 5936,103140546,n,angarillas,1
 5937,103466493,n,crucero,143
-5938,1Synset Not Found,n,zeda,1
-5939,1Synset Not Found,n,zeta,95
-5940,1Synset Not Found,n,ceta,4
+5938,103141065,n,zeda,1
+5939,103141065,n,zeta,95
+5940,103141065,n,ceta,4
 5941,103141702,n,trituradora,6
 5942,103141702,n,machacadora,2
 5943,103141823,n,muleta,44
@@ -5962,7 +5962,7 @@
 5960,114359459,n,taza,201
 5961,103147901,n,copa,52
 5962,103148324,n,alacena,20
-5963,1Synset Not Found,n,bordillo,14
+5963,103148920,n,bordillo,14
 5964,103149951,n,singularidad,169
 5965,103150511,n,moldeador,1
 5966,103150795,n,cursor,43
@@ -6098,8 +6098,8 @@
 6096,109722159,n,diván,30
 6097,103216402,n,escafandra,15
 6098,103216828,n,dársena,113
-6099,1Synset Not Found,n,trasto,8
-6100,1Synset Not Found,n,artilugio,52
+6099,103218545,n,trasto,8
+6100,103218545,n,artilugio,52
 6101,103219135,n,muñeca,302
 6102,103219362,n,casa_de_muñecas,1
 6103,103219859,n,dolman,1
@@ -6129,8 +6129,8 @@
 6127,103231912,n,desaguadero,42
 6128,103231912,n,bajante,6
 6129,110784795,n,cajón,237
-6130,1Synset Not Found,n,shorts,2
-6131,1Synset Not Found,n,gallumbos,1
+6130,102901114,n,shorts,2
+6131,102901114,n,gallumbos,1
 6132,107003119,n,dibujo,1501
 6133,103235979,n,carretón,23
 6134,103236217,n,draga,11
@@ -6268,9 +6268,9 @@
 6266,103304605,n,expectorante,36
 6267,114853392,n,explosivo,22
 6268,103306207,n,exportación,808
-6269,1Synset Not Found,n,rápido,71
-6270,1Synset Not Found,n,expreso,79
-6271,1Synset Not Found,n,exprés,3
+6269,103306385,n,rápido,71
+6270,103306385,n,expreso,79
+6271,103306385,n,exprés,3
 6272,108467757,n,expresionismo,2
 6273,103306610,n,autopista,842
 6274,103306869,n,supletorio,1
@@ -6436,9 +6436,9 @@
 6434,103387926,n,manantial,291
 6435,103388043,n,fuente,84
 6436,103388183,n,estilográfica,2
-6437,1Synset Not Found,n,armazón,155
-6438,1Synset Not Found,n,armadura,783
-6439,1Synset Not Found,n,carcasa,103
+6437,103391770,n,armazón,155
+6438,103391770,n,armadura,783
+6439,103391770,n,carcasa,103
 6440,103394149,n,montacargas,18
 6441,103394649,n,puertaventana,2
 6442,103394916,n,trompa,211
@@ -6502,12 +6502,12 @@
 6500,103427084,n,usina,23
 6501,114820425,n,verja,114
 6502,103429288,n,indicador,371
-6503,1Synset Not Found,n,guantelete,11
+6503,103429771,n,guantelete,11
 6504,103429914,n,gasa,30
 6505,103430418,n,glorieta,197
 6506,103430418,n,cenador,12
-6507,1Synset Not Found,n,parafernalia,11
-6508,1Synset Not Found,n,accesorios,24
+6507,103430959,n,parafernalia,11
+6508,103430959,n,accesorios,24
 6509,103431243,n,marcha,125
 6510,103431745,n,engranaje,121
 6511,103432972,n,tesoro,24
@@ -6565,7 +6565,7 @@
 6563,103455033,n,tumba,1813
 6564,103455033,n,yacija,1
 6565,103455488,n,lápida,266
-6566,1Synset Not Found,n,salsera,5
+6566,103456024,n,salsera,5
 6567,103456665,n,sobretodo,218
 6568,103457451,n,greba,17
 6569,103457686,n,frutería,10
@@ -6630,8 +6630,8 @@
 6628,113993685,n,manecilla,14
 6629,103483086,n,parihuela,6
 6630,103484083,n,carretilla,32
-6631,1Synset Not Found,n,manilla,22
-6632,1Synset Not Found,n,esposas,295
+6631,103484576,n,manilla,22
+6632,103484576,n,esposas,295
 6633,103484931,n,lupa,23
 6634,103485198,n,espejito,1
 6635,103485309,n,granada_de_mano,2
@@ -6848,7 +6848,7 @@
 6846,105633385,n,invento,256
 6847,105633385,n,innovación,737
 6848,103584829,n,plancha,9
-6849,1Synset Not Found,n,hierros,1
+6849,103585438,n,hierros,1
 6850,103585778,n,caballo_de_hierro,1
 6851,103586760,n,herraje,40
 6852,103586911,n,ferrería,59
@@ -7234,7 +7234,7 @@
 7232,103775847,n,mesana,10
 7233,103776050,n,fosa,1
 7234,109504603,n,móvil,261
-7235,1Synset Not Found,n,mocasín,9
+7235,103776877,n,mocasín,9
 7236,103776997,n,maqueta,661
 7237,103777283,n,modelo,155
 7238,103777754,n,módem,69
@@ -7273,7 +7273,7 @@
 7271,114281086,n,mosaico,52
 7272,103787904,n,mosaico,13
 7273,103724756,n,mezquita,584
-7274,1Synset Not Found,n,motel,112
+7274,103788498,n,motel,112
 7275,103789171,n,tomavistas,4
 7276,108398773,n,botarga,29
 7277,109359631,n,motor,5761
@@ -7343,7 +7343,7 @@
 7341,103833564,n,boquilla,123
 7342,103834040,n,reactor,21
 7343,103835197,n,desnudo,3
-7344,1Synset Not Found,n,biberón,16
+7344,102877266,n,biberón,16
 7345,113875392,n,tuerca,66
 7346,114966192,n,nilón,2
 7347,114966192,n,nailon,12
@@ -7379,8 +7379,8 @@
 7377,110737431,n,abridor,5
 7378,114485249,n,abertura,22
 7379,103849275,n,guillame,2
-7380,1Synset Not Found,n,quirófano,72
-7381,1Synset Not Found,n,sala_de_operaciones,1
+7380,103850245,n,quirófano,72
+7381,103850245,n,sala_de_operaciones,1
 7382,103850613,n,oftalmoscopio,4
 7383,114637176,n,opio,96
 7384,103852031,n,fibra_óptica,2
@@ -7399,8 +7399,8 @@
 7397,103856012,n,orfanato,189
 7398,103857430,n,oscilador,56
 7399,103857828,n,osciloscopio,12
-7400,1Synset Not Found,n,puf,32
-7401,1Synset Not Found,n,puff,44
+7400,103858418,n,puf,32
+7401,103858418,n,puff,44
 7402,103859280,n,accesoria,5
 7403,103859280,n,anejo,150
 7404,103859608,n,desembocadura,10
@@ -7443,8 +7443,8 @@
 7441,103878963,n,palizada,17
 7442,103879854,n,paliativo,6
 7443,115140405,n,olla,191
-7444,1Synset Not Found,n,sanalotodo,1
-7445,1Synset Not Found,n,curalotodo,1
+7444,103880770,n,sanalotodo,1
+7445,103880770,n,curalotodo,1
 7446,108414381,n,panel,841
 7447,103882611,n,artesonado,163
 7448,103882611,n,panelería,5
@@ -7738,8 +7738,8 @@
 7736,104007894,n,producto,1359
 7737,104008385,n,cadena,12
 7738,104008634,n,proyectil,129
-7739,1Synset Not Found,n,protuberancia,14
-7740,1Synset Not Found,n,saliente,162
+7739,104008947,n,protuberancia,14
+7740,104008947,n,saliente,162
 7741,104238617,n,proyector,64
 7742,104009801,n,proyector,68
 7743,104010566,n,concha,1
@@ -7759,24 +7759,24 @@
 7757,104017807,n,lancha_torpedera,1
 7758,104018155,n,megafonía,39
 7759,104018399,n,pub,187
-7760,1Synset Not Found,n,servicios,427
-7761,1Synset Not Found,n,urinario,4
-7762,1Synset Not Found,n,aseos,8
-7763,1Synset Not Found,n,evacuatorio,1
-7764,1Synset Not Found,n,mingitorio,2
+7760,104018667,n,servicios,427
+7761,104018667,n,urinario,4
+7762,104018667,n,aseos,8
+7763,104018667,n,evacuatorio,1
+7764,104018667,n,mingitorio,2
 7765,104019101,n,transporte_público,5
 7766,104019335,n,obras_públicas,125
 7767,104019541,n,puck,33
-7768,1Synset Not Found,n,garrucha,23
-7769,1Synset Not Found,n,polea,62
+7768,104020298,n,garrucha,23
+7769,104020298,n,polea,62
 7770,105388805,n,bomba,25
-7771,1Synset Not Found,n,escarpín,5
+7771,104022332,n,escarpín,5
 7772,104023695,n,ponchera,1
 7773,107314658,n,pinchazo,31
 7774,104025350,n,marioneta,153
 7775,104025350,n,títere,168
-7776,1Synset Not Found,n,purgante,8
-7777,1Synset Not Found,n,laxante,17
+7776,104025748,n,purgante,8
+7777,104025748,n,laxante,17
 7778,104026053,n,depurador,17
 7779,104026053,n,purificador,8
 7780,104027023,n,botón,35
@@ -7975,7 +7975,7 @@
 7973,115006012,n,borrador,2
 7974,104113406,n,ruleta,52
 7975,110239089,n,mesa_redonda,20
-7976,1Synset Not Found,n,gomita,4
+7976,104116098,n,gomita,4
 7977,104116294,n,katiuska,8
 7978,104116512,n,goma,26
 7979,104117216,n,gobernalle,2
@@ -8106,8 +8106,8 @@
 8104,111968931,n,aparato,1
 8105,104177820,n,escaño,946
 8106,104179712,n,costurero,4
-8107,1Synset Not Found,n,cadenas,35
-8108,1Synset Not Found,n,cuerdas,32
+8107,104181228,n,cadenas,35
+8108,104181228,n,cuerdas,32
 8109,104182708,n,fuste,219
 8110,104182890,n,hueco,42
 8111,114715356,n,tripe,5
@@ -8198,8 +8198,8 @@
 8196,113555915,n,fregadero,14
 8197,110055410,n,sirena,39
 8198,104224842,n,sitar,45
-8199,1Synset Not Found,n,patín,174
-8200,1Synset Not Found,n,patines,4
+8199,104225729,n,patín,174
+8200,104225729,n,patines,4
 8201,104225987,n,monopatín,33
 8202,1Synset Not Found,n,armadura,7
 8203,104227144,n,esbozo,171
@@ -8257,7 +8257,7 @@
 8255,104247876,n,bridón,1
 8256,104247876,n,barbada,7
 8257,104248209,n,gafete,1
-8258,1Synset Not Found,n,instantánea,36
+8258,104248607,n,instantánea,36
 8259,104249029,n,lazo,1
 8260,104249415,n,redoblante,8
 8261,104250692,n,redecilla,6
@@ -8376,9 +8376,9 @@
 8374,104299215,n,tenderete,6
 8375,104299215,n,caseta,149
 8376,106855817,n,sello,36
-8377,1Synset Not Found,n,gradería,13
-8378,1Synset Not Found,n,gradas,72
-8379,1Synset Not Found,n,graderío,51
+8377,104300741,n,gradería,13
+8378,104300741,n,gradas,72
+8379,104300741,n,graderío,51
 8380,104301140,n,estandarte,331
 8381,104303095,n,corchete,2
 8382,104303258,n,grapa,1
@@ -8471,8 +8471,8 @@
 8469,104340935,n,fortaleza,732
 8470,104341686,n,construcción,4005
 8471,104343148,n,tornapunta,65
-8472,1Synset Not Found,n,tachón,1
-8473,1Synset Not Found,n,roblón,5
+8472,104343346,n,tachón,1
+8473,104343346,n,roblón,5
 8474,104343919,n,potrero,81
 8475,104343919,n,acaballadero,3
 8476,104344246,n,estudio,6629
@@ -8831,7 +8831,7 @@
 8829,104525038,n,velludo,1
 8830,104525038,n,terciopelo,163
 8831,104525417,n,chapado,4
-8832,1Synset Not Found,n,respiradero,40
+8832,104526241,n,respiradero,40
 8833,104526520,n,ventilación,15
 8834,104526520,n,sistema_de_ventilación,14
 8835,104526964,n,ventilador,124
@@ -8926,9 +8926,9 @@
 8924,103933529,n,muelle,369
 8925,103933529,n,desembarcadero,102
 8926,103933529,n,embarcadero,125
-8927,1Synset Not Found,n,cosas,73
-8928,1Synset Not Found,n,trastos,1
-8929,1Synset Not Found,n,chismes,1
+8927,104345288,n,cosas,73
+8928,104345288,n,trastos,1
+8929,104345288,n,chismes,1
 8930,113392262,n,rueda,1546
 8931,104576002,n,silla_de_ruedas,1
 8932,104577139,n,chalana,4
@@ -8986,7 +8986,7 @@
 8984,104602044,n,curro,29
 8985,104602762,n,taller,3
 8986,104603081,n,taller,2149
-8987,1Synset Not Found,n,web,5730
+8987,104604276,n,web,5730
 8988,104605163,n,estambre,4
 8989,104605321,n,estambre,1
 8990,104605726,n,envoltorio,35
@@ -9422,7 +9422,7 @@
 9420,104774511,n,holgura,30
 9421,104776176,n,portabilidad,39
 9422,104776572,n,inercia,1
-9423,1Synset Not Found,n,fijeza,5
+9423,104777098,n,fijeza,5
 9424,104777852,n,firmeza,80
 9425,104778267,n,firmeza,1
 9426,104778401,n,estabilidad,677
@@ -9551,8 +9551,8 @@
 9549,104819285,n,legibilidad,17
 9550,106608977,n,inteligibilidad,25
 9551,104819694,n,expresividad,79
-9552,1Synset Not Found,n,lucidez,46
-9553,1Synset Not Found,n,transparencia,191
+9552,104820258,n,lucidez,46
+9553,104820258,n,transparencia,191
 9554,104821084,n,foco,401
 9555,114420464,n,coherencia,6
 9556,104824819,n,explicitación,2
@@ -9579,8 +9579,8 @@
 9577,104829764,n,bondad,2
 9578,104829922,n,indulgencia,1
 9579,104830343,n,barbarie,1
-9580,1Synset Not Found,n,saña,36
-9581,1Synset Not Found,n,salvajismo,25
+9580,104830689,n,saña,36
+9581,104830689,n,salvajismo,25
 9582,107506382,n,crueldad,3
 9583,104831437,n,inexorabilidad,2
 9584,104831727,n,generosidad,110
@@ -9653,8 +9653,8 @@
 9651,104849759,n,castidad,48
 9652,104850117,n,justicia,525
 9653,104850589,n,inmoralidad,8
-9654,1Synset Not Found,n,degeneración,63
-9655,1Synset Not Found,n,depravación,21
+9654,104850996,n,degeneración,63
+9655,104850996,n,depravación,21
 9656,104852088,n,maldad,1
 9657,104852750,n,vileza,4
 9658,104853873,n,flaqueza,6
@@ -9669,8 +9669,8 @@
 9667,104856460,n,peligrosidad,67
 9668,104857083,n,coraje,210
 9669,104857490,n,temple,186
-9670,1Synset Not Found,n,heroicidad,12
-9671,1Synset Not Found,n,heroísmo,113
+9670,104857738,n,heroicidad,12
+9671,104857738,n,heroísmo,113
 9672,107526182,n,intrepidez,12
 9673,1Synset Not Found,n,osadía,26
 9674,1Synset Not Found,n,atrevimiento,29
@@ -9695,10 +9695,10 @@
 9693,104863793,n,inflexibilidad,6
 9694,104863969,n,decisión,360
 9695,104864200,n,determinación,469
-9696,1Synset Not Found,n,persistencia,85
-9697,1Synset Not Found,n,tenacidad,67
-9698,1Synset Not Found,n,pertinacia,1
-9699,1Synset Not Found,n,perseverancia,66
+9696,104864515,n,persistencia,85
+9697,104864515,n,tenacidad,67
+9698,104864515,n,pertinacia,1
+9699,104864515,n,perseverancia,66
 9700,104865114,n,diligencia,50
 9701,104865502,n,asiduidad,87
 9702,104865502,n,esmero,32
@@ -9934,8 +9934,8 @@
 9932,114082788,n,talle,3
 9933,104930632,n,estilo_de_vida,3
 9934,109481523,n,caída,7
-9935,1Synset Not Found,n,estructuración,156
-9936,1Synset Not Found,n,conformación,257
+9935,104931965,n,estructuración,156
+9936,104931965,n,conformación,257
 9937,104933363,n,armazón,1
 9938,1Synset Not Found,n,composición,24
 9939,104933852,n,fenotipo,76
@@ -9987,8 +9987,8 @@
 9985,104950952,n,fibrado,1
 9986,104951373,n,claridad,67
 9987,104951373,n,iluminación,773
-9988,1Synset Not Found,n,nimbo,9
-9989,1Synset Not Found,n,halo,33
+9988,104951716,n,nimbo,9
+9989,104951716,n,halo,33
 9990,105620955,n,luminosidad,167
 9991,104952570,n,fulgor,16
 9992,104952821,n,deslumbramiento,14
@@ -10007,7 +10007,7 @@
 10005,104954920,n,lucimiento,32
 10006,104954920,n,lustre,32
 10007,104955160,n,pulimento,19
-10008,1Synset Not Found,n,matidez,3
+10008,104956110,n,matidez,3
 10009,104956594,n,colorido,12612
 10010,104956594,n,coloración,13065
 10011,104956594,n,color,12779
@@ -10031,7 +10031,7 @@
 10029,114843986,n,ocre,37
 10030,104967191,n,verde,304
 10031,104968257,n,verde-amarillo,1
-10032,1Synset Not Found,n,verde-azul,1
+10032,104968426,n,verde-azul,1
 10033,104968749,n,jade,115
 10034,104968895,n,azul,17
 10035,104969242,n,celeste,64
@@ -10121,7 +10121,7 @@
 10119,105003590,n,gracia,838
 10120,105003590,n,graciosidad,1
 10121,105003590,n,salero,9
-10122,1Synset Not Found,n,agilidad,173
+10122,105003850,n,agilidad,173
 10123,105651971,n,sensibilidad,8
 10124,105006898,n,sexualidad,336
 10125,105008227,n,masculinidad,12
@@ -10169,8 +10169,8 @@
 10167,105031849,n,consistencia,9
 10168,105032028,n,invencibilidad,15
 10169,105032193,n,coraje,1
-10170,1Synset Not Found,n,agallas,1
-10171,1Synset Not Found,n,huevos,17
+10170,105032351,n,agallas,1
+10171,105032351,n,huevos,17
 10172,113962166,n,resistencia,1985
 10173,113962166,n,aguante,26
 10174,105033410,n,tolerancia,287
@@ -10344,7 +10344,7 @@
 10342,105105879,n,cabida,176
 10343,105105879,n,aforo,154
 10344,105106633,n,pequeñez,19
-10345,1Synset Not Found,n,menudez,1
+10345,105106928,n,menudez,1
 10346,113760316,n,cantidad,123
 10347,113497135,n,incremento,940
 10348,1Synset Not Found,n,aumento,6
@@ -10366,8 +10366,8 @@
 10364,105117237,n,rareza,1
 10365,105117660,n,moderación,2
 10366,105118437,n,exceso,381
-10367,1Synset Not Found,n,lujo,664
-10368,1Synset Not Found,n,extravagancia,39
+10367,105119223,n,lujo,664
+10368,105119223,n,extravagancia,39
 10369,105119367,n,superabundancia,1
 10370,105119367,n,sobreabundancia,1
 10371,105119714,n,sobrante,43
@@ -10484,8 +10484,8 @@
 10482,105161614,n,desventaja,353
 10483,105161967,n,desfavorecimiento,1
 10484,100808182,n,restricción,3
-10485,1Synset Not Found,n,molestia,2
-10486,1Synset Not Found,n,inconveniencia,1
+10485,105162807,n,molestia,2
+10486,105162807,n,inconveniencia,1
 10487,105162985,n,pérdida,94
 10488,105164521,n,inconveniente,3
 10489,105164521,n,entorpecimiento,8
@@ -10780,8 +10780,8 @@
 10778,114838677,n,sangre,3034
 10779,105402091,n,grumo,8
 10780,105402091,n,coágulo,45
-10781,1Synset Not Found,n,plasma,274
-10782,1Synset Not Found,n,suero,166
+10781,105403149,n,plasma,274
+10782,105403149,n,suero,166
 10783,105404074,n,linfa,7
 10784,105404336,n,semen,71
 10785,115247110,n,tinta,8
@@ -10941,17 +10941,17 @@
 10939,111680838,n,placenta,20
 10940,111680838,n,parias,4
 10941,105523108,n,vagina,124
-10942,1Synset Not Found,n,chocho,11
-10943,1Synset Not Found,n,chirri,1
-10944,1Synset Not Found,n,coño,4
+10942,105521514,n,chocho,11
+10943,105521514,n,chirri,1
+10944,105521514,n,coño,4
 10945,105521636,n,vulva,35
 10946,105521934,n,himen,8
 10947,105523420,n,clítoris,24
-10948,1Synset Not Found,n,turma,10
-10949,1Synset Not Found,n,gónada,35
-10950,1Synset Not Found,n,dídimo,1
-10951,1Synset Not Found,n,testículo,112
-10952,1Synset Not Found,n,cojón,11
+10948,105524615,n,turma,10
+10949,105524615,n,gónada,35
+10950,105524615,n,dídimo,1
+10951,105524615,n,testículo,112
+10952,105524615,n,cojón,11
 10953,105525628,n,epidídimo,4
 10954,105526384,n,pene,154
 10955,105526384,n,falo,30
@@ -11037,12 +11037,12 @@
 11035,105558345,n,cavidad_abdominal,1
 11036,105558555,n,pubis,26
 11037,105558717,n,espalda,1157
-11038,1Synset Not Found,n,pandero,15
-11039,1Synset Not Found,n,poto,16
-11040,1Synset Not Found,n,culo,62
-11041,1Synset Not Found,n,pompis,2
-11042,1Synset Not Found,n,nalgas,1
-11043,1Synset Not Found,n,trasero,69
+11038,105559256,n,pandero,15
+11039,105559256,n,poto,16
+11040,105559256,n,culo,62
+11041,105559256,n,pompis,2
+11042,105559256,n,nalgas,1
+11043,105559256,n,trasero,69
 11044,105559727,n,nalga,37
 11045,105559727,n,anca,27
 11046,105559908,n,extremidad,373
@@ -11342,7 +11342,7 @@
 11340,105706629,n,inobservancia,4
 11341,105706629,n,descuido,27
 11342,105706629,n,negligencia,55
-11343,1Synset Not Found,n,preterición,1
+11343,105707146,n,preterición,1
 11344,105707269,n,exclusión,212
 11345,105707269,n,excepción,1193
 11346,105707495,n,intuición,3
@@ -11413,7 +11413,7 @@
 11411,105747815,n,balance,12
 11412,105748054,n,discriminación,10
 11413,105748285,n,diferenciación,223
-11414,1Synset Not Found,n,individualización,18
+11414,105749402,n,individualización,18
 11415,105749619,n,apreciación,10
 11416,105749619,n,gusto,320
 11417,105750163,n,tendencia,208
@@ -11425,7 +11425,7 @@
 11423,105752020,n,contracultura,32
 11424,105752544,n,aprendizaje,1015
 11425,105755883,n,estudio,7078
-11426,1Synset Not Found,n,interiorización,7
+11426,105753954,n,interiorización,7
 11427,105754730,n,huella,99
 11428,105754730,n,impronta,121
 11429,105755156,n,memorizar,2
@@ -11440,20 +11440,20 @@
 11438,105759949,n,condicionamiento,65
 11439,105758692,n,extinción,2
 11440,105760202,n,memoria,2419
-11441,1Synset Not Found,n,remembranza,10
-11442,1Synset Not Found,n,rememoración,7
-11443,1Synset Not Found,n,recordación,12
+11441,105761918,n,remembranza,10
+11442,105761918,n,rememoración,7
+11443,105761918,n,recordación,12
 11444,107174138,n,reconstrucción,3
-11445,1Synset Not Found,n,reminiscencia,127
-11446,1Synset Not Found,n,recuerdo,1133
+11445,105761559,n,reminiscencia,127
+11446,105761559,n,recuerdo,1133
 11447,105762998,n,identificación,12
 11448,105763412,n,identidad,66
 11449,105763916,n,conexión,40
 11450,105764365,n,convergencia,217
 11451,105764365,n,superposición,128
 11452,106766654,n,retrospección,3
-11453,1Synset Not Found,n,símbolo,167
-11454,1Synset Not Found,n,simbolización,8
+11453,105765415,n,símbolo,167
+11454,105765415,n,simbolización,8
 11455,100900581,n,tipificación,25
 11456,100900581,n,ejemplificación,3
 11457,105766247,n,interpretación,2
@@ -11463,15 +11463,15 @@
 11461,108220714,n,visión,75
 11462,105768553,n,sueño,161
 11463,105768806,n,sueño,843
-11464,1Synset Not Found,n,ensueño,1282
-11465,1Synset Not Found,n,sueño,1459
-11466,1Synset Not Found,n,ensoñación,18
+11464,105769471,n,ensueño,1282
+11465,105769471,n,sueño,1459
+11466,105769471,n,ensoñación,18
 11467,114564056,n,evocación,5
 11468,113553560,n,búsqueda,4
 11469,1Synset Not Found,n,reflexión,8
 11470,105772356,n,razonamiento,297
 11471,105772667,n,análisis,24
-11472,1Synset Not Found,n,argumentación,89
+11472,105773049,n,argumentación,89
 11473,105774129,n,deducción,6
 11474,105774614,n,inferencia,46
 11475,104893172,n,anticipación,90
@@ -11499,10 +11499,10 @@
 11497,106753030,n,raciocinio,16
 11498,113323313,n,consideración,302
 11499,105785067,n,ponderación,38
-11500,1Synset Not Found,n,meditación,316
-11501,1Synset Not Found,n,reflexión,69
-11502,1Synset Not Found,n,pensamiento,191
-11503,1Synset Not Found,n,cavilación,5
+11500,105785508,n,meditación,316
+11501,105785508,n,reflexión,69
+11502,105785508,n,pensamiento,191
+11503,105785508,n,cavilación,5
 11504,105786655,n,introspección,38
 11505,105788149,n,toma_de_decisiones,1
 11506,105788713,n,eclecticismo,57
@@ -11589,9 +11589,9 @@
 11587,105828552,n,refuerzo,50
 11588,105829213,n,estímulo,8
 11589,105829782,n,gozo,17
-11590,1Synset Not Found,n,joroba,25
-11591,1Synset Not Found,n,puñeta,1
-11592,1Synset Not Found,n,molestia,165
+11590,105830059,n,joroba,25
+11591,105830059,n,puñeta,1
+11592,105830059,n,molestia,165
 11593,105831784,n,espina,1
 11594,105832264,n,quebradero,18
 11595,105832745,n,carga,358
@@ -11690,8 +11690,8 @@
 11688,105892096,n,suposición,112
 11689,105892427,n,prerrequisito,12
 11690,105892651,n,requisito,534
-11691,1Synset Not Found,n,presuposición,3
-11692,1Synset Not Found,n,presunción,40
+11691,105893356,n,presuposición,3
+11692,105893356,n,presunción,40
 11693,105893653,n,error,1418
 11694,105893916,n,falacia,61
 11695,105895138,n,sofisma,3
@@ -11746,11 +11746,11 @@
 11744,1Synset Not Found,n,sentido,403
 11745,105920272,n,tema,222
 11746,105920791,n,implicación,169
-11747,1Synset Not Found,n,quid,900
-11748,1Synset Not Found,n,corazón,169
-11749,1Synset Not Found,n,enjundia,7
-11750,1Synset Not Found,n,meollo,7
-11751,1Synset Not Found,n,núcleo,2717
+11747,105921123,n,quid,900
+11748,105921123,n,corazón,169
+11749,105921123,n,enjundia,7
+11750,105921123,n,meollo,7
+11751,105921123,n,núcleo,2717
 11752,113495413,n,hipóstasis,3
 11753,105922450,n,tono,1
 11754,105922809,n,trasfondo,188
@@ -11841,8 +11841,8 @@
 11839,105946406,n,pacifismo,2
 11840,108367683,n,pluralismo,67
 11841,105965933,n,populismo,20
-11842,1Synset Not Found,n,predestinación,27
-11843,1Synset Not Found,n,predeterminación,2
+11842,105966129,n,predestinación,27
+11843,105966129,n,predeterminación,2
 11844,105966958,n,librepensamiento,12
 11845,108476829,n,humanismo,24
 11846,105967402,n,humanitarismo,6
@@ -11994,7 +11994,7 @@
 11992,106052300,n,medicina_general,5
 11993,106052300,n,medicina_interna,19
 11994,106053101,n,neuropsiquiatría,6
-11995,1Synset Not Found,n,obstetricia,74
+11995,106053439,n,obstetricia,74
 11996,106054266,n,oncología,35
 11997,106054446,n,oftalmología,41
 11998,106054892,n,farmacología,133
@@ -12381,8 +12381,8 @@
 12379,106252138,n,comunicación,4695
 12380,106252743,n,intercomunicación,37
 12381,106252954,n,impartición,15
-12382,1Synset Not Found,n,difusión,1287
-12383,1Synset Not Found,n,divulgación,362
+12382,106253140,n,difusión,1287
+12383,106253140,n,divulgación,362
 12384,106253690,n,mensaje,623
 12385,114899530,n,medio_de_comunicación,1
 12386,115112086,n,vehículo,262
@@ -12893,11 +12893,11 @@
 12891,106539770,n,decreto,1848
 12892,106540527,n,queda,96
 12893,106541167,n,decreto_imperial,4
-12894,1Synset Not Found,n,interdicto,16
-12895,1Synset Not Found,n,prohibición,590
-12896,1Synset Not Found,n,entredicho,5
-12897,1Synset Not Found,n,proscripción,40
-12898,1Synset Not Found,n,interdicción,18
+12894,106542047,n,interdicto,16
+12895,106542047,n,prohibición,590
+12896,106542047,n,entredicho,5
+12897,106542047,n,proscripción,40
+12898,106542047,n,interdicción,18
 12899,106544142,n,testamento,514
 12900,106544657,n,codicilo,5
 12901,106545137,n,escritura,41
@@ -12967,9 +12967,9 @@
 12965,106606044,n,lección,11
 12966,106606044,n,moralina,8
 12967,106606191,n,matiz,9
-12968,1Synset Not Found,n,sinsentido,11
-12969,1Synset Not Found,n,despropósito,10
-12970,1Synset Not Found,n,disparate,15
+12968,106607339,n,sinsentido,11
+12969,106607339,n,despropósito,10
+12970,106607339,n,disparate,15
 12971,106607809,n,adefesio,5
 12972,106608143,n,desatinos,3
 12973,106608277,n,cliché,65
@@ -12980,10 +12980,10 @@
 12978,106610063,n,abracadabra,12
 12979,106610143,n,balbuceo,11
 12980,106610897,n,ambigüedades,2
-12981,1Synset Not Found,n,chorrada,4
-12982,1Synset Not Found,n,estupidez,13
-12983,1Synset Not Found,n,majadería,2
-12984,1Synset Not Found,n,animalada,1
+12981,106611681,n,chorrada,4
+12982,106611681,n,estupidez,13
+12983,106611681,n,majadería,2
+12984,106611681,n,animalada,1
 12985,106611998,n,borra,10
 12986,106611998,n,bagatela,7
 12987,106611998,n,hojarasca,64
@@ -12991,10 +12991,10 @@
 12989,106612649,n,recorte,2
 12990,106613056,n,cita,50
 12991,106613340,n,epígrafe,4
-12992,1Synset Not Found,n,película,20377
-12993,1Synset Not Found,n,film,1540
-12994,1Synset Not Found,n,producción,7270
-12995,1Synset Not Found,n,filme,3030
+12992,106613686,n,película,20377
+12993,106613686,n,film,1540
+12994,106613686,n,producción,7270
+12995,106613686,n,filme,3030
 12996,106614729,n,fotograma,81
 12997,106615026,n,largometraje,629
 12998,111479058,n,atracción,58
@@ -13066,7 +13066,7 @@
 13064,1Synset Not Found,n,registro,2120
 13065,106636806,n,formato,3370
 13066,106638868,n,base_de_datos,12
-13067,1Synset Not Found,n,principios,129
+13067,106639563,n,principios,129
 13068,106639674,n,índice,2
 13069,106641181,n,índice_de_precios,3
 13070,106642138,n,nuevas,72
@@ -13078,8 +13078,8 @@
 13076,106645039,n,huella,622
 13077,106645039,n,pisada,17
 13078,106646243,n,marca,110
-13079,1Synset Not Found,n,vestigio,580
-13080,1Synset Not Found,n,rastro,357
+13079,106646628,n,vestigio,580
+13080,106646628,n,rastro,357
 13081,106647206,n,constancia,477
 13082,113780180,n,prueba,30
 13083,106647864,n,comprobación,107
@@ -13138,10 +13138,10 @@
 13136,106674542,n,propaganda,21
 13137,106674947,n,prospecto,55
 13138,113558953,n,fuente,17
-13139,1Synset Not Found,n,programa_de_estudios,492
-13140,1Synset Not Found,n,plan_de_estudios,16
-13141,1Synset Not Found,n,programa,839
-13142,1Synset Not Found,n,currículo,64
+13139,106676416,n,programa_de_estudios,492
+13140,106676416,n,plan_de_estudios,16
+13141,106676416,n,programa,839
+13142,106676416,n,currículo,64
 13143,106677302,n,impresión,213
 13144,106680818,n,litografía,110
 13145,106680333,n,cromolitografía,2
@@ -13262,10 +13262,10 @@
 13260,106724763,n,descripción,65
 13261,106725067,n,especificación,542
 13262,106725877,n,manifestación,248
-13263,1Synset Not Found,n,promulgación,157
-13264,1Synset Not Found,n,proclamación,412
-13265,1Synset Not Found,n,pregón,66
-13266,1Synset Not Found,n,proclama,123
+13263,106726158,n,promulgación,157
+13264,106726158,n,proclamación,412
+13265,106726158,n,pregón,66
+13266,106726158,n,proclama,123
 13267,106727224,n,manifiesto,318
 13268,106727616,n,aserto,5
 13269,106727758,n,declaración_de_derechos,1
@@ -13293,9 +13293,9 @@
 13291,106741305,n,justificación,21
 13292,106740402,n,motivo,1266
 13293,106740644,n,defensa,21
-13294,1Synset Not Found,n,excusa,289
-13295,1Synset Not Found,n,coartada,23
-13296,1Synset Not Found,n,autojustificación,2
+13294,106741305,n,excusa,289
+13295,106741305,n,coartada,23
+13296,106741305,n,autojustificación,2
 13297,106741993,n,exposición,14
 13298,106743506,n,solución,2512
 13299,106743506,n,resultado,1054
@@ -13365,9 +13365,9 @@
 13363,106763273,n,glosa,51
 13364,106763273,n,anotación,773
 13365,106764244,n,leyenda,2636
-13366,1Synset Not Found,n,remisión,60
-13367,1Synset Not Found,n,mención,1112
-13368,1Synset Not Found,n,cita,1074
+13366,106763681,n,remisión,60
+13367,106763681,n,mención,1112
+13368,106763681,n,cita,1074
 13369,106765044,n,juicio,1059
 13370,106765044,n,comentario,1530
 13371,106765531,n,estratagema,1
@@ -13445,9 +13445,9 @@
 13443,106791372,n,señal,2336
 13444,106791372,n,signo,1096
 13445,106792188,n,pistoletazo,7
-13446,1Synset Not Found,n,rótulo,51
-13447,1Synset Not Found,n,pancarta,40
-13448,1Synset Not Found,n,cartel,672
+13446,106793426,n,rótulo,51
+13447,106793426,n,pancarta,40
+13448,106793426,n,cartel,672
 13449,106794374,n,cipo,3
 13450,106794374,n,señalizador,5
 13451,106794666,n,estigma,99
@@ -13611,10 +13611,10 @@
 13609,106875288,n,gallardete,21
 13610,106875697,n,lenguaje_de_signos,1
 13611,106882009,n,seña,152
-13612,1Synset Not Found,n,mímica,25
-13613,1Synset Not Found,n,gesto,514
-13614,1Synset Not Found,n,gesticulación,7
-13615,1Synset Not Found,n,ademán,3
+13612,106876309,n,mímica,25
+13613,106876309,n,gesto,514
+13614,106876309,n,gesticulación,7
+13615,106876309,n,ademán,3
 13616,106877509,n,rictus,4
 13617,106877578,n,mueca,23
 13618,106877849,n,ceño,6
@@ -14070,7 +14070,7 @@
 14068,107066659,n,estilo,6
 14069,107069210,n,elocuencia,79
 14070,107069948,n,expresión,57
-14071,1Synset Not Found,n,grandilocuencia,9
+14071,107070429,n,grandilocuencia,9
 14072,107071017,n,jerga,2
 14073,107072698,n,retórica,46
 14074,107073447,n,arcaísmo,25
@@ -14090,8 +14090,8 @@
 14088,107084560,n,monotonía,49
 14089,107084927,n,canturreo,1
 14090,115271732,n,cesura,4
-14091,1Synset Not Found,n,acento,316
-14092,1Synset Not Found,n,acentuación,32
+14091,107085375,n,acento,316
+14092,107085375,n,acentuación,32
 14093,107086323,n,ritmo,4
 14094,107086518,n,cadencia,77
 14095,107087346,n,recitativo,49
@@ -14195,11 +14195,11 @@
 14193,107122639,n,hosanna,18
 14194,107123012,n,chillido,12
 14195,107123404,n,alarido,11
-14196,1Synset Not Found,n,pitada,2
-14197,1Synset Not Found,n,abucheo,2
+14196,107123870,n,pitada,2
+14197,107123870,n,abucheo,2
 14198,107124172,n,blasfemia,2
-14199,1Synset Not Found,n,obscenidad,24
-14200,1Synset Not Found,n,vulgarismo,11
+14199,107124340,n,obscenidad,24
+14200,107124340,n,vulgarismo,11
 14201,107124928,n,escatología,8
 14202,107125096,n,palabrota,5
 14203,107125096,n,juramento,397
@@ -14268,13 +14268,13 @@
 14266,115225249,n,sesión,59
 14267,107145783,n,seminario,123
 14268,107148022,n,tutoría,32
-14269,1Synset Not Found,n,tramitación,82
-14270,1Synset Not Found,n,gestión,2289
+14269,107148192,n,tramitación,82
+14270,107148192,n,gestión,2289
 14271,107148573,n,diplomacia,29
 14272,107150023,n,mercadeo,70
 14273,107150138,n,regateo,10
-14274,1Synset Not Found,n,mediación,300
-14275,1Synset Not Found,n,arbitraje,168
+14274,107150644,n,mediación,300
+14275,107150644,n,arbitraje,168
 14276,107151380,n,locución,131
 14277,107151380,n,expresión,158
 14278,107152259,n,lema,797
@@ -14341,12 +14341,12 @@
 14339,107174260,n,popularización,59
 14340,107174433,n,malentendido,57
 14341,113936153,n,lío,1
-14342,1Synset Not Found,n,consenso,390
-14343,1Synset Not Found,n,anuencia,17
-14344,1Synset Not Found,n,consentimiento,346
-14345,1Synset Not Found,n,venia,96
-14346,1Synset Not Found,n,beneplácito,78
-14347,1Synset Not Found,n,otorgamiento,69
+14342,107175575,n,consenso,390
+14343,107175575,n,anuencia,17
+14344,107175575,n,consentimiento,346
+14345,107175575,n,venia,96
+14346,107175575,n,beneplácito,78
+14347,107175575,n,otorgamiento,69
 14348,107176073,n,aceptación,1
 14349,107176243,n,claudicación,3
 14350,107176804,n,conformidad,227
@@ -14371,12 +14371,12 @@
 14369,107181935,n,disputa,124
 14370,107181935,n,repunta,1
 14371,107181935,n,querella,108
-14372,1Synset Not Found,n,discusión,994
-14373,1Synset Not Found,n,controversia,1035
-14374,1Synset Not Found,n,disputa,986
-14375,1Synset Not Found,n,lid,38
-14376,1Synset Not Found,n,pendencia,9
-14377,1Synset Not Found,n,quimera,115
+14372,107183151,n,discusión,994
+14373,107183151,n,controversia,1035
+14374,107183151,n,disputa,986
+14375,107183151,n,lid,38
+14376,107183151,n,pendencia,9
+14377,107183151,n,quimera,115
 14378,110448670,n,polémica,814
 14379,107184149,n,pleito,246
 14380,107184149,n,choque,25
@@ -14491,9 +14491,9 @@
 14489,107220586,n,anécdota,359
 14490,107220586,n,chilindrina,11
 14491,107220586,n,historieta,450
-14492,1Synset Not Found,n,relato,1916
-14493,1Synset Not Found,n,narración,683
-14494,1Synset Not Found,n,cuento,2239
+14492,107220773,n,relato,1916
+14493,107220773,n,narración,683
+14494,107220773,n,cuento,2239
 14495,107221939,n,conseja,5
 14496,107222050,n,rondalla,29
 14497,107222433,n,dramón,1
@@ -14563,7 +14563,7 @@
 14561,107242912,n,soflama,1
 14562,107242912,n,perorata,2
 14563,107242912,n,prédica,28
-14564,1Synset Not Found,n,desvarío,10
+14564,107243193,n,desvarío,10
 14565,107243837,n,predicación,183
 14566,107243837,n,arenga,55
 14567,107243837,n,sermón,258
@@ -14580,7 +14580,7 @@
 14578,107247071,n,publicidad,1181
 14579,107247602,n,sensacionalismo,14
 14580,107247925,n,relaciones_públicas,50
-14581,1Synset Not Found,n,mancheta,1
+14581,107248060,n,mancheta,1
 14582,107248507,n,jaleo,15
 14583,107248507,n,bombo,102
 14584,1Synset Not Found,n,anuncio,911
@@ -14653,9 +14653,9 @@
 14651,107271648,n,incógnita,55
 14652,107272084,n,logo,416
 14653,107272084,n,logotipo,828
-14654,1Synset Not Found,n,pegata,1
-14655,1Synset Not Found,n,pegatina,57
-14656,1Synset Not Found,n,etiqueta,43
+14654,107272172,n,pegata,1
+14655,107272172,n,pegatina,57
+14656,107272172,n,etiqueta,43
 14657,107272416,n,ex_libris,1
 14658,111308520,n,marbete,4
 14659,107273802,n,mojón,56
@@ -14666,8 +14666,8 @@
 14664,107283608,n,suceso,1413
 14665,107283608,n,hecho,9420
 14666,107283608,n,acontecimiento,1872
-14667,1Synset Not Found,n,acompañamiento,29
-14668,1Synset Not Found,n,coocurrencia,1
+14667,107284554,n,acompañamiento,29
+14668,107284554,n,coocurrencia,1
 14669,107287812,n,experiencia,104
 14670,107286014,n,augurio,48
 14671,107286368,n,agüero,43
@@ -14812,18 +14812,18 @@
 14810,107336763,n,dificultad,12
 14811,107337390,n,fluctuación,145
 14812,111414411,n,impacto,42
-14813,1Synset Not Found,n,trompazo,1
-14814,1Synset Not Found,n,batacazo,7
-14815,1Synset Not Found,n,topetazo,1
-14816,1Synset Not Found,n,porrazo,2
-14817,1Synset Not Found,n,choque,571
+14813,107338681,n,trompazo,1
+14814,107338681,n,batacazo,7
+14815,107338681,n,topetazo,1
+14816,107338681,n,porrazo,2
+14817,107338681,n,choque,571
 14818,107339098,n,sacudida,4
 14819,107339329,n,roce,90
 14820,109899782,n,baja,75
 14821,107340249,n,herida,3
 14822,107342049,n,repetición,410
 14823,107343363,n,recurrencia,118
-14824,1Synset Not Found,n,atavismo,11
+14824,107343574,n,atavismo,11
 14825,107344120,n,mar_de_fondo,4
 14826,107344233,n,cachón,4
 14827,107344233,n,oleaje,110
@@ -15029,7 +15029,7 @@
 15027,113306669,n,expensas,34
 15028,107420770,n,perjuicio,195
 15029,107420991,n,pulsación,56
-15030,1Synset Not Found,n,cortocircuito,40
+15030,104204755,n,cortocircuito,40
 15031,115271619,n,apagón,55
 15032,107423365,n,giro,32
 15033,107424109,n,revolución,2554
@@ -15074,8 +15074,8 @@
 15072,107437372,n,polinización,110
 15073,107438655,n,autogamia,2
 15074,107438983,n,autopolinización,9
-15075,1Synset Not Found,n,revoloteo,2
-15076,1Synset Not Found,n,revuelo,69
+15075,107439284,n,revoloteo,2
+15076,107439284,n,revuelo,69
 15077,107439570,n,oleada,182
 15078,107439570,n,borbotón,5
 15079,1Synset Not Found,n,rotación,73
@@ -15083,9 +15083,9 @@
 15081,107443010,n,carrera,3829
 15082,107443210,n,distensión,5
 15083,107443210,n,aflojamiento,2
-15084,1Synset Not Found,n,substitución,38
-15085,1Synset Not Found,n,sustitución,757
-15086,1Synset Not Found,n,permutación,27
+15084,107443761,n,substitución,38
+15085,107443761,n,sustitución,757
+15086,107443761,n,permutación,27
 15087,107444668,n,desplazamiento,3
 15088,107444882,n,amplitud,71
 15089,107446270,n,estampida,26
@@ -15319,8 +15319,8 @@
 15317,107514345,n,conmoción,4
 15318,107514520,n,trastorno,1
 15319,114522265,n,sosiego,22
-15320,1Synset Not Found,n,imperturbabilidad,3
-15321,1Synset Not Found,n,cachaza,2
+15320,107515328,n,imperturbabilidad,3
+15321,107515328,n,cachaza,2
 15322,107515560,n,tranquilidad,11
 15323,107515790,n,reposo,249
 15324,107515790,n,paz,56
@@ -15366,7 +15366,7 @@
 15364,114375166,n,preocupación,746
 15365,114375166,n,angustia,167
 15366,114375166,n,zozobra,7
-15367,1Synset Not Found,n,cuita,4
+15367,107524242,n,cuita,4
 15368,107524529,n,miedo,338
 15369,107524529,n,temor,571
 15370,107524529,n,inquietud,305
@@ -15444,10 +15444,10 @@
 15442,107543204,n,cinismo,18
 15443,113596569,n,amor,5683
 15444,107544491,n,devoción,441
-15445,1Synset Not Found,n,afecto,273
-15446,1Synset Not Found,n,cariño,322
-15447,1Synset Not Found,n,simpatía,312
-15448,1Synset Not Found,n,ternura,84
+15445,107544647,n,afecto,273
+15446,107544647,n,cariño,322
+15447,107544647,n,simpatía,312
+15448,107544647,n,ternura,84
 15449,107545161,n,apego,143
 15450,107545717,n,benevolencia,1
 15451,107545833,n,beneficencia,109
@@ -15489,8 +15489,8 @@
 15487,107554342,n,ternura,1
 15488,107554500,n,clemencia,73
 15489,107554640,n,perdón,389
-15490,1Synset Not Found,n,compenetración,8
-15491,1Synset Not Found,n,compatibilidad,215
+15490,107554758,n,compenetración,8
+15491,107554758,n,compatibilidad,215
 15492,107554856,n,empatía,70
 15493,1Synset Not Found,n,identificación,18
 15494,107555014,n,entusiasmo,449
@@ -15533,8 +15533,8 @@
 15531,114409718,n,cena,590
 15532,115138691,n,picnic,61
 15533,107576781,n,barbacoa,36
-15534,1Synset Not Found,n,colación,35
-15535,1Synset Not Found,n,tentempié,8
+15534,107577374,n,colación,35
+15535,107577374,n,tentempié,8
 15536,107577657,n,comilona,6
 15537,107578363,n,ración,99
 15538,107579076,n,bocado,37
@@ -16104,8 +16104,8 @@
 16102,107886463,n,copetín,9
 16103,107886572,n,poción,46
 16104,107886572,n,pócima,5
-16105,1Synset Not Found,n,birra,1
-16106,1Synset Not Found,n,cerveza,607
+16105,107886849,n,birra,1
+16106,107886849,n,cerveza,607
 16107,1None,n,pilsener,10
 16108,107888909,n,malta,459
 16109,110875249,n,burton,88
@@ -16409,9 +16409,9 @@
 16407,108100907,n,vicariato,26
 16408,1Synset Not Found,n,raza,270
 16409,108101755,n,purasangre,13
-16410,1Synset Not Found,n,estirpe,112
-16411,1Synset Not Found,n,linaje,623
-16412,1Synset Not Found,n,descendencia,713
+16410,108101937,n,estirpe,112
+16411,108101937,n,linaje,623
+16412,108101937,n,descendencia,713
 16413,108102402,n,genealogía,346
 16414,108102402,n,árbol_genealógico,2
 16415,111954798,n,filo,253
@@ -16507,8 +16507,8 @@
 16505,108171992,n,entente_cordial,8
 16506,108177592,n,superpotencia,68
 16507,108178741,n,población,97
-16508,1Synset Not Found,n,superpoblación,19
-16509,1Synset Not Found,n,sobrepoblación,17
+16508,108178935,n,superpoblación,19
+16509,108178935,n,sobrepoblación,17
 16510,108179689,n,pueblo,28
 16511,108180190,n,pueblo,550
 16512,108180639,n,clase_obrera,4
@@ -16832,7 +16832,7 @@
 16830,108363106,n,tecnocracia,3
 16831,108363428,n,teocracia,26
 16832,108364044,n,monarquía,784
-16833,1Synset Not Found,n,diarquía,3
+16833,108361612,n,diarquía,3
 16834,108364044,n,monarquía_parlamentaria,1
 16835,108364143,n,capitalismo,380
 16836,108364757,n,industrialismo,4
@@ -16842,9 +16842,9 @@
 16840,108366440,n,nacionalsocialismo,48
 16841,108366753,n,economía,4153
 16842,108367880,n,sistema_político,1
-16843,1Synset Not Found,n,leninismo,6
-16844,1Synset Not Found,n,colectivismo,10
-16845,1Synset Not Found,n,marxismo,195
+16843,108368308,n,leninismo,6
+16844,108368308,n,colectivismo,10
+16845,108368308,n,marxismo,195
 16846,108368516,n,revisionismo,36
 16847,106215495,n,maoísmo,2
 16848,108368757,n,ecosistema,603
@@ -16896,11 +16896,11 @@
 16894,108397856,n,caballería,868
 16895,108398036,n,guarnición,191
 16896,108398467,n,aquelarre,45
-16897,1Synset Not Found,n,surtido,28
-16898,1Synset Not Found,n,miscelánea,138
-16899,1Synset Not Found,n,variedad,3134
-16900,1Synset Not Found,n,mezcla,35
-16901,1Synset Not Found,n,cajón_de_sastre,2
+16897,108398773,n,surtido,28
+16898,108398773,n,miscelánea,138
+16899,108398773,n,variedad,3134
+16900,108398773,n,mezcla,35
+16901,108398773,n,cajón_de_sastre,2
 16902,114858292,n,camada,108
 16903,108400870,n,nidada,66
 16904,108401248,n,subdivisión,235
@@ -17118,8 +17118,8 @@
 17116,108544419,n,rincón,399
 17117,108544719,n,maizal,12
 17118,108544719,n,trigal,13
-17119,1Synset Not Found,n,país,18628
-17120,1Synset Not Found,n,tierra,8302
+17119,108544813,n,país,18628
+17120,108544813,n,tierra,8302
 17121,114433232,n,condado,6712
 17122,108547544,n,cresta,11
 17123,108567877,n,destino,89
@@ -17158,9 +17158,9 @@
 17156,114443786,n,señorío,96
 17157,108558963,n,residencia,1253
 17158,108558963,n,domicilio,294
-17159,1Synset Not Found,n,vertedero,86
-17160,1Synset Not Found,n,basurero,62
-17161,1Synset Not Found,n,escombrera,9
+17159,108560027,n,vertedero,86
+17160,108560027,n,basurero,62
+17161,108560027,n,escombrera,9
 17162,108560560,n,muladar,1
 17163,108560560,n,muradal,1
 17164,109270894,n,tierra,28
@@ -17534,10 +17534,10 @@
 17532,115299367,n,ion,497
 17533,115199033,n,catión,76
 17534,115064729,n,anión,63
-17535,1Synset Not Found,n,cosmos,179
-17536,1Synset Not Found,n,macrocosmos,137
-17537,1Synset Not Found,n,mundo,926
-17538,1Synset Not Found,n,universo,1708
+17535,109466280,n,cosmos,179
+17536,109466280,n,macrocosmos,137
+17537,109466280,n,mundo,926
+17538,109466280,n,universo,1708
 17539,109201998,n,acuífero,110
 17540,109348460,n,macizo,403
 17541,109366317,n,elevación,33
@@ -17565,11 +17565,11 @@
 17563,109258715,n,fisura,145
 17564,113904843,n,corte,4
 17565,109698337,n,rendija,22
-17566,1Synset Not Found,n,despeñadero,2
-17567,1Synset Not Found,n,precipicio,93
-17568,1Synset Not Found,n,peñasco,42
-17569,1Synset Not Found,n,acantilado,358
-17570,1Synset Not Found,n,risco,72
+17566,109246464,n,despeñadero,2
+17567,109246464,n,precipicio,93
+17568,109246464,n,peñasco,42
+17569,109246464,n,acantilado,358
+17570,109246464,n,risco,72
 17571,110708797,n,peñón,81
 17572,109398677,n,derrumbe,180
 17573,109454153,n,talud,116
@@ -17594,8 +17594,8 @@
 17592,109303528,n,ladera,835
 17593,109437454,n,cuesta,222
 17594,109437454,n,pendiente,419
-17595,1Synset Not Found,n,declive,501
-17596,1Synset Not Found,n,descenso,945
+17595,109265620,n,declive,501
+17596,109265620,n,descenso,945
 17597,109206985,n,cuesta,7
 17598,109409752,n,cresta,2
 17599,109205509,n,arista,1
@@ -17666,7 +17666,7 @@
 17664,109406793,n,cabezo,31
 17665,109406793,n,arrecife,270
 17666,109406793,n,rompiente,21
-17667,1Synset Not Found,n,cayo,278
+17667,109325395,n,cayo,278
 17668,109210862,n,atolón,94
 17669,109316454,n,isla,13842
 17670,109319456,n,isleta,31
@@ -17674,8 +17674,8 @@
 17672,109203827,n,archipiélago,1096
 17673,109388848,n,península,1987
 17674,109319604,n,istmo,200
-17675,1Synset Not Found,n,promontorio,193
-17676,1Synset Not Found,n,farallón,19
+17675,109399592,n,promontorio,193
+17676,109399592,n,farallón,19
 17677,113911872,n,punta,32
 17678,109233715,n,cabo,1
 17679,109409203,n,tira,4
@@ -17697,8 +17697,8 @@
 17695,109354984,n,vía_láctea,148
 17696,109439433,n,sistema_solar,448
 17697,109562704,n,mercurio,21
-17698,1Synset Not Found,n,mundo,15501
-17699,1Synset Not Found,n,globo,516
+17698,109270894,n,mundo,15501
+17699,109270894,n,globo,516
 17700,109347445,n,planeta_rojo,2
 17701,109573966,n,júpiter,430
 17702,113907104,n,saturno,137
@@ -17793,11 +17793,11 @@
 17791,107363668,n,cascada,476
 17792,107363668,n,catarata,179
 17793,109328746,n,laguna,141
-17794,1Synset Not Found,n,rada,97
-17795,1Synset Not Found,n,bahía,89
-17796,1Synset Not Found,n,cala,119
-17797,1Synset Not Found,n,ensenada,213
-17798,1Synset Not Found,n,abra,73
+17794,109313716,n,rada,97
+17795,109313716,n,bahía,89
+17796,109313716,n,cala,119
+17797,109313716,n,ensenada,213
+17798,109313716,n,abra,73
 17799,109281104,n,fiordo,152
 17800,112244650,n,bahía,1485
 17801,1Synset Not Found,n,estrecho,1076
@@ -17845,7 +17845,7 @@
 17843,109489697,n,tritón,8
 17844,109489790,n,marciano,90
 17845,109488711,n,gigante,534
-17846,1Synset Not Found,n,cíclopes,4
+17846,109490572,n,cíclopes,4
 17847,109490756,n,giganta,2
 17848,109490825,n,ogro,32
 17849,109491966,n,monstruo,54
@@ -17951,10 +17951,10 @@
 17949,109618880,n,ex_presidente,1
 17950,110541833,n,entendido,58
 17951,109619824,n,individualista,5
-17952,1Synset Not Found,n,vecino,3382
-17953,1Synset Not Found,n,morador,138
-17954,1Synset Not Found,n,vecina,4
-17955,1Synset Not Found,n,habitante,14543
+17952,109620078,n,vecino,3382
+17953,109620078,n,morador,138
+17954,109620078,n,vecina,4
+17955,109620078,n,habitante,14543
 17956,109620794,n,nativo,1405
 17957,109620794,n,natural,160
 17958,109620794,n,autóctono,2
@@ -18176,7 +18176,7 @@
 18174,109732170,n,sudanés,8
 18175,109732441,n,sueco,73
 18176,109732544,n,británicos,41
-18177,1Synset Not Found,n,ingleses,22
+18177,109732668,n,ingleses,22
 18178,106960778,n,irlandeses,4
 18179,106964901,n,franceses,25
 18180,109733243,n,pueblo_español,1
@@ -18245,16 +18245,16 @@
 18243,109761403,n,economista,480
 18244,109761403,n,contable,54
 18245,109761403,n,contador,248
-18246,1Synset Not Found,n,acusado,292
-18247,1Synset Not Found,n,demandado,41
-18248,1Synset Not Found,n,procesado,110
-18249,1Synset Not Found,n,defendido,27
+18246,109762101,n,acusado,292
+18247,109762101,n,demandado,41
+18248,109762101,n,procesado,110
+18249,109762101,n,defendido,27
 18250,109762385,n,denunciante,16
 18251,109762385,n,acusador,32
-18252,1Synset Not Found,n,ducho,1
-18253,1Synset Not Found,n,genio,491
-18254,1Synset Not Found,n,diestro,57
-18255,1Synset Not Found,n,crack,198
+18252,109762509,n,ducho,1
+18253,109762509,n,genio,491
+18254,109762509,n,diestro,57
+18255,109762509,n,crack,198
 18256,109762821,n,éxito,79
 18257,109763349,n,acólito,29
 18258,109763784,n,conocido,599
@@ -18297,15 +18297,15 @@
 18295,109774266,n,asesor,630
 18296,109774266,n,consejero,825
 18297,109774266,n,consultora,74
-18298,1Synset Not Found,n,defensor,1122
-18299,1Synset Not Found,n,partidario,729
+18298,109774783,n,defensor,1122
+18299,109774783,n,partidario,729
 18300,109775907,n,ingeniero_aeronáutico,5
 18301,109776079,n,ingeniero_aeroespacial,1
 18302,109777353,n,agente,1
 18303,109778927,n,agnóstico,11
 18304,109779623,n,agricultor,12
-18305,1Synset Not Found,n,agrícola,154
-18306,1Synset Not Found,n,agricultor,54
+18305,109779790,n,agrícola,154
+18306,109779790,n,agricultor,54
 18307,109780120,n,agrónomo,38
 18308,109780828,n,comandante,3
 18309,109781650,n,albino,20
@@ -18357,8 +18357,8 @@
 18355,111338796,n,apóstol,417
 18356,109799461,n,defensor,3
 18357,109799607,n,delegado_apostólico,3
-18358,1Synset Not Found,n,conciliador,8
-18359,1Synset Not Found,n,pacificador,18
+18358,109952163,n,conciliador,8
+18359,109952163,n,pacificador,18
 18360,109800469,n,recurrente,1
 18361,109801864,n,aprendiz,409
 18362,109801864,n,meritorio,3
@@ -18500,9 +18500,9 @@
 18498,109849012,n,beldad,9
 18499,109849012,n,bella,288
 18500,109849167,n,campanero,20
-18501,1Synset Not Found,n,querido,172
-18502,1Synset Not Found,n,corazón,446
-18503,1Synset Not Found,n,querida,18
+18501,109849598,n,querido,172
+18502,109849598,n,corazón,446
+18503,109849598,n,querida,18
 18504,109850121,n,beneficiario,52
 18505,109850317,n,bereber,45
 18506,109850974,n,sitiador,45
@@ -18750,9 +18750,9 @@
 18748,109920901,n,vicetiple,2
 18749,109921034,n,escogido,13
 18750,109921168,n,cronista,530
-18751,1Synset Not Found,n,mameluco,83
-18752,1Synset Not Found,n,panoli,1
-18753,1Synset Not Found,n,cipote,3
+18751,109921409,n,mameluco,83
+18752,109921409,n,panoli,1
+18753,109921409,n,cipote,3
 18754,109923263,n,cenicienta,19
 18755,109923418,n,don_nadie,1
 18756,110457903,n,ciudadano,2454
@@ -18900,8 +18900,8 @@
 18898,109963914,n,coordinador,458
 18899,109964202,n,copiloto,82
 18900,109964315,n,calderero,10
-18901,1Synset Not Found,n,imitador,79
-18902,1Synset Not Found,n,plagiador,1
+18901,109964411,n,imitador,79
+18902,109964411,n,plagiador,1
 18903,109964805,n,copiador,1
 18904,109964805,n,copista,44
 18905,109964805,n,amanuense,3
@@ -18929,11 +18929,11 @@
 18927,109972157,n,modisto,15
 18928,109972661,n,cowboy,77
 18929,109972661,n,vaquero,112
-18930,1Synset Not Found,n,chalupa,26
-18931,1Synset Not Found,n,tarambana,1
-18932,1Synset Not Found,n,chiflado,17
-18933,1Synset Not Found,n,pirado,2
-18934,1Synset Not Found,n,tabardillo,3
+18930,109974496,n,chalupa,26
+18931,109974496,n,tarambana,1
+18932,109974496,n,chiflado,17
+18933,109974496,n,pirado,2
+18934,109974496,n,tabardillo,3
 18935,109974648,n,artesano,444
 18936,109976283,n,majara,1
 18937,109976283,n,chalado,1
@@ -18959,9 +18959,9 @@
 18957,109982277,n,coracero,24
 18958,109982760,n,agregado_cultural,3
 18959,109983053,n,escanciador,1
-18960,1Synset Not Found,n,párroco,375
-18961,1Synset Not Found,n,rector,465
-18962,1Synset Not Found,n,vicario,178
+18960,109983572,n,párroco,375
+18961,109983572,n,rector,465
+18962,109983572,n,vicario,178
 18963,109983889,n,conservador,205
 18964,109984298,n,custodio,56
 18965,109984298,n,guarda,271
@@ -18978,7 +18978,7 @@
 18976,109988216,n,quesera,7
 18977,109988216,n,lechera,17
 18978,109988392,n,lechero,33
-18979,1Synset Not Found,n,roncero,2
+18979,109988703,n,roncero,2
 18980,109989045,n,nena,40
 18981,109989168,n,damisela,10
 18982,109989045,n,dama,969
@@ -19054,8 +19054,8 @@
 19052,110006842,n,trásfuga,1
 19053,110006842,n,tránsfuga,6
 19054,110006842,n,desertor,74
-19055,1Synset Not Found,n,apóstata,17
-19056,1Synset Not Found,n,renegado,36
+19055,110007109,n,apóstata,17
+19056,110007109,n,renegado,36
 19057,110008388,n,forajido,18
 19058,110008716,n,destructor,368
 19059,110009276,n,detective,569
@@ -19097,7 +19097,7 @@
 19095,110608188,n,buzo,72
 19096,110019552,n,hombre_rana,1
 19097,110020366,n,divorciada,4
-19098,1Synset Not Found,n,ex-mujer,28
+19098,110020533,n,ex-mujer,28
 19099,110020890,n,médico,1775
 19100,110020890,n,doctor,2703
 19101,110020890,n,facultativo,59
@@ -19109,8 +19109,8 @@
 19107,110022759,n,astuto,3
 19108,110022759,n,pajarraco,3
 19109,110022759,n,pájara,10
-19110,1Synset Not Found,n,carcamal,1
-19111,1Synset Not Found,n,fósil,14
+19110,110022908,n,carcamal,1
+19111,110022908,n,fósil,14
 19112,110023264,n,dux,55
 19113,110023656,n,doctrinario,8
 19114,110024119,n,doméstico,17
@@ -19276,12 +19276,12 @@
 19274,110075802,n,factótum,1
 19275,110100514,n,especial,78
 19276,110100514,n,maniático,9
-19277,1Synset Not Found,n,marica,12
-19278,1Synset Not Found,n,mariposón,1
-19279,1Synset Not Found,n,maricón,21
-19280,1Synset Not Found,n,puto,14
-19281,1Synset Not Found,n,moña,2
-19282,1Synset Not Found,n,sarasa,2
+19277,110076033,n,marica,12
+19278,110076033,n,mariposón,1
+19279,110076033,n,maricón,21
+19280,110076033,n,puto,14
+19281,110076033,n,moña,2
+19282,110076033,n,sarasa,2
 19283,110076307,n,fakir,3
 19284,110076307,n,faquir,12
 19285,110076604,n,cetrero,7
@@ -19454,8 +19454,8 @@
 19452,110132035,n,soplador,2
 19453,110132145,n,cristalero,2
 19454,110132145,n,vidriero,18
-19455,1Synset Not Found,n,goloso,2
-19456,1Synset Not Found,n,glotón,12
+19455,110132988,n,goloso,2
+19456,110132988,n,glotón,12
 19457,110134001,n,guardavalla,1
 19458,110134001,n,guardameta,152
 19459,110134001,n,arquero,582
@@ -19465,9 +19465,9 @@
 19463,110134870,n,madrina,78
 19464,110134982,n,padrino,57
 19465,110135709,n,ambicioso,34
-19466,1Synset Not Found,n,inútil,19
-19467,1Synset Not Found,n,cantonero,8
-19468,1Synset Not Found,n,pelafustán,1
+19466,110135953,n,inútil,19
+19467,110135953,n,cantonero,8
+19468,110135953,n,pelafustán,1
 19469,110136615,n,orfebre,102
 19470,110136959,n,golfista,50
 19471,110137825,n,gondolero,10
@@ -19516,7 +19516,7 @@
 19514,110148542,n,mosquetero,2
 19515,110148991,n,fan,1681
 19516,110149527,n,garante,44
-19517,1Synset Not Found,n,carcelero,22
+19517,110149867,n,carcelero,22
 19518,110150071,n,guarda,9
 19519,110150281,n,base,52
 19520,110150556,n,guerrillero,453
@@ -19671,10 +19671,10 @@
 19669,110200781,n,personaje,1984
 19670,110200781,n,prócer,129
 19671,110201366,n,importador,30
-19672,1Synset Not Found,n,simulador,156
-19673,1Synset Not Found,n,embustero,7
-19674,1Synset Not Found,n,farsante,31
-19675,1Synset Not Found,n,embaucador,7
+19672,110201535,n,simulador,156
+19673,110201535,n,embustero,7
+19674,110201535,n,farsante,31
+19675,110201535,n,embaucador,7
 19676,110459414,n,impresionista,43
 19677,110202363,n,inepto,15
 19678,110204921,n,soldado_de_infantería,270
@@ -19696,9 +19696,9 @@
 19694,110209246,n,soplador,3
 19695,110209246,n,instigador,27
 19696,110209539,n,instructora,2
-19697,1Synset Not Found,n,rebelde,677
-19698,1Synset Not Found,n,insurrecto,56
-19699,1Synset Not Found,n,insurgente,166
+19697,110210137,n,rebelde,677
+19698,110210137,n,insurrecto,56
+19699,110210137,n,insurgente,166
 19700,110210648,n,diseñador,828
 19701,110210648,n,interiorista,10
 19702,110210648,n,decorador,102
@@ -19739,9 +19739,9 @@
 19737,110224098,n,chistoso,4
 19738,110427223,n,periodista,3531
 19739,110225118,n,judas,109
-19740,1Synset Not Found,n,magistrado,385
-19741,1Synset Not Found,n,togado,5
-19742,1Synset Not Found,n,juez,1704
+19740,110225219,n,magistrado,385
+19741,110225219,n,togado,5
+19742,110225219,n,juez,1704
 19743,110225931,n,auditor_de_guerra,3
 19744,110226413,n,malabarista,10
 19745,110226413,n,saltimbanqui,2
@@ -19778,9 +19778,9 @@
 19776,111694469,n,lama,78
 19777,110244359,n,encendedor,1
 19778,110244818,n,lancero,83
-19779,1Synset Not Found,n,casero,36
-19780,1Synset Not Found,n,casera,1
-19781,1Synset Not Found,n,arrendador,23
+19779,110245236,n,casero,36
+19780,110245236,n,casera,1
+19781,110245236,n,arrendador,23
 19782,110245639,n,terrateniente,310
 19783,110245639,n,hacendado,144
 19784,110245863,n,paisajista,43
@@ -19862,22 +19862,22 @@
 19860,110273572,n,desvalido,4
 19861,110274173,n,lotario,31
 19862,110274318,n,bocazas,7
-19863,1Synset Not Found,n,porro,13
-19864,1Synset Not Found,n,zoquete,4
-19865,1Synset Not Found,n,zopenco,1
-19866,1Synset Not Found,n,patán,2
+19863,110274639,n,porro,13
+19864,110274639,n,zoquete,4
+19865,110274639,n,zopenco,1
+19866,110274639,n,patán,2
 19867,110275395,n,leal,144
 19868,110275395,n,legitimista,16
 19869,110275395,n,lealista,198
-19870,1Synset Not Found,n,maderero,23
+19870,110276045,n,maderero,23
 19871,110276238,n,lumbrera,29
 19872,110276764,n,loco,349
 19873,110276764,n,demente,20
 19874,110276764,n,lunático,13
 19875,110277815,n,luterano,40
 19876,110277912,n,letrista,138
-19877,1Synset Not Found,n,mamá,319
-19878,1Synset Not Found,n,mami,9
+19877,110278128,n,mamá,319
+19878,110278128,n,mami,9
 19879,110278456,n,macero,6
 19880,110278666,n,máquina,15
 19881,110279018,n,maquinista,81
@@ -19901,12 +19901,12 @@
 19899,110283663,n,mariscal,470
 19900,110284965,n,desafecto,5
 19901,110284965,n,malcontento,1
-19902,1Synset Not Found,n,garzón,34
-19903,1Synset Not Found,n,muchacho,1382
-19904,1Synset Not Found,n,niño,11281
-19905,1Synset Not Found,n,chaval,38
-19906,1Synset Not Found,n,mozo,234
-19907,1Synset Not Found,n,chico,4419
+19902,110285313,n,garzón,34
+19903,110285313,n,muchacho,1382
+19904,110285313,n,niño,11281
+19905,110285313,n,chaval,38
+19906,110285313,n,mozo,234
+19907,110285313,n,chico,4419
 19908,110286084,n,hermano,96
 19909,110286200,n,maleante,26
 19910,110287213,n,varón,1471
@@ -19957,7 +19957,7 @@
 19955,110306279,n,espiritista,13
 19956,110306496,n,megalómano,2
 19957,113810615,n,miembro,19266
-19958,1Synset Not Found,n,remendón,11
+19958,110308732,n,remendón,11
 19959,110023885,n,cenicienta,105
 19960,110309496,n,mentor,275
 19961,110309614,n,mercenario,441
@@ -19985,7 +19985,7 @@
 19983,110318087,n,molinero,41
 19984,110318193,n,molinera,5
 19985,110162354,n,sombrerero,12
-19986,1Synset Not Found,n,pensador,326
+19986,110708292,n,pensador,326
 19987,110319580,n,telépata,13
 19988,110319796,n,minero,265
 19989,110319996,n,mineralogista,19
@@ -20028,10 +20028,10 @@
 20026,110329579,n,monoteísta,5
 20027,110329789,n,monseñor,135
 20028,110329945,n,monstruo,907
-20029,1Synset Not Found,n,gorrón,1
-20030,1Synset Not Found,n,buitre,109
-20031,1Synset Not Found,n,chupón,10
-20032,1Synset Not Found,n,sablista,2
+20029,110330189,n,gorrón,1
+20030,110330189,n,buitre,109
+20031,110330189,n,chupón,10
+20032,110330189,n,sablista,2
 20033,110330931,n,moralista,22
 20034,110331569,n,hipotecante,1
 20035,110331841,n,empresario_de_pompas_fúnebres,1
@@ -20058,8 +20058,8 @@
 20056,110340312,n,músico,4200
 20057,110341343,n,profesor_de_música,1
 20058,110341446,n,mosquetero,72
-20059,1Synset Not Found,n,mutante,210
-20060,1Synset Not Found,n,mutación,261
+20059,110341660,n,mutante,210
+20060,110341660,n,mutación,261
 20061,110342367,n,mudo,19
 20062,110342367,n,sordomudo,34
 20063,110343355,n,miope,4
@@ -20149,8 +20149,8 @@
 20147,110375506,n,abuelo,2178
 20148,110375506,n,anciano,772
 20149,110375506,n,viejo,493
-20150,1Synset Not Found,n,carroza,2
-20151,1Synset Not Found,n,tarra,5
+20150,110376890,n,carroza,2
+20151,110376890,n,tarra,5
 20152,110377185,n,oligarca,35
 20153,1Synset Not Found,n,olímpico,23
 20154,110377394,n,ombudsman,12
@@ -20330,7 +20330,7 @@
 20328,110435367,n,filibustero,76
 20329,110435367,n,bucanero,30
 20330,110435988,n,lanzador,362
-20331,1Synset Not Found,n,plagiario,2
+20331,110437262,n,plagiario,2
 20332,110437698,n,llanero,89
 20333,110437852,n,actora,20
 20334,110437852,n,demandante,44
@@ -20393,7 +20393,7 @@
 20391,110462860,n,practicante,203
 20392,110463028,n,pretor,110
 20393,110463386,n,pragmatista,3
-20394,1Synset Not Found,n,burlador,13
+20394,110463714,n,burlador,13
 20395,110464052,n,rezador,2
 20396,110464178,n,predicador,199
 20397,110464432,n,prebendado,4
@@ -20499,16 +20499,16 @@
 20497,110494778,n,perseguido,1
 20498,110494935,n,perseguidor,97
 20499,110495299,n,proveedor,503
-20500,1Synset Not Found,n,narco,35
-20501,1Synset Not Found,n,narcotraficante,250
-20502,1Synset Not Found,n,traficante,118
+20500,110495555,n,narco,35
+20501,110495555,n,narcotraficante,250
+20502,110495555,n,traficante,118
 20503,110593521,n,putter,2
 20504,110496626,n,pigmeo,26
 20505,110497046,n,pitonisa,10
 20506,110497202,n,curandero,37
 20507,110498551,n,pedrero,11
 20508,110498551,n,cantero,75
-20509,1Synset Not Found,n,cincelador,4
+20509,110659294,n,cincelador,4
 20510,110498816,n,quaterback,9
 20511,110498986,n,furriel,1
 20512,110501908,n,quintillizo,4
@@ -20552,8 +20552,8 @@
 20550,110735984,n,árbitro,598
 20551,110514784,n,refinador,3
 20552,110514962,n,restaurador,68
-20553,1Synset Not Found,n,reformista,63
-20554,1Synset Not Found,n,reformador,79
+20553,110515194,n,reformista,63
+20554,110515194,n,reformador,79
 20555,110516016,n,asilado,8
 20556,110516016,n,refugiado,575
 20557,110516294,n,regente,293
@@ -20566,8 +20566,8 @@
 20564,110519126,n,ermitaño,151
 20565,110519126,n,anacoreta,18
 20566,110519291,n,cenobita,35
-20567,1Synset Not Found,n,renegado,6
-20568,1Synset Not Found,n,chaquetero,2
+20567,110520544,n,renegado,6
+20568,110520544,n,chaquetero,2
 20569,110520964,n,rentista,2
 20570,1Synset Not Found,n,reparador,21
 20571,110521662,n,repórter,11
@@ -20614,9 +20614,9 @@
 20612,110537906,n,romántico,84
 20613,110539015,n,funámbulo,3
 20614,111675025,n,doncella,1
-20615,1Synset Not Found,n,gilipollas,4
-20616,1Synset Not Found,n,cabrón,15
-20617,1Synset Not Found,n,perro,8
+20615,110539715,n,gilipollas,4
+20616,110539715,n,cabrón,15
+20617,110539715,n,perro,8
 20618,110541229,n,gobernante,820
 20619,110541833,n,autoridad_civil,2
 20620,113844923,n,corredor,23
@@ -20686,7 +20686,7 @@
 20684,110560352,n,profesora,303
 20685,110560637,n,científico,2296
 20686,110561222,n,vástago,2
-20687,1Synset Not Found,n,guasón,18
+20687,110561320,n,guasón,18
 20688,110561613,n,tragón,1
 20689,110562391,n,goleador,600
 20690,110562391,n,anotador,275
@@ -20757,7 +20757,7 @@
 20755,110586444,n,chacarero,34
 20756,110586444,n,aparcero,9
 20757,110587605,n,pastor,63
-20758,1Synset Not Found,n,jeque,52
+20758,110588357,n,jeque,52
 20759,110588965,n,pastor,9
 20760,110589066,n,pastora,19
 20761,110589140,n,sheriff,115
@@ -20824,9 +20824,9 @@
 20822,1Synset Not Found,n,preciosidad,4
 20823,110614976,n,fumador,77
 20824,110615179,n,pelota,2
-20825,1Synset Not Found,n,contrabandista,63
-20826,1Synset Not Found,n,metedor,1
-20827,1Synset Not Found,n,pasador,56
+20825,110615334,n,contrabandista,63
+20826,110615334,n,metedor,1
+20827,110615334,n,pasador,56
 20828,110616204,n,randa,2
 20829,110616204,n,chorizo,109
 20830,110616204,n,ratero,19
@@ -20889,8 +20889,8 @@
 20887,110638385,n,portavoz,403
 20888,110638385,n,representante,2094
 20889,110639925,n,aficionado,2
-20890,1Synset Not Found,n,cónyuge,428
-20891,1Synset Not Found,n,consorte,443
+20890,110640620,n,cónyuge,428
+20891,110640620,n,consorte,443
 20892,110641413,n,velocista,24
 20893,110641413,n,esprínter,1
 20894,110641413,n,sprinter,34
@@ -20919,8 +20919,8 @@
 20917,110654461,n,entenado,1
 20918,110654701,n,padrastro,107
 20919,110654827,n,madrastra,151
-20920,1Synset Not Found,n,cargador,258
-20921,1Synset Not Found,n,estibador,20
+20920,110655169,n,cargador,258
+20921,110655169,n,estibador,20
 20922,110655594,n,azafato,2
 20923,110655875,n,azafata,49
 20924,110655986,n,rigorista,2
@@ -20958,9 +20958,9 @@
 20956,110665698,n,alumno,3045
 20957,109901502,n,catecúmeno,9
 20958,110666846,n,doble,5
-20959,1Synset Not Found,n,tonto,1
-20960,1Synset Not Found,n,mendrugo,2
-20961,1Synset Not Found,n,mastuerzo,2
+20959,110667187,n,tonto,1
+20960,110667187,n,mendrugo,2
+20961,110667187,n,mastuerzo,2
 20962,110667709,n,alférez,123
 20963,110667863,n,subcontratista,13
 20964,110669357,n,submarinista,20
@@ -21091,11 +21091,11 @@
 21089,110714577,n,pijo,10
 21090,110714577,n,lechuguino,1
 21091,110715789,n,abanderado,1
-21092,1Synset Not Found,n,atormentador,4
+21092,110716005,n,atormentador,4
 21093,110716389,n,torturador,29
 21094,110716698,n,tory,25
-21095,1Synset Not Found,n,chulo,2
-21096,1Synset Not Found,n,duro,86
+21095,110717921,n,chulo,2
+21096,110717921,n,duro,86
 21097,110718131,n,veraneante,34
 21098,110718131,n,turista,842
 21099,110719132,n,pregonero,34
@@ -21164,11 +21164,11 @@
 21162,110741367,n,galopín,1
 21163,110741367,n,mataperros,1
 21164,110741493,n,urólogo,11
-21165,1Synset Not Found,n,usuario,3832
+21165,110741590,n,usuario,3832
 21166,110741821,n,acomodador,20
 21167,110741821,n,guía,109
 21168,110742111,n,ujier,15
-21169,1Synset Not Found,n,usurero,14
+21169,110742384,n,usurero,14
 21170,110742546,n,usurpador,89
 21171,110742736,n,utilitarista,2
 21172,110743356,n,utopista,1
@@ -21265,8 +21265,8 @@
 21263,1Synset Not Found,n,nodriza,49
 21264,1Synset Not Found,n,aya,42
 21265,110775128,n,ballenero,11
-21266,1Synset Not Found,n,jeremías,44
-21267,1Synset Not Found,n,pupas,1
+21266,110776339,n,jeremías,44
+21267,110776339,n,pupas,1
 21268,110776987,n,mequetrefe,1
 21269,110778148,n,carmelita,161
 21270,110024937,n,dominico,150
@@ -21448,8 +21448,8 @@
 21446,114299070,n,atracción,3
 21447,111498203,n,empuje,16
 21448,114577753,n,radiación,867
-21449,1Synset Not Found,n,radioactividad,24
-21450,1Synset Not Found,n,radiactividad,24
+21449,113545184,n,radioactividad,24
+21450,113545184,n,radiactividad,24
 21451,111501381,n,lluvia,2091
 21452,104562496,n,turbión,5
 21453,104562496,n,chaparrón,9
@@ -22562,7 +22562,7 @@
 22560,112416278,n,genus_crocus,1
 22561,112455540,n,azafrán,9
 22562,112417062,n,fresia,24
-22563,1Synset Not Found,n,gladiolo,7
+22563,112417382,n,gladiolo,7
 22564,112417686,n,ixia,53
 22565,112418065,n,sisyrinchium,11
 22566,112418356,n,sparaxis,10
@@ -23073,7 +23073,7 @@
 23071,112825301,n,cuscuta,7
 23072,112826395,n,ipomoea,33
 23073,112828977,n,ipomea,3
-23074,1Synset Not Found,n,boniato,10
+23074,107712063,n,boniato,10
 23075,112829099,n,gesneriáceas,1
 23076,112830974,n,alsobia,1
 23077,112832976,n,saintpaulia,10
@@ -23353,8 +23353,8 @@
 23351,113108481,n,pimpollo,2
 23352,113108841,n,conífero,255
 23353,113111881,n,bonsai,22
-23354,1Synset Not Found,n,algaida,11
-23355,1Synset Not Found,n,maleza,202
+23354,113112296,n,algaida,11
+23355,113112296,n,maleza,202
 23356,113112664,n,arbusto,1542
 23357,113112664,n,mata,212
 23358,113119870,n,zarza,59
@@ -23477,8 +23477,8 @@
 23475,114479488,n,propiedad,175
 23476,113243668,n,dominio_público,2
 23477,113243991,n,cooperativa,1
-23478,1Synset Not Found,n,pertenencia,371
-23479,1Synset Not Found,n,posesiones,2
+23478,113244109,n,pertenencia,371
+23479,113244109,n,posesiones,2
 23480,113245626,n,propiedad_privada,3
 23481,113245626,n,bien,176
 23482,113245846,n,enseres,62
@@ -23521,7 +23521,7 @@
 23519,113259917,n,lucro,471
 23520,113259917,n,garito,11
 23521,113259917,n,ganancia,390
-23522,1Synset Not Found,n,rédito,33
+23522,113260190,n,rédito,33
 23523,113261916,n,impuestos,25
 23524,113262663,n,presa,1020
 23525,113262663,n,botín,261
@@ -23553,8 +23553,8 @@
 23551,113273836,n,dividendo,5
 23552,113274092,n,bonificación,5
 23553,113274597,n,descuento,13
-23554,1Synset Not Found,n,gastos,962
-23555,1Synset Not Found,n,gasto,1073
+23554,113275288,n,gastos,962
+23555,113275288,n,gasto,1073
 23556,113318147,n,costo,1449
 23557,113318147,n,coste,1198
 23558,113386465,n,pago,1313
@@ -23754,7 +23754,7 @@
 23752,114492723,n,dinero,3439
 23753,113384877,n,moneda,91
 23754,113686660,n,libras_esterlinas,2
-23755,1Synset Not Found,n,cucas,2
+23755,113385216,n,cucas,2
 23756,113387209,n,moneda,41
 23757,113387209,n,papel_moneda,1
 23758,113387689,n,vuelta,54
@@ -23914,9 +23914,9 @@
 23912,113449156,n,segmentación,5
 23913,115142836,n,lactación,7
 23914,115142836,n,lactancia,195
-23915,1Synset Not Found,n,mes,32
-23916,1Synset Not Found,n,menstruación,31
-23917,1Synset Not Found,n,menstruo,1
+23915,113513747,n,mes,32
+23916,113513747,n,menstruación,31
+23917,113513747,n,menstruo,1
 23918,113466586,n,expulsión,22
 23919,113540429,n,eyaculación,17
 23920,113473097,n,defecación,6
@@ -23925,7 +23925,7 @@
 23923,113496972,n,incontinencia,1
 23924,113459088,n,defecación,14
 23925,113515958,n,micción,16
-23926,1Synset Not Found,n,enuresis,4
+23926,113474858,n,enuresis,4
 23927,113479889,n,supuración,8
 23928,113477934,n,expectoración,3
 23929,113552528,n,salivación,12
@@ -24167,8 +24167,8 @@
 24165,113657244,n,unidad_astronómica,1
 24166,113658027,n,ángstrom,1
 24167,113658278,n,nanómetro,195
-24168,1Synset Not Found,n,micrómetro,35
-24169,1Synset Not Found,n,micra,50
+24168,113658496,n,micrómetro,35
+24169,113658496,n,micra,50
 24170,113658657,n,mm,40
 24171,113658657,n,milímetro,125
 24172,113658828,n,centímetro,129
@@ -24256,7 +24256,7 @@
 24254,113711663,n,milibar,7
 24255,114671587,n,bar,4294
 24256,113712428,n,cícero,5
-24257,1Synset Not Found,n,bel,77
+24257,113713521,n,bel,77
 24258,113713633,n,decibelio,17
 24259,113713633,n,decibel,4
 24260,113714184,n,grado,55
@@ -24284,11 +24284,11 @@
 24282,113724350,n,decagramo,3
 24283,113724474,n,hg,35
 24284,113724474,n,hectogramo,8
-24285,1Synset Not Found,n,quilogramo,17
-24286,1Synset Not Found,n,kilogramo,657
-24287,1Synset Not Found,n,kg,20
-24288,1Synset Not Found,n,quilo,17
-24289,1Synset Not Found,n,kilo,455
+24285,113724582,n,quilogramo,17
+24286,113724582,n,kilogramo,657
+24287,113724582,n,kg,20
+24288,113724582,n,quilo,17
+24289,113724582,n,kilo,455
 24290,113725271,n,quintal,16
 24291,113725588,n,tonelada,3
 24292,113725726,n,erg,12
@@ -24321,13 +24321,13 @@
 24319,113742358,n,cero,330
 24320,113742840,n,mónada,5
 24321,113743269,n,dos,3
-24322,1Synset Not Found,n,tándem,35
-24323,1Synset Not Found,n,dúo,835
-24324,1Synset Not Found,n,par,187
+24322,113743605,n,tándem,35
+24323,113743605,n,dúo,835
+24324,113743605,n,par,187
 24325,113746512,n,decena,474
 24326,113746785,n,docena,163
-24327,1Synset Not Found,n,centenar,296
-24328,1Synset Not Found,n,ciento,1079
+24327,113750415,n,centenar,296
+24328,113750415,n,ciento,1079
 24329,113750844,n,millar,1709
 24330,113750844,n,mil,1584
 24331,113751533,n,millón,1305
@@ -24428,9 +24428,9 @@
 24426,113809207,n,parte,41489
 24427,113809920,n,elemento,22
 24428,115154774,n,elemento,129
-24429,1Synset Not Found,n,resto,11799
-24430,1Synset Not Found,n,remanente,136
-24431,1Synset Not Found,n,restante,498
+24429,113810818,n,resto,11799
+24430,113810818,n,remanente,136
+24431,113810818,n,restante,498
 24432,113811410,n,afinidad,264
 24433,113811900,n,sintonía,201
 24434,113812607,n,parentesco,394
@@ -24472,8 +24472,8 @@
 24470,113841863,n,interdependencia,34
 24471,113841863,n,mutualidad,9
 24472,113842622,n,simbiosis,102
-24473,1Synset Not Found,n,inverso,74
-24474,1Synset Not Found,n,recíproca,4
+24473,113843601,n,inverso,74
+24474,113843601,n,recíproca,4
 24475,113844212,n,interrelación,81
 24476,113844923,n,antecedente,7
 24477,113845114,n,cronología,636
@@ -24592,11 +24592,11 @@
 24590,113893310,n,declinación_magnética,1
 24591,113893502,n,acimut,13
 24592,113893786,n,surco,200
-24593,1Synset Not Found,n,bulto,119
-24594,1Synset Not Found,n,prominencia,80
+24593,113894434,n,bulto,119
+24594,113894434,n,prominencia,80
 24595,114464883,n,verruga,2
 24596,113895986,n,nodo,606
-24597,1Synset Not Found,n,relieve,678
+24597,104073669,n,relieve,678
 24598,113896100,n,arco,112
 24599,113896217,n,medialuna,39
 24600,113896369,n,marca,32
@@ -24781,9 +24781,9 @@
 24779,113963032,n,extinción,24
 24780,115140744,n,vida,20569
 24781,113963757,n,estado_civil,8
-24782,1Synset Not Found,n,enlace,48548
-24783,1Synset Not Found,n,connubio,1
-24784,1Synset Not Found,n,matrimonio,4943
+24782,113963970,n,enlace,48548
+24783,113963970,n,connubio,1
+24784,113963970,n,matrimonio,4943
 24785,113964466,n,bigamia,2
 24786,113965049,n,endogamia,13
 24787,113965274,n,exogamia,6
@@ -24824,13 +24824,13 @@
 24822,1Synset Not Found,n,fárrago,1
 24823,113977043,n,motín,4
 24824,113977184,n,escándalo,2
-24825,1Synset Not Found,n,disturbios,14
-24826,1Synset Not Found,n,tumulto,57
-24827,1Synset Not Found,n,conmoción,89
-24828,1Synset Not Found,n,trapisonda,4
-24829,1Synset Not Found,n,sarao,3
-24830,1Synset Not Found,n,trastorno,992
-24831,1Synset Not Found,n,cacao,223
+24825,113977366,n,disturbios,14
+24826,113977366,n,tumulto,57
+24827,113977366,n,conmoción,89
+24828,113977366,n,trapisonda,4
+24829,113977366,n,sarao,3
+24830,113977366,n,trastorno,992
+24831,113977366,n,cacao,223
 24832,113978033,n,incidente,12
 24833,113978344,n,tormenta,1
 24834,113979064,n,discordia,73
@@ -24915,8 +24915,8 @@
 24913,114379360,n,equilibrio,832
 24914,114004149,n,inestabilidad,1
 24915,114005549,n,movimiento,40
-24916,1Synset Not Found,n,trepidación,3
-24917,1Synset Not Found,n,palpitación,5
+24916,114004572,n,trepidación,3
+24917,114004572,n,palpitación,5
 24918,114004958,n,trémolo,30
 24919,114005728,n,precesión,29
 24920,114005892,n,torrente,212
@@ -25012,8 +25012,8 @@
 25010,114055796,n,anorexia,72
 25011,114061805,n,enfermedad,80
 25012,114062490,n,invalidez,1
-25013,1Synset Not Found,n,adicción,241
-25014,1Synset Not Found,n,dependencia,1326
+25013,114062725,n,adicción,241
+25014,114062725,n,dependencia,1326
 25015,114064408,n,drogodependencia,18
 25016,114064408,n,drogadicción,41
 25017,114064408,n,toxicomanía,3
@@ -25134,8 +25134,8 @@
 25132,114149773,n,psitacosis,1
 25133,114150612,n,silicosis,1
 25134,114152279,n,albinismo,9
-25135,1Synset Not Found,n,daltonismo,3
-25136,1Synset Not Found,n,acromatopsia,2
+25135,114153010,n,daltonismo,3
+25136,114153010,n,acromatopsia,2
 25137,114155506,n,fibrosis_quística,1
 25138,114159623,n,mongolismo,1
 25139,114159623,n,síndrome_de_down,8
@@ -25331,7 +25331,7 @@
 25329,114325732,n,cólico,29
 25330,114326607,n,cefalea,40
 25331,114326607,n,cefalalgia,3
-25332,1Synset Not Found,n,hemorroides,2
+25332,114327125,n,hemorroides,2
 25333,114327707,n,migraña,37
 25334,114327707,n,jaqueca,12
 25335,114796575,n,lumbago,4
@@ -25393,8 +25393,8 @@
 25391,114364566,n,callosidad,38
 25392,114364566,n,callo,30
 25393,114364980,n,calcificación,35
-25394,1Synset Not Found,n,pirexia,13
-25395,1Synset Not Found,n,fiebre,143
+25394,114365356,n,pirexia,13
+25395,114365356,n,fiebre,143
 25396,114365619,n,hiperpirexia,1
 25397,114365741,n,atrofia,39
 25398,114366759,n,hipertrofia,74
@@ -25640,8 +25640,8 @@
 25638,114459824,n,refinamiento,35
 25639,114460565,n,integridad,372
 25640,114462193,n,plenitud,135
-25641,1Synset Not Found,n,entereza,28
-25642,1Synset Not Found,n,totalidad,1544
+25641,114461231,n,entereza,28
+25642,114461231,n,totalidad,1544
 25643,114461519,n,plenitud,3
 25644,114462946,n,fallo,9
 25645,114463471,n,insuficiencia,1
@@ -25731,7 +25731,7 @@
 25729,114499111,n,sordidez,4
 25730,114499262,n,desorden,28
 25731,114499734,n,descuido,42
-25732,1Synset Not Found,n,desorganización,34
+25732,114500341,n,desorganización,34
 25733,105953416,n,mezcolanza,15
 25734,105953416,n,revoltijo,2
 25735,114500908,n,normalidad,212
@@ -25779,7 +25779,7 @@
 25777,114525365,n,tenebrosidad,1
 25778,114525548,n,desolación,11
 25779,114526032,n,miasma,2
-25780,1Synset Not Found,n,vibraciones,17
+25780,104727883,n,vibraciones,17
 25781,114526764,n,inmunidad,47
 25782,114528873,n,exención,123
 25783,114529082,n,amnistía,24
@@ -25874,10 +25874,10 @@
 25872,114583670,n,escoria,72
 25873,114584260,n,alérgeno,18
 25874,114585223,n,antidetonante,2
-25875,1Synset Not Found,n,menudencia,7
-25876,1Synset Not Found,n,pellizco,10
-25877,1Synset Not Found,n,partícula,1138
-25878,1Synset Not Found,n,insignificancia,11
+25875,114585519,n,menudencia,7
+25876,114585519,n,pellizco,10
+25877,114585519,n,partícula,1138
+25878,114585519,n,insignificancia,11
 25879,114929662,n,mezcla,321
 25880,115103911,n,aleación,269
 25881,114590975,n,coloide,10
@@ -26101,8 +26101,8 @@
 26099,114708413,n,ágata,14
 26100,115058310,n,alcohol,35
 26101,114709265,n,etanol,172
-26102,1Synset Not Found,n,parafina,6
-26103,1Synset Not Found,n,alcano,22
+26102,114951377,n,parafina,6
+26103,114951377,n,alcano,22
 26104,114951983,n,metileno,11
 26105,114952122,n,metilo,40
 26106,114710325,n,etilo,17
@@ -26344,8 +26344,8 @@
 26342,114853947,n,deyección,4
 26343,114853947,n,excremento,86
 26344,114853947,n,heces,3
-26345,1Synset Not Found,n,mierda,102
-26346,1Synset Not Found,n,caca,13
+26345,114854581,n,mierda,102
+26346,114854581,n,caca,13
 26347,114854847,n,estiércol,45
 26348,114855724,n,pis,12
 26349,114855724,n,meado,2
@@ -26530,8 +26530,8 @@
 26528,114956325,n,barro,579
 26529,114956325,n,légamo,1
 26530,114956325,n,lodo,137
-26531,1Synset Not Found,n,cieno,14
-26532,1Synset Not Found,n,limo,68
+26531,114956661,n,cieno,14
+26532,114956661,n,limo,68
 26533,114957893,n,mielina,16
 26534,114958254,n,napalm,16
 26535,114958405,n,nafta,37
@@ -26573,8 +26573,8 @@
 26571,115064917,n,peróxido,11
 26572,114980215,n,pesticida,61
 26573,114980215,n,plaguicida,35
-26574,1Synset Not Found,n,petróleo,923
-26575,1Synset Not Found,n,crudo,86
+26574,114980579,n,petróleo,923
+26575,114980579,n,crudo,86
 26576,114981183,n,sistema,12
 26577,114981579,n,fenilalanina,23
 26578,114981847,n,fosgeno,23
@@ -26679,10 +26679,10 @@
 26677,115044327,n,esteatita,10
 26678,115044844,n,sosa,5
 26679,115046900,n,sólido,364
-26680,1Synset Not Found,n,disolvente,148
-26681,1Synset Not Found,n,fundente,2
-26682,1Synset Not Found,n,solvente,70
-26683,1Synset Not Found,n,diluyente,8
+26680,115047313,n,disolvente,148
+26681,115047313,n,fundente,2
+26682,115047313,n,solvente,70
+26683,115047313,n,diluyente,8
 26684,115047849,n,soluto,50
 26685,115049096,n,espato,5
 26686,115049594,n,derrame,6
@@ -26745,8 +26745,8 @@
 26743,115091669,n,piridoxina,4
 26744,115092059,n,niacina,10
 26745,115092059,n,ácido_nicotínico,1
-26746,1Synset Not Found,n,vitamina_d,3
-26747,1Synset Not Found,n,calciferol,1
+26746,115092227,n,vitamina_d,3
+26747,115092227,n,calciferol,1
 26748,115092409,n,vitamina_e,4
 26749,115092409,n,tocoferol,2
 26750,115092650,n,biotina,11
@@ -26882,9 +26882,9 @@
 26880,115165289,n,mañana,1672
 26881,115165490,n,mediodía,2
 26882,115166352,n,tarde,1251
-26883,1Synset Not Found,n,atardecer,162
-26884,1Synset Not Found,n,noche,557
-26885,1Synset Not Found,n,anochecer,639
+26883,115166462,n,atardecer,162
+26884,115166462,n,noche,557
+26885,115166462,n,anochecer,639
 26886,115167027,n,noche,3765
 26887,115168185,n,medianoche,1
 26888,115168790,n,amanecida,5
@@ -26894,7 +26894,7 @@
 26892,115168790,n,aurora,261
 26893,115168790,n,amanecer,518
 26894,115169248,n,ocaso,138
-26895,1Synset Not Found,n,anochecida,1
+26895,115169421,n,anochecida,1
 26896,115169873,n,semana,6390
 26897,115170331,n,quincena,94
 26898,115170504,n,fin_de_semana,10
@@ -26997,9 +26997,9 @@
 26995,115240119,n,pretemporada,161
 26996,115242955,n,años,1049
 26997,115243730,n,eón,44
-26998,1Synset Not Found,n,infinito,168
-26999,1Synset Not Found,n,eternidad,177
-27000,1Synset Not Found,n,infinidad,195
+26998,115243976,n,infinito,168
+26999,115243976,n,eternidad,177
+27000,115243976,n,infinidad,195
 27001,115244650,n,instante,513
 27002,115245382,n,segundo,7
 27003,115246353,n,segundo,37
@@ -27052,8 +27052,8 @@
 27050,115266911,n,término,3114
 27051,115266911,n,fin,8220
 27052,115266911,n,conclusión,862
-27053,1Synset Not Found,n,terminación,274
-27054,1Synset Not Found,n,meta,18
+27053,115267536,n,terminación,274
+27054,115267536,n,meta,18
 27055,115268682,n,vencimiento,42
 27056,115268857,n,punto_final,19
 27057,115269513,n,intervalo,576
@@ -27067,7 +27067,7 @@
 27065,115272571,n,intermedio,185
 27066,115272685,n,interludio,71
 27067,115272791,n,entreacto,11
-27068,1Synset Not Found,n,ínterin,12
+27068,115272887,n,ínterin,12
 27069,115273522,n,interregno,38
 27070,115273626,n,siesta,51
 27071,115274074,n,descanso,784
@@ -27076,11 +27076,11 @@
 27074,115274863,n,arrendamiento,1
 27075,115276427,n,natalidad,94
 27076,115276801,n,criminalidad,57
-27077,1Synset Not Found,n,morbilidad,25
-27078,1Synset Not Found,n,mortalidad,285
+27077,115277118,n,morbilidad,25
+27078,115277118,n,mortalidad,285
 27079,115278281,n,frecuencia,3096
-27080,1Synset Not Found,n,cs,83
-27081,1Synset Not Found,n,hertz,15
+27080,115279104,n,cs,83
+27081,115279104,n,hertz,15
 27082,115279596,n,kilohercio,2
 27083,115279957,n,megahercio,10
 27084,115280346,n,mph,173

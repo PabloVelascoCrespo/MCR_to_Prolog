@@ -1,53 +1,147 @@
 import pandas as pd
-import re
+from collections import defaultdict
 
-# Rutas de los CSVs y del fichero wn_s.pl
-csv_files = ['csv1.csv', 'csv2.csv', 'csv3.csv']
-wn_s_path = 'wn_s.pl'
+def normalize_word(s):
+    if pd.isna(s):
+        return s
+    s = str(s).strip()
+    quote_pairs = [("'", "'"), ('"', '"'), ("‘", "’"), ("“", "”"), ("`", "`")]
+    if len(s) >= 2:
+        for left, right in quote_pairs:
+            if s.startswith(left) and s.endswith(right):
+                return s[1:-1].strip()
+        if (s[0] in "\"'`“”‘’") and (s[-1] in "\"'`“”‘’"):
+            return s[1:-1].strip()
+    return s
 
-# Leer CSVs con pandas
-dfs = [pd.read_csv(f) for f in csv_files]
+def add_quotes(s):
+    if pd.isna(s):
+        return s
+    s = str(s).strip()
+    if not (s.startswith("'") and s.endswith("'")):
+        return f"'{s}'"
+    return s
 
-# Unificar columnas relevantes y normalizar
-for df in dfs:
-    df.columns = df.columns.str.strip().str.lower()
-    df.rename(columns={
-        'índice': 'index',
-        'synset': 'synset',
-        'categoría gramatical': 'pos',
-        'palabra': 'lemma',
-        'tagcount': 'tag_count'
-    }, inplace=True)
+def normalize_synset(x):
+    return None if pd.isna(x) else str(x).strip()
 
-# Combinar los tres CSVs haciendo un merge múltiple
-df_merged = dfs[0].merge(dfs[1], on=['synset', 'pos', 'lemma'], suffixes=('_1', '_2')) \
-                 .merge(dfs[2], on=['synset', 'pos', 'lemma'])
-df_merged.rename(columns={'tag_count': 'tag_count_3'}, inplace=True)
 
-# Calcular media aritmética del tag_count
-df_merged['avg_tag_count'] = df_merged[['tag_count_1', 'tag_count_2', 'tag_count_3']].mean(axis=1).round().astype(int)
+# ======================
+# CARGA CSVs
+# ======================
 
-# Leer wn_s.pl
-pattern = re.compile(r"s\((\d+),(\d+),'(.+?)',([a-z]),(\d+),(\d+)\)\.")
-with open(wn_s_path, 'r', encoding='utf-8') as f:
-    wn_lines = f.readlines()
+path_main = "spa/PrologCSV/wn_s.csv"
+paths_other = [
+    "spa/PrologCSV/Tag_Count_AnCora30.csv",   # CSV1
+    "spa/PrologCSV/Tag_Count_SenSem.csv",     # CSV2 ✅ especial para Type!=n
+    "spa/PrologCSV/Tag_Count_WikiCorpus30.csv" # CSV3
+]
 
-# Extraer datos del wn_s.pl en un diccionario
-wn_data = {}
-for line in wn_lines:
-    m = pattern.match(line.strip())
-    if m:
-        synset = int(m.group(1))
-        lemma = m.group(3)
-        pos = m.group(4)
-        tag = int(m.group(6))
-        key = (synset, pos, lemma)
-        wn_data[key] = tag
+df_main = pd.read_csv(path_main)
+dfs_other = [pd.read_csv(p) for p in paths_other]
 
-# Comparar y mostrar
-for _, row in df_merged.iterrows():
-    key = (int(row['synset']), row['pos'], row['lemma'])
-    if key in wn_data:
-        original = wn_data[key]
-        promedio = row['avg_tag_count']
-        print(f"{key}: wn_s.pl = {original}, promedio = {promedio}")
+df1, df2, df3 = dfs_other   # nombres claros
+
+
+# ======================
+# Normalizar
+# ======================
+
+df_main["Synset"] = df_main["Synset"].apply(normalize_synset)
+df_main["Word"]   = df_main["Word"].apply(normalize_word)
+df_main["Tag Count"] = pd.to_numeric(df_main["Tag Count"], errors="coerce").fillna(0)
+
+for df in (df1, df2, df3):
+    df["Synset"] = df["Synset"].apply(normalize_synset)
+    df["Word"]   = df["Word"].apply(normalize_word)
+    df["Tag Count"] = pd.to_numeric(df["Tag Count"], errors="coerce").fillna(0)
+
+
+# ======================
+# ✅ PESOS PARA type=="n" (SenSem solo sustantivos)
+# ======================
+
+# ✅ Solo filas donde SenSem.PoS == 'n'
+sen_sem_nouns = df2[df2["PoS"] == "n"]
+
+weights = [
+    len(df1),            # AnCora30 completo
+    len(sen_sem_nouns),  # ✅ SenSem: SOLO sustantivos
+    len(df3)             # WikiCorpus completo
+]
+
+total_weight = sum(weights)
+w1, w2, w3 = [w / total_weight for w in weights]
+
+
+# ======================
+# CALCULO DE TAG COUNT
+# ======================
+
+new_tagcounts = {}
+
+for idx, row in df_main.iterrows():
+    synset = row["Synset"]
+    word   = row["Word"]
+    tipo   = row["Type"]
+
+    # ✅ REGLA: Si no es 'n', usar SOLO SenSem (sin ponderar)
+    if tipo != "n":
+        match = df2[(df2["Synset"] == synset) & (df2["Word"] == word)]
+        if not match.empty:
+            new_tagcounts[idx] = int(match["Tag Count"].iloc[0])
+        else:
+            new_tagcounts[idx] = 0
+        continue
+
+    # ✅ Si sí es 'n', usar ponderación normal
+    weighted_sum = 0
+    any_found = False
+
+    # CSV1 (AnCora)
+    match1 = df1[(df1["Synset"] == synset) & (df1["Word"] == word)]
+    if not match1.empty:
+        weighted_sum += match1["Tag Count"].iloc[0] * w1
+        any_found = True
+
+    # CSV2 (SenSem)
+    match2 = sen_sem_nouns[(sen_sem_nouns["Synset"] == synset) & (sen_sem_nouns["Word"] == word)]
+    if not match2.empty:
+        weighted_sum += match2["Tag Count"].iloc[0] * w2
+        any_found = True
+
+    # CSV3 (WikiCorpus)
+    match3 = df3[(df3["Synset"] == synset) & (df3["Word"] == word)]
+    if not match3.empty:
+        weighted_sum += match3["Tag Count"].iloc[0] * w3
+        any_found = True
+
+    new_tagcounts[idx] = int(round(weighted_sum)) if any_found else 0
+
+
+# ======================
+# Guardar resultados en columnas
+# ======================
+
+df_main["Tag Count"] = df_main.index.map(lambda i: new_tagcounts[i])
+df_main["Word"] = df_main["Word"].apply(add_quotes)
+
+
+# ======================
+# REORDENAR Y REGENERAR W Num
+# ======================
+
+df_main = df_main.sort_values(
+    by=["Synset", "Tag Count"],
+    ascending=[True, False]
+)
+
+df_main["W Num"] = df_main.groupby("Synset").cumcount() + 1
+
+
+# ======================
+# Guardar archivo
+# ======================
+
+df_main.to_csv(path_main, index=False)
+print("\n✅ CSV actualizado ✅ Pesos corregidos (SenSem solo sustantivos) ✅\n")
