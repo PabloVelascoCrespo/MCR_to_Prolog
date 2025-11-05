@@ -1,4 +1,4 @@
-#Conversion of the Spanish WordNet databases into a Prolog-readable format (with Tag-count information)
+# Conversion of the Spanish WordNet databases into a Prolog-readable format (with Tag-count information)
 
 The Spanish WordNet, like others, does not provide a version compatible with Prolog. This work aims to fill this gap by translating the Multilingual Central Repository (MCR) version of the Spanish WordNet (based on the English WordNet 3.0) into anProlog-compatible format. This goal is motivated by the variety of linguistic applications that can be addressed using WordNet in combination with the declarative features of Prolog (for example, cataloging of texts, analysis of causal relationships,. . ., and generally more intuitive access to information contained in WordNet).
 
@@ -13,17 +13,13 @@ Finally, it is important to highlight that in this new version we are publishing
 
 # Conversion of the Spanish WordNet databases into a Prolog-readable format
 
-## ¿Cómo generar los ficheros prolog? / How to generate prolog files?
+## How to generate prolog files?
 
 ### Windows
-
-Para generar todos ficheros y ordenarlos:
 
 To generate all files and sort them:
 
     Windows\exe.bat
-
-Si se desea traducir y añadir más glosas a wn_g (No se recomienda debido a que tarda alrededor de 5 horas, dependiendo de la conexión):
 
 If you want to translate and add more glosses to wn_g (Not recommended because it takes about 5 hours, depending on the connection):
 
@@ -31,13 +27,9 @@ If you want to translate and add more glosses to wn_g (Not recommended because i
     
 ### Linux / MAC OS
 
-Para generar todos los ficheros y ordenarlos, colóquese dentro del directorio Linux-MAC_OS:
-
 To generate all the files and sort them, place them inside the Linux-MAC_OS directory:
 
     make ejecucion
-
-Si se desea traducir y añadir más glosas a wn_g (No se recomienda debido a que tarda alrededor de 5 horas, dependiendo de la conexión), dentro del directorio mencionado:
 
 If you want to translate and add more glosses to wn_g (not recommended because it takes about 5 hours, depending on the connection), inside the mentioned directory:    
 
